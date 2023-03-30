@@ -2,9 +2,9 @@
 # ::1           ip6-localhost
 
 # Block OTA downloading from GMS (Disable fetching Android system update)
-127.0.0.1 ota.googlezip.net
-127.0.0.1 ota-cache1.googlezip.net
-127.0.0.1 ota-cache2.googlezip.net
+0.0.0.0 ota.googlezip.net
+0.0.0.0 ota-cache1.googlezip.net
+0.0.0.0 ota-cache2.googlezip.net
 
 # Block WhatsApp tracker (Prevent banned for mod user)
 0.0.0.0 dit.whatsapp.net
