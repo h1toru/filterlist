@@ -8,6 +8,6 @@
 #
 
 # DANA (id.dana)
-0.0.0.0 auth.split.io
-0.0.0.0 events.split.io
-0.0.0.0 sdk.split.io
+auth.split.io
+events.split.io
+sdk.split.io
