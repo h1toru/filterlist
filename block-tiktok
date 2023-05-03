@@ -41,6 +41,7 @@
 # Adaway DNS requests log
 0.0.0.0 vt.tiktok.com
 0.0.0.0 tiktokv.com
+0.0.0.0 tiktokcdn.com
 0.0.0.0 log.tiktokv.com
 0.0.0.0 webcast.tiktok.com
 
@@ -52,26 +53,26 @@
 0.0.0.0 api16-normal.tiktokv.com
 0.0.0.0 api16-core-c-alisg.tiktokv.com
 0.0.0.0 api16-normal-c-alisg.tiktokv.com
-0.0.0.0 api16-core-c-useast2a.tiktokv.com
+0.0.0.0 api16-core-c-useast1a.tiktokv.com
 0.0.0.0 api16-normal-c-useast1a.tiktokv.com
 0.0.0.0 api19-core.tiktokv.com
 0.0.0.0 api19-normal.tiktokv.com
 0.0.0.0 api19-core-c-alisg.tiktokv.com
 0.0.0.0 api19-normal-c-alisg.tiktokv.com
-0.0.0.0 api19-core-c-useast2a.tiktokv.com
-0.0.0.0 api19-normal-c-useast2a.tiktokv.com
+0.0.0.0 api19-core-c-useast1a.tiktokv.com
+0.0.0.0 api19-normal-c-useast1a.tiktokv.com
 0.0.0.0 api21-core.tiktokv.com
 0.0.0.0 api21-normal.tiktokv.com
 0.0.0.0 api21-core-c-alisg.tiktokv.com
 0.0.0.0 api21-normal-c-alisg.tiktokv.com
-0.0.0.0 api21-core-c-useast2a.tiktokv.com
-0.0.0.0 api21-normal-c-useast2a.tiktokv.com
+0.0.0.0 api21-core-c-useast1a.tiktokv.com
+0.0.0.0 api21-normal-c-useast1a.tiktokv.com
 0.0.0.0 api22-core.tiktokv.com
 0.0.0.0 api22-normal.tiktokv.com
 0.0.0.0 api22-core-c-alisg.tiktokv.com
 0.0.0.0 api22-normal-c-alisg.tiktokv.com
-0.0.0.0 api22-core-c-useast2a.tiktokv.com
-0.0.0.0 api22-normal-c-useast2a.tiktokv.com
+0.0.0.0 api22-core-c-useast1a.tiktokv.com
+0.0.0.0 api22-normal-c-useast1a.tiktokv.com
 
 0.0.0.0 mon.tiktokv.com
 0.0.0.0 mon-sg.tiktokv.com
