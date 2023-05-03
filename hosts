@@ -1,5 +1,11 @@
+# Title: hosts
+# Description: Block analytics/tracker without breaking compatibility (safe).
+# Homepage: https://github.com/h1toru/hosts
+# Author: @h1toru
+#
 # 0.0.0.0       localhost
 # ::1           ip6-localhost
+#
 
 # Block OTA downloading from GMS (Disable fetching Android system update)
 # Source: https://github.com/PixelExperience/system_core/commit/c10bc39e416dd43d092060e4593c630ad45053c8
@@ -7,7 +13,7 @@
 0.0.0.0 ota-cache1.googlezip.net
 0.0.0.0 ota-cache2.googlezip.net
 
-# Block WhatsApp tracker (Prevent banned for Whatsapp mod user)
+# Block WhatsApp tracker (Prevent ban for Whatsapp mod user)
 # Source: https://t.me/WeAreRavenS/907
 0.0.0.0 dit.whatsapp.net
 
