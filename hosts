@@ -2,11 +2,15 @@
 # ::1           ip6-localhost
 
 # Block OTA downloading from GMS (Disable fetching Android system update)
-# source: https://github.com/PixelExperience/system_core/commit/c10bc39e416dd43d092060e4593c630ad45053c8
+# Source: https://github.com/PixelExperience/system_core/commit/c10bc39e416dd43d092060e4593c630ad45053c8
 0.0.0.0 ota.googlezip.net
 0.0.0.0 ota-cache1.googlezip.net
 0.0.0.0 ota-cache2.googlezip.net
 
 # Block WhatsApp tracker (Prevent banned for Whatsapp mod user)
-# source: https://t.me/WeAreRavenS/907
+# Source: https://t.me/WeAreRavenS/907
 0.0.0.0 dit.whatsapp.net
+
+# Fix Steam Fatal Error
+# Source: https://forums.linuxmint.com/viewtopic.php?t=343762
+0.0.0.0 client-download.steampowered.com
