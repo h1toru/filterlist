@@ -173,6 +173,7 @@
 0.0.0.0 vcs-i18n.tiktokv.com
 0.0.0.0 frontier-i18n.tiktokv.com
 
+0.0.0.0 s20.tiktokcdn.com
 0.0.0.0 sf16.tiktokcdn.com
 0.0.0.0 sf16-sg.tiktokcdn.com
 0.0.0.0 sf16-va.tiktokcdn.com
@@ -182,8 +183,6 @@
 
 0.0.0.0 mon.isnssdk.com
 0.0.0.0 whoami.akamai.net
-0.0.0.0 scontent.fcgk11-1.fna.fbcdn.net
-0.0.0.0 z-m-scontent.fupg1-1.fna.fbcdn.net
 
 0.0.0.0 pull-a5-gcp01.tiktokcdn.com
 0.0.0.0 pull-a5-sg01.tiktokcdn.com
