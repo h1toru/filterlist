@@ -7,6 +7,6 @@
 0.0.0.0 ota-cache1.googlezip.net
 0.0.0.0 ota-cache2.googlezip.net
 
-# Block WhatsApp tracker (Prevent banned for mod user)
+# Block WhatsApp tracker (Prevent banned for Whatsapp mod user)
 # source: https://t.me/WeAreRavenS/907
 0.0.0.0 dit.whatsapp.net
