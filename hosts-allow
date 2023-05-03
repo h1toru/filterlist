@@ -3,9 +3,6 @@
 # Homepage: https://github.com/h1toru/hosts
 # Created by h1toru
 #
-# 0.0.0.0       localhost
-# ::1           ip6-localhost
-#
 
 # Fix YouTube's watch history
 s.youtube.com
