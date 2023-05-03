@@ -1,7 +1,7 @@
-# Title: hosts
+# Title: h1toru Block List
 # Description: Block analytics/tracker without breaking compatibility (safe).
 # Homepage: https://github.com/h1toru/hosts
-# Author: @h1toru
+# Created by h1toru
 #
 # 0.0.0.0       localhost
 # ::1           ip6-localhost

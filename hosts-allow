@@ -1,7 +1,7 @@
-# Title: hosts allow-list
+# Title: h1toru Allow List
 # Description: Allow access domains to fix broken compatibility.
 # Homepage: https://github.com/h1toru/hosts
-# Author: h1toru
+# Created by h1toru
 #
 # 0.0.0.0       localhost
 # ::1           ip6-localhost
