@@ -42,6 +42,7 @@
 0.0.0.0 vt.tiktok.com
 0.0.0.0 tiktokv.com
 0.0.0.0 log.tiktokv.com
+0.0.0.0 webcast.tiktok.com
 
 0.0.0.0 api.tiktokv.com
 0.0.0.0 api-h2.tiktokv.com
@@ -81,10 +82,23 @@
 0.0.0.0 mon-va.byteoversea.com
 0.0.0.0 mon-useast2a.byteoversea.com
 
+0.0.0.0 mcs.tiktok.com
+0.0.0.0 mcs-sg.tiktok.com
+0.0.0.0 mcs-va.tiktok.com
+0.0.0.0 mcs-useast2a.tiktok.com
+0.0.0.0 mssdk.tiktok.com
+0.0.0.0 mssdk-sg.tiktok.com
+0.0.0.0 mssdk-va.tiktok.com
+0.0.0.0 mssdk-useast2a.tiktok.com
+
 0.0.0.0 p16.tiktokcdn.com
 0.0.0.0 p16-sg.tiktokcdn.com
 0.0.0.0 p16-va.tiktokcdn.com
 0.0.0.0 p16-useast2a.tiktokcdn.com
+0.0.0.0 p16-captcha.ibyteimg.com
+0.0.0.0 p16-captcha-sg.ibyteimg.com
+0.0.0.0 p16-captcha-va.ibyteimg.com
+0.0.0.0 p16-captcha-useast2a.ibyteimg.com
 0.0.0.0 p16-sign.tiktokcdn.com
 0.0.0.0 p16-sign-sg.tiktokcdn.com
 0.0.0.0 p16-sign-va.tiktokcdn.com
@@ -107,6 +121,10 @@
 0.0.0.0 p19-sg.tiktokcdn.com
 0.0.0.0 p19-va.tiktokcdn.com
 0.0.0.0 p19-useast2a.tiktokcdn.com
+0.0.0.0 p19-captcha.ibyteimg.com
+0.0.0.0 p19-captcha-sg.ibyteimg.com
+0.0.0.0 p19-captcha-va.ibyteimg.com
+0.0.0.0 p19-captcha-useast2a.ibyteimg.com
 0.0.0.0 p19-sign.tiktokcdn.com
 0.0.0.0 p19-sign-sg.tiktokcdn.com
 0.0.0.0 p19-sign-va.tiktokcdn.com
@@ -131,6 +149,10 @@
 0.0.0.0 lf19-tt-template.tiktokcdn.com
 0.0.0.0 lf16-pkgcdn.pitaya-clientai.com
 0.0.0.0 lf19-pkgcdn.pitaya-clientai.com
+0.0.0.0 lf16-tiktok-common.ttwstatic.com
+0.0.0.0 lf19-tiktok-common.ttwstatic.com
+0.0.0.0 lf16-tiktok-web.ttwstatic.com
+0.0.0.0 lf19-tiktok-web.ttwstatic.com
 
 0.0.0.0 search16-normal-c-useast1a.tiktokv.com
 0.0.0.0 search19-normal-c-useast1a.tiktokv.com
@@ -140,6 +162,7 @@
 0.0.0.0 v3.tiktokcdn.com
 0.0.0.0 v53.tiktokcdn.com
 0.0.0.0 v9-id.tiktokcdn.com
+0.0.0.0 v16-webapp-prime.tiktok.com
 
 0.0.0.0 libra.tiktokv.com
 0.0.0.0 libra-sg.tiktokv.com
@@ -148,13 +171,17 @@
 0.0.0.0 vcs-i18n.tiktokv.com
 0.0.0.0 frontier-i18n.tiktokv.com
 
+0.0.0.0 sf16.tiktokcdn.com
 0.0.0.0 sf16-sg.tiktokcdn.com
+0.0.0.0 sf16-va.tiktokcdn.com
+0.0.0.0 sf16-useast2a.tiktokcdn.com
+0.0.0.0 sf16-website-login.neutral.ttwstatic.com
 0.0.0.0 tnc16-platform-alisg.tiktokv.com
 
-0.0.0.0 scontent.fcgk11-1.fna.fbcdn.net
-0.0.0.0 z-m-scontent.fupg1-1.fna.fbcdn.net
 0.0.0.0 mon.isnssdk.com
 0.0.0.0 whoami.akamai.net
+0.0.0.0 scontent.fcgk11-1.fna.fbcdn.net
+0.0.0.0 z-m-scontent.fupg1-1.fna.fbcdn.net
 
 0.0.0.0 pull-a5-gcp01.tiktokcdn.com
 0.0.0.0 pull-a5-sg01.tiktokcdn.com
