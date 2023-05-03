@@ -20,15 +20,3 @@
 # Fix Steam Fatal Error
 # Source: https://forums.linuxmint.com/viewtopic.php?t=343762
 0.0.0.0 client-download.steampowered.com
-
-# DANA (id.dana)
-0.0.0.0 mgs-gw.saas.dana.id
-0.0.0.0 mas-log1.saas.dana.id
-0.0.0.0 mgs-gw.m.dana.id
-0.0.0.0 a.m.dana.id
-0.0.0.0 gw.zamcs.com
-0.0.0.0 gw-dana.ebuckler.com
-
-# mics. (ID)
-0.0.0.0 myim3banner.kloc.co
-0.0.0.0 sponsor.ajay.app
