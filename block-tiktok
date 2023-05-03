@@ -39,6 +39,10 @@
 0.0.0.0 ns-722.awsdns-26.net
 
 # Adaway DNS requests log
+0.0.0.0 api-core.tiktokv.com
+0.0.0.0 api-normal.tiktokv.com
+0.0.0.0 mon-va.byteoversea.com
+0.0.0.0 mon-va.tiktokv.com
 0.0.0.0 api16-core-c-useast2a.tiktokv.com
 0.0.0.0 api16-core.tiktokv.com
 0.0.0.0 api16-normal-c-useast1a.tiktokv.com
@@ -47,7 +51,6 @@
 0.0.0.0 api22-core.tiktokv.com
 0.0.0.0 frontier-i18n.tiktokv.com
 0.0.0.0 lf16-tt-template.tiktokcdn.com
-0.0.0.0 mon-va.tiktokv.com
 0.0.0.0 p16-amd-va.tiktokcdn.com
 0.0.0.0 p16-oec-common-useast2a.ibyteimg.com
 0.0.0.0 p16-oec-sg.ibyteimg.com
