@@ -254,10 +254,16 @@
 0.0.0.0 pull-w5-gcp01.tiktokcdn.com
 0.0.0.0 pull-w5-sg01.tiktokcdn.com
 0.0.0.0 pull-w5-va01.tiktokcdn.com
+0.0.0.0 push-rtmp-f5-sg01.tiktokcdn.com
 0.0.0.0 push-rtmp-f5-va01.tiktokcdn.com
+0.0.0.0 push-rtmp-f5-vr-sg01.tiktokcdn.com
 0.0.0.0 push-rtmp-f5-vr-va01.tiktokcdn.com
+0.0.0.0 push-rtmp-l1-sg01.tiktokcdn.com
 0.0.0.0 push-rtmp-l1-va01.tiktokcdn.com
+0.0.0.0 push-rtmp-l10-sg01.tiktokcdn.com
 0.0.0.0 push-rtmp-l10-va01.tiktokcdn.com
+0.0.0.0 push-rtmp-l11-sg01.tiktokcdn.com
 0.0.0.0 push-rtmp-l11-va01.tiktokcdn.com
+0.0.0.0 push-rtmp-l16-sg01.tiktokcdn.com
 0.0.0.0 push-rtmp-l16-va01.tiktokcdn.com
 0.0.0.0 push-rtmp-l77-va01.tiktokcdn.com
