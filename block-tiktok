@@ -39,23 +39,40 @@
 #0.0.0.0 ns-722.awsdns-26.net
 
 # Adaway DNS requests log
+## Main
+0.0.0.0 tiktokv.com
+0.0.0.0 log.tiktokv.com
 0.0.0.0 api-core.tiktokv.com
 0.0.0.0 api-normal.tiktokv.com
-0.0.0.0 mon-va.byteoversea.com
+## Country specific
 0.0.0.0 mon-va.tiktokv.com
+0.0.0.0 vcs-sg.tiktokv.com
+0.0.0.0 libra-sg.tiktokv.com
+## External Domains
+0.0.0.0 mon-va.byteoversea.com
 0.0.0.0 mon.isnssdk.com
+0.0.0.0 whoami.akamai.net
+## Analytics/Tracker
+0.0.0.0 api-h2.tiktokv.com
+0.0.0.0 api16-core-c-alisg.tiktokv.com
 0.0.0.0 api16-core-c-useast2a.tiktokv.com
 0.0.0.0 api16-core.tiktokv.com
+0.0.0.0 api16-normal-c-alisg.tiktokv.com
 0.0.0.0 api16-normal-c-useast1a.tiktokv.com
 0.0.0.0 api19-core-c-useast2a.tiktokv.com
 0.0.0.0 api19-normal-c-useast2a.tiktokv.com
+0.0.0.0 api21-core-c-alisg.tiktokv.com
+0.0.0.0 api21-normal-c-alisg.tiktokv.com
 0.0.0.0 api22-core.tiktokv.com
 0.0.0.0 frontier-i18n.tiktokv.com
+0.0.0.0 lf16-pkgcdn.pitaya-clientai.com
 0.0.0.0 lf16-tt-template.tiktokcdn.com
+0.0.0.0 lf19-pkgcdn.pitaya-clientai.com
 0.0.0.0 p16-amd-va.tiktokcdn.com
 0.0.0.0 p16-oec-common-useast2a.ibyteimg.com
 0.0.0.0 p16-oec-sg.ibyteimg.com
 0.0.0.0 p16-oec-va.ibyteimg.com
+0.0.0.0 p16-sg.tiktokcdn.com
 0.0.0.0 p16-sign-sg.tiktokcdn.com
 0.0.0.0 p16-sign-va.tiktokcdn.com
 0.0.0.0 p16-sign.tiktokcdn-us.com
@@ -146,10 +163,10 @@
 0.0.0.0 push-rtmp-l77-va01.tiktokcdn.com
 0.0.0.0 search16-normal-c-useast1a.tiktokv.com
 0.0.0.0 search19-normal-c-useast1a.tiktokv.com
+0.0.0.0 sf16-sg.tiktokcdn.com
 0.0.0.0 tnc16-platform-alisg.tiktokv.com
 0.0.0.0 v16.tiktokcdn.com
 0.0.0.0 v3.tiktokcdn.com
 0.0.0.0 v53.tiktokcdn.com
 0.0.0.0 v9-id.tiktokcdn.com
 0.0.0.0 vcs-i18n.tiktokv.com
-0.0.0.0 whoami.akamai.net
