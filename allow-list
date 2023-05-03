@@ -1,0 +1,13 @@
+# Title: hosts allow-list
+# Description: Allow access domains to fix broken compatibility.
+# Homepage: https://github.com/h1toru/hosts
+# Author: h1toru
+#
+# 0.0.0.0       localhost
+# ::1           ip6-localhost
+#
+
+# DANA (id.dana)
+0.0.0.0 auth.split.io
+0.0.0.0 events.split.io
+0.0.0.0 sdk.split.io
