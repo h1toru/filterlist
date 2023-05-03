@@ -7,6 +7,9 @@
 # ::1           ip6-localhost
 #
 
+# Fix YouTube's watch history
+s.youtube.com
+
 # DANA (id.dana)
 auth.split.io
 events.split.io
