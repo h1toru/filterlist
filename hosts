@@ -1,12 +1,11 @@
 # Title: h1toru's blocklist
-# Description: hosts blocklist to fix various issues and block analytics/trackers. mainly aim for android/mobile devices.
+# Description: Blocklist to fix various issues and block analytics/trackers. Mainly aim for android/mobile devices.
 # Homepage: https://github.com/h1toru/hosts
 # Made by h1toru (GitHub)
 #
 #
 #
-
-# Resolver
+# Resolver (DO NOT CHANGE)
 # * Source: https://github.com/StevenBlack/hosts/blob/master/hosts
 127.0.0.1 localhost
 127.0.0.1 localhost.localdomain
