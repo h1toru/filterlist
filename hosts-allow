@@ -1,5 +1,5 @@
-# Title: h1toru Allow List
-# Description: Allow access domains to fix broken compatibility.
+# Title: h1toru's allowlist
+# Description: Fix broken compatibilities caused by hosts blocklist.
 # Homepage: https://github.com/h1toru/hosts
 # Created by h1toru
 #
@@ -7,7 +7,8 @@
 # Fix YouTube's watch history
 s.youtube.com
 
-# DANA (id.dana)
+# Fix banking site / app
 auth.split.io
+cdn.split.io
 events.split.io
 sdk.split.io
