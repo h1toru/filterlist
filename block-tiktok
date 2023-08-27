@@ -16,7 +16,7 @@
 0.0.0.0 ads.tiktok.com
 0.0.0.0 log.byteoversea.com
 
-# Adaway DNS requests log
+# DNS requests log (Adaway)
 0.0.0.0 www.tiktok.com
 0.0.0.0 tiktok.com
 0.0.0.0 tiktokv.com
