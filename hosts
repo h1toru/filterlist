@@ -1,22 +1,38 @@
-# Title: h1toru Block List
-# Description: Block analytics/tracker without breaking compatibility (safe).
+# Title: h1toru's blocklist
+# Description: hosts blocklist to fix various issues and block analytics/trackers. mainly aim for android/mobile devices.
 # Homepage: https://github.com/h1toru/hosts
-# Created by h1toru
+# Made by h1toru (GitHub)
 #
-# 0.0.0.0       localhost
-# ::1           ip6-localhost
+#
 #
 
+# Resolver
+# * Source: https://github.com/StevenBlack/hosts/blob/master/hosts
+127.0.0.1 localhost
+127.0.0.1 localhost.localdomain
+127.0.0.1 local
+255.255.255.255 broadcasthost
+::1 localhost
+::1 ip6-localhost
+::1 ip6-loopback
+fe80::1%lo0 localhost
+ff00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+ff02::3 ip6-allhosts
+0.0.0.0 0.0.0.0
+
 # Block OTA downloading from GMS (Disable fetching Android system update)
-# Source: https://github.com/PixelExperience/system_core/commit/c10bc39e416dd43d092060e4593c630ad45053c8
+# * Source: https://github.com/PixelExperience/system_core/commit/c10bc39e416dd43d092060e4593c630ad45053c8
 0.0.0.0 ota.googlezip.net
 0.0.0.0 ota-cache1.googlezip.net
 0.0.0.0 ota-cache2.googlezip.net
 
-# Block WhatsApp tracker (Prevent ban for Whatsapp mod user)
-# Source: https://t.me/WeAreRavenS/907
+# Block WhatsApp tracker (Prevent ban for Whatsapp mod users)
+# * Source: https://t.me/WeAreRavenS/907
 0.0.0.0 dit.whatsapp.net
 
-# Fix Steam Fatal Error
-# Source: https://forums.linuxmint.com/viewtopic.php?t=343762
+# Fix Steam 'Fatal Error'
+# * Source: https://forums.linuxmint.com/viewtopic.php?t=343762
 0.0.0.0 client-download.steampowered.com
