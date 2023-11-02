@@ -63,41 +63,55 @@ ff02::3 ip6-allhosts
 0.0.0.0 cf.shopee.co.id
 0.0.0.0 cv.shopee.co.id
 0.0.0.0 sv.shopee.co.id
-0.0.0.0 msdk.shopee.co.id
 0.0.0.0 ccms.shopee.io
-#0.0.0.0 api.gw.airpay.co.id
+
+### Trackers
 0.0.0.0 endpoint.mms.shopee.co.id
-0.0.0.0 ug-api.sv.shopee.co.id
 0.0.0.0 log-collector.shopee.co.id
-0.0.0.0 df.infra.sz.shopee.co.id
 0.0.0.0 apm.tracking.shopee.co.id
 0.0.0.0 dp.tracking.shopee.co.id
 0.0.0.0 ubt.tracking.shopee.co.id
 0.0.0.0 ubta.tracking.shopee.co.id
-#0.0.0.0 deo.shopeemobile.com
-0.0.0.0 c-api-bit.shopeemobile.com
+0.0.0.0 df.infra.sz.shopee.co.id
 0.0.0.0 patronus.idata.shopeemobile.com
 0.0.0.0 remote-config.gslb.sgw.shopeemobile.com
-## media/user content
-0.0.0.0 spm.susercontent.com
-#0.0.0.0 down-id.img.susercontent.com
+
+0.0.0.0 deo.shopeemobile.com
+### API/SDK
+0.0.0.0 msdk.shopee.co.id
+0.0.0.0 ug-api.sv.shopee.co.id
+0.0.0.0 c-api-bit.shopeemobile.com
+# ShopeePay
+#0.0.0.0 api.gw.airpay.co.id
+
+### media/user content
+0.0.0.0 down-id.img.susercontent.com
 #0.0.0.0 down-aka-id.img.susercontent.com
 #0.0.0.0 down-ws-id.img.susercontent.com
+0.0.0.0 spm.susercontent.com
 0.0.0.0 down-cvs-id.vod.susercontent.com
 0.0.0.0 mms.vod.susercontent.com
-## Livestream related
+
+### Livestream related
 0.0.0.0 live.shopee.co.id
 0.0.0.0 livetech.shopee.co.id
 0.0.0.0 live-apm.shopee.co.id
 0.0.0.0 chatroom-live.shopee.co.id
+
 0.0.0.0 play-ws.vod.shopee.com
+0.0.0.0 play-ws.livestream.shopee.co.id
 0.0.0.0 play-ws-src.livestream.shopee.co.id
-0.0.0.0 play-hw-src.livestream.shopee.co.id
-0.0.0.0 play-tx-src.livestream.shopee.co.id
 0.0.0.0 play-ws-las.livetech.shopee.co.id
+0.0.0.0 play-hw.livestream.shopee.co.id
+0.0.0.0 play-hw-src.livestream.shopee.co.id
+0.0.0.0 play-hw-las.livestream.shopee.co.id
+0.0.0.0 play-tx.livestream.shopee.co.id
+0.0.0.0 play-tx-src.livestream.shopee.co.id
 0.0.0.0 play-tx-las.livetech.shopee.co.id
+
 0.0.0.0 data-rep.livetech.shopee.co.id
-## etc.
+
+### etc.
 0.0.0.0 launches.appsflyer.com
 0.0.0.0 content.garena.com
 0.0.0.0 cdngarenanow-a.akamaihd.net
