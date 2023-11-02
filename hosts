@@ -1,26 +1,9 @@
+#########################
 # Title: h1toru's blocklist
 # Description: Blocklist to fix various issues and block analytics/trackers. Mainly aim for android/mobile devices.
 # Homepage: https://github.com/h1toru/hosts
 # Made by h1toru (GitHub)
-#
-#
-#
-# Resolver (DO NOT CHANGE)
-# * Source: https://github.com/StevenBlack/hosts/blob/master/hosts
-127.0.0.1 localhost
-127.0.0.1 localhost.localdomain
-127.0.0.1 local
-255.255.255.255 broadcasthost
-::1 localhost
-::1 ip6-localhost
-::1 ip6-loopback
-fe80::1%lo0 localhost
-ff00::0 ip6-localnet
-ff00::0 ip6-mcastprefix
-ff02::1 ip6-allnodes
-ff02::2 ip6-allrouters
-ff02::3 ip6-allhosts
-0.0.0.0 0.0.0.0
+#########################
 
 # Block OTA downloading from GMS (Disable fetching Android system update)
 # * Source: https://github.com/PixelExperience/system_core/commit/c10bc39e416dd43d092060e4593c630ad45053c8
@@ -57,18 +40,31 @@ ff02::3 ip6-allhosts
 0.0.0.0 www.googletagmanager.com
 
 # Facebook
-0.0.0.0 www.facebook.com
-0.0.0.0 graph.facebook.com
-0.0.0.0 connect.facebook.net
+#0.0.0.0 www.facebook.com
+#0.0.0.0 graph.facebook.com
+#0.0.0.0 connect.facebook.net
 
 # Shopee
+
+# Image, Thumbnails, etc.
+#0.0.0.0 down-aka-id.img.susercontent.com
+
+# Buttons Icon
+#0.0.0.0 deo.shopeemobile.com
+
+# Shopee Links
 #0.0.0.0 shope.ee
+
+# Shopee Mall
 #0.0.0.0 mall.shopee.co.id
+
+# ShopeePay
+#0.0.0.0 api.gw.airpay.co.id
+
 0.0.0.0 cf.shopee.co.id
 0.0.0.0 cv.shopee.co.id
 0.0.0.0 sv.shopee.co.id
 0.0.0.0 ccms.shopee.io
-0.0.0.0 deo.shopeemobile.com
 
 ### Trackers
 0.0.0.0 endpoint.mms.shopee.co.id
@@ -85,12 +81,9 @@ ff02::3 ip6-allhosts
 0.0.0.0 msdk.shopee.co.id
 0.0.0.0 ug-api.sv.shopee.co.id
 0.0.0.0 c-api-bit.shopeemobile.com
-# ShopeePay
-#0.0.0.0 api.gw.airpay.co.id
 
 ### media/user content
 0.0.0.0 down-id.img.susercontent.com
-#0.0.0.0 down-aka-id.img.susercontent.com
 0.0.0.0 down-ws-id.img.susercontent.com
 0.0.0.0 spm.susercontent.com
 0.0.0.0 down-cvs-id.vod.susercontent.com
