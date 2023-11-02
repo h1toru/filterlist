@@ -64,7 +64,7 @@ ff02::3 ip6-allhosts
 # Shopee
 #0.0.0.0 shope.ee
 #0.0.0.0 mall.shopee.co.id
-#0.0.0.0 cf.shopee.co.id
+0.0.0.0 cf.shopee.co.id
 0.0.0.0 cv.shopee.co.id
 0.0.0.0 sv.shopee.co.id
 0.0.0.0 ccms.shopee.io
