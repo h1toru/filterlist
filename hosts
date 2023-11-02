@@ -60,6 +60,10 @@
 
 # ShopeePay
 #0.0.0.0 api.gw.airpay.co.id
+#0.0.0.0 pay.shopee.sg
+
+# Shopee Seller
+#0.0.0.0 seller.shopee.sg
 
 0.0.0.0 cf.shopee.co.id
 0.0.0.0 cv.shopee.co.id
@@ -84,6 +88,7 @@
 
 ### media/user content
 0.0.0.0 down-id.img.susercontent.com
+0.0.0.0 down-aka-sg.img.susercontent.com
 0.0.0.0 down-ws-id.img.susercontent.com
 0.0.0.0 spm.susercontent.com
 0.0.0.0 down-cvs-id.vod.susercontent.com
@@ -94,6 +99,11 @@
 0.0.0.0 livetech.shopee.co.id
 0.0.0.0 live-apm.shopee.co.id
 0.0.0.0 chatroom-live.shopee.co.id
+
+0.0.0.0 play-aka.vod.shopee.com
+0.0.0.0 play-aka.livestream.shopee.co.id
+0.0.0.0 play-aka-src.livestream.shopee.co.id
+0.0.0.0 play-aka-las.livetech.shopee.co.id
 
 0.0.0.0 play-ws.vod.shopee.com
 0.0.0.0 play-ws.livestream.shopee.co.id
