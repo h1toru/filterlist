@@ -37,11 +37,23 @@ ff02::3 ip6-allhosts
 0.0.0.0 client-download.steampowered.com
 
 # Shopee
-0.0.0.0 livetech.shopee.co.id
+0.0.0.0 log-collector.shopee.co.id
+0.0.0.0 df.infra.sz.shopee.co.id
 0.0.0.0 dp.tracking.shopee.co.id
 0.0.0.0 ubt.tracking.shopee.co.id
 0.0.0.0 ubta.tracking.shopee.co.id
 0.0.0.0 idfp.tongdun.net
-
-# etc.
+## Livestream related
+0.0.0.0 live.shopee.co.id
+0.0.0.0 livetech.shopee.co.id
+0.0.0.0 live-apm.shopee.co.id
+0.0.0.0 chatroom-live.shopee.co.id
+0.0.0.0 mms.vod.susercontent.com
+0.0.0.0 play-ws.vod.shopee.com
+0.0.0.0 play-ws-src.livestream.shopee.co.id
+0.0.0.0 play-tx-src.livestream.shopee.co.id
+0.0.0.0 play-tx-las.livetech.shopee.co.id
+0.0.0.0 data-rep.livetech.shopee.co.id
+## etc.
 0.0.0.0 content.garena.com
+0.0.0.0 cdngarenanow-a.akamaihd.net
