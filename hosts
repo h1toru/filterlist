@@ -36,7 +36,8 @@ ff02::3 ip6-allhosts
 # * Source: https://forums.linuxmint.com/viewtopic.php?t=343762
 0.0.0.0 client-download.steampowered.com
 
-# Google
+# Google Analytics/Trackers
+0.0.0.0 analytics.google.com
 0.0.0.0 www.google-analytics.com
 0.0.0.0 ssl.google-analytics.com
 0.0.0.0 crashlyticsreports-pa.googleapis.com
@@ -51,6 +52,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 alt7-mtalk.google.com
 0.0.0.0 alt8-mtalk.google.com
 0.0.0.0 googleads.g.doubleclick.net
+0.0.0.0 www.googletagmanager.com
 
 # Facebook
 0.0.0.0 www.facebook.com
@@ -64,6 +66,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 cv.shopee.co.id
 0.0.0.0 sv.shopee.co.id
 0.0.0.0 ccms.shopee.io
+0.0.0.0 deo.shopeemobile.com
 
 ### Trackers
 0.0.0.0 endpoint.mms.shopee.co.id
@@ -76,7 +79,6 @@ ff02::3 ip6-allhosts
 0.0.0.0 patronus.idata.shopeemobile.com
 0.0.0.0 remote-config.gslb.sgw.shopeemobile.com
 
-0.0.0.0 deo.shopeemobile.com
 ### API/SDK
 0.0.0.0 msdk.shopee.co.id
 0.0.0.0 ug-api.sv.shopee.co.id
@@ -102,9 +104,13 @@ ff02::3 ip6-allhosts
 0.0.0.0 play-ws.livestream.shopee.co.id
 0.0.0.0 play-ws-src.livestream.shopee.co.id
 0.0.0.0 play-ws-las.livetech.shopee.co.id
+
+0.0.0.0 play-hw.vod.shopee.com
 0.0.0.0 play-hw.livestream.shopee.co.id
 0.0.0.0 play-hw-src.livestream.shopee.co.id
 0.0.0.0 play-hw-las.livestream.shopee.co.id
+
+0.0.0.0 play-tx.vod.shopee.com
 0.0.0.0 play-tx.livestream.shopee.co.id
 0.0.0.0 play-tx-src.livestream.shopee.co.id
 0.0.0.0 play-tx-las.livetech.shopee.co.id
