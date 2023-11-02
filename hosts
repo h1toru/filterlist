@@ -35,3 +35,13 @@ ff02::3 ip6-allhosts
 # Fix Steam 'Fatal Error'
 # * Source: https://forums.linuxmint.com/viewtopic.php?t=343762
 0.0.0.0 client-download.steampowered.com
+
+# Shopee
+0.0.0.0 livetech.shopee.co.id
+0.0.0.0 dp.tracking.shopee.co.id
+0.0.0.0 ubt.tracking.shopee.co.id
+0.0.0.0 ubta.tracking.shopee.co.id
+0.0.0.0 idfp.tongdun.net
+
+# etc.
+0.0.0.0 content.garena.com
