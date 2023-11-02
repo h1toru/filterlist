@@ -62,6 +62,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 cv.shopee.co.id
 0.0.0.0 sv.shopee.co.id
 0.0.0.0 ccms.shopee.io
+0.0.0.0 api.gw.airpay.co.id
 0.0.0.0 endpoint.mms.shopee.co.id
 0.0.0.0 ug-api.sv.shopee.co.id
 0.0.0.0 log-collector.shopee.co.id
@@ -71,10 +72,12 @@ ff02::3 ip6-allhosts
 0.0.0.0 ubt.tracking.shopee.co.id
 0.0.0.0 ubta.tracking.shopee.co.id
 0.0.0.0 deo.shopeemobile.com
+0.0.0.0 c-api-bit.shopeemobile.com
 0.0.0.0 patronus.idata.shopeemobile.com
 0.0.0.0 remote-config.gslb.sgw.shopeemobile.com
 ## media/user content
-0.0.0.0 down-id.img.susercontent.com
+0.0.0.0 spm.susercontent.com
+#0.0.0.0 down-id.img.susercontent.com
 #0.0.0.0 down-aka-id.img.susercontent.com
 0.0.0.0 down-ws-id.img.susercontent.com
 0.0.0.0 down-cvs-id.vod.susercontent.com
