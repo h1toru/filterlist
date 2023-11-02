@@ -37,11 +37,15 @@ ff02::3 ip6-allhosts
 0.0.0.0 client-download.steampowered.com
 
 # Shopee
+0.0.0.0 cf.shopee.co.id
 0.0.0.0 log-collector.shopee.co.id
 0.0.0.0 df.infra.sz.shopee.co.id
 0.0.0.0 dp.tracking.shopee.co.id
 0.0.0.0 ubt.tracking.shopee.co.id
 0.0.0.0 ubta.tracking.shopee.co.id
+0.0.0.0 patronus.idata.shopeemobile.com
+0.0.0.0 remote-config.gslb.sgw.shopeemobile.com
+0.0.0.0 down-aka-id.img.susercontent.com
 0.0.0.0 idfp.tongdun.net
 ## Livestream related
 0.0.0.0 live.shopee.co.id
@@ -51,6 +55,7 @@ ff02::3 ip6-allhosts
 0.0.0.0 mms.vod.susercontent.com
 0.0.0.0 play-ws.vod.shopee.com
 0.0.0.0 play-ws-src.livestream.shopee.co.id
+0.0.0.0 play-hw-src.livestream.shopee.co.id
 0.0.0.0 play-tx-src.livestream.shopee.co.id
 0.0.0.0 play-tx-las.livetech.shopee.co.id
 0.0.0.0 data-rep.livetech.shopee.co.id
