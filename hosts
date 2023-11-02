@@ -39,6 +39,7 @@ ff02::3 ip6-allhosts
 # Google
 0.0.0.0 www.google-analytics.com
 0.0.0.0 ssl.google-analytics.com
+0.0.0.0 crashlyticsreports-pa.googleapis.com
 0.0.0.0 firebaselogging-pa.googleapis.com
 0.0.0.0 mtalk.google.com
 0.0.0.0 alt1-mtalk.google.com
@@ -58,11 +59,13 @@ ff02::3 ip6-allhosts
 
 # Shopee
 0.0.0.0 shope.ee
+0.0.0.0 mall.shopee.co.id
 0.0.0.0 cf.shopee.co.id
 0.0.0.0 cv.shopee.co.id
 0.0.0.0 sv.shopee.co.id
+0.0.0.0 msdk.shopee.co.id
 0.0.0.0 ccms.shopee.io
-0.0.0.0 api.gw.airpay.co.id
+#0.0.0.0 api.gw.airpay.co.id
 0.0.0.0 endpoint.mms.shopee.co.id
 0.0.0.0 ug-api.sv.shopee.co.id
 0.0.0.0 log-collector.shopee.co.id
@@ -76,8 +79,8 @@ ff02::3 ip6-allhosts
 0.0.0.0 patronus.idata.shopeemobile.com
 0.0.0.0 remote-config.gslb.sgw.shopeemobile.com
 ## media/user content
-0.0.0.0 spm.susercontent.com
-#0.0.0.0 down-id.img.susercontent.com
+#0.0.0.0 spm.susercontent.com
+0.0.0.0 down-id.img.susercontent.com
 #0.0.0.0 down-aka-id.img.susercontent.com
 0.0.0.0 down-ws-id.img.susercontent.com
 0.0.0.0 down-cvs-id.vod.susercontent.com
