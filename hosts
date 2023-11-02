@@ -64,7 +64,7 @@ ff02::3 ip6-allhosts
 # Shopee
 #0.0.0.0 shope.ee
 #0.0.0.0 mall.shopee.co.id
-0.0.0.0 cf.shopee.co.id
+#0.0.0.0 cf.shopee.co.id
 0.0.0.0 cv.shopee.co.id
 0.0.0.0 sv.shopee.co.id
 0.0.0.0 ccms.shopee.io
@@ -84,7 +84,7 @@ ff02::3 ip6-allhosts
 ### API/SDK
 0.0.0.0 msdk.shopee.co.id
 0.0.0.0 ug-api.sv.shopee.co.id
-#0.0.0.0 c-api-bit.shopeemobile.com
+0.0.0.0 c-api-bit.shopeemobile.com
 # ShopeePay
 #0.0.0.0 api.gw.airpay.co.id
 
