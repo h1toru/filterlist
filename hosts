@@ -89,7 +89,7 @@ ff02::3 ip6-allhosts
 #0.0.0.0 api.gw.airpay.co.id
 
 ### media/user content
-0.0.0.0 down-id.img.susercontent.com
+#0.0.0.0 down-id.img.susercontent.com
 #0.0.0.0 down-aka-id.img.susercontent.com
 #0.0.0.0 down-ws-id.img.susercontent.com
 0.0.0.0 spm.susercontent.com
