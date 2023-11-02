@@ -84,14 +84,14 @@ ff02::3 ip6-allhosts
 ### API/SDK
 0.0.0.0 msdk.shopee.co.id
 0.0.0.0 ug-api.sv.shopee.co.id
-0.0.0.0 c-api-bit.shopeemobile.com
+#0.0.0.0 c-api-bit.shopeemobile.com
 # ShopeePay
 #0.0.0.0 api.gw.airpay.co.id
 
 ### media/user content
-#0.0.0.0 down-id.img.susercontent.com
+0.0.0.0 down-id.img.susercontent.com
 #0.0.0.0 down-aka-id.img.susercontent.com
-#0.0.0.0 down-ws-id.img.susercontent.com
+0.0.0.0 down-ws-id.img.susercontent.com
 0.0.0.0 spm.susercontent.com
 0.0.0.0 down-cvs-id.vod.susercontent.com
 0.0.0.0 mms.vod.susercontent.com
