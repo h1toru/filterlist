@@ -79,9 +79,9 @@ ff02::3 ip6-allhosts
 0.0.0.0 patronus.idata.shopeemobile.com
 0.0.0.0 remote-config.gslb.sgw.shopeemobile.com
 ## media/user content
-#0.0.0.0 spm.susercontent.com
-0.0.0.0 down-id.img.susercontent.com
-#0.0.0.0 down-aka-id.img.susercontent.com
+0.0.0.0 spm.susercontent.com
+#0.0.0.0 down-id.img.susercontent.com
+0.0.0.0 down-aka-id.img.susercontent.com
 0.0.0.0 down-ws-id.img.susercontent.com
 0.0.0.0 down-cvs-id.vod.susercontent.com
 0.0.0.0 mms.vod.susercontent.com
