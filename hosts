@@ -44,15 +44,19 @@
 # Shopee Links
 #0.0.0.0 shope.ee
 
-# Shopee Mall
-0.0.0.0 mall.shopee.co.id
-
 # ShopeePay
 #0.0.0.0 api.gw.airpay.co.id
 #0.0.0.0 pay.shopee.sg
 
+# ShopeeFood
+#0.0.0.0 foody.shopee.co.id
+#0.0.0.0 food-metric.shopee.co.id
+
 # Shopee Seller
 0.0.0.0 seller.shopee.sg
+
+# Shopee Mall
+0.0.0.0 mall.shopee.co.id
 
 # Shopee Barokah
 0.0.0.0 crm.shopee.co.id
@@ -61,10 +65,12 @@
 0.0.0.0 games.shopee.co.id
 0.0.0.0 games.deo.shopeemobile.com
 0.0.0.0 idgame.shopee.co.id
+#0.0.0.0 games-dailycheckin.shopee.co.id
 
 0.0.0.0 cf.shopee.co.id
 0.0.0.0 cv.shopee.co.id
 0.0.0.0 sv.shopee.co.id
+0.0.0.0 dem.shopee.com
 0.0.0.0 ccms.shopee.io
 
 ### Trackers
@@ -105,6 +111,7 @@
 0.0.0.0 play-aka.vod.shopee.com
 0.0.0.0 play-hw.vod.shopee.com
 #0.0.0.0 play-ws.vod.shopee.com
+0.0.0.0 play-spe.vod.shopee.com
 0.0.0.0 play-tx.vod.shopee.com
 
 0.0.0.0 mms.vod.susercontent.com
@@ -149,3 +156,4 @@ play-tx.livestream.shopee.co.id
 0.0.0.0 cfg.flurry.com
 0.0.0.0 data.flurry.com
 0.0.0.0 static.doubleclick.net
+0.0.0.0 o468184.ingest.sentry.io
