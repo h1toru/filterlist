@@ -1,0 +1,118 @@
+##################################################
+# Title: Shopee Blocklist (Light)
+# Description: Block Shopee Analytics/Tracker and unwanted/unnecessary features.
+# Source: https://github.com/h1toru/hosts
+##################################################
+
+# Analytics/Tracker
+0.0.0.0 endpoint.mms.shopee.co.id
+0.0.0.0 log-collector.shopee.co.id
+0.0.0.0 apm.tracking.shopee.co.id
+0.0.0.0 dp.tracking.shopee.co.id
+0.0.0.0 ubt.tracking.shopee.co.id
+0.0.0.0 ubta.tracking.shopee.co.id
+0.0.0.0 df.infra.sz.shopee.co.id
+0.0.0.0 patronus.idata.shopeemobile.com
+0.0.0.0 remote-config.gslb.sgw.shopeemobile.com
+# - Third-party Tracker
+0.0.0.0 graph.facebook.com
+0.0.0.0 launches.appsflyer.com
+0.0.0.0 cfg.flurry.com
+0.0.0.0 data.flurry.com
+0.0.0.0 content.garena.com
+0.0.0.0 cdngarenanow-a.akamaihd.net
+0.0.0.0 idfp.tongdun.net
+0.0.0.0 static.doubleclick.net
+0.0.0.0 o468184.ingest.sentry.io
+# + API/SDK
+0.0.0.0 api.shopee.co.id
+0.0.0.0 ug-api.sv.shopee.co.id
+0.0.0.0 c-api-bit.shopeemobile.com
+0.0.0.0 msdk.shopee.co.id
+
+# Images
+0.0.0.0 spm.susercontent.com
+0.0.0.0 img.sp.mms.shopee.sg
+# + Button Icons
+#0.0.0.0 deo.shopeemobile.com
+# - SG
+0.0.0.0 down-sg.img.susercontent.com
+#0.0.0.0 down-aka-sg.img.susercontent.com
+0.0.0.0 down-ws-sg.img.susercontent.com
+# - ID
+0.0.0.0 down-id.img.susercontent.com
+#0.0.0.0 down-aka-id.img.susercontent.com
+0.0.0.0 down-ws-id.img.susercontent.com
+# - PH
+0.0.0.0 down-ph.img.susercontent.com
+#0.0.0.0 down-aka-ph.img.susercontent.com
+0.0.0.0 down-ws-ph.img.susercontent.com
+
+# Shopee Video
+0.0.0.0 mms.vod.susercontent.com
+
+0.0.0.0 play-aka.vod.shopee.com
+0.0.0.0 play-hw.vod.shopee.com
+0.0.0.0 play-spe.vod.shopee.com
+0.0.0.0 play-tx.vod.shopee.com
+#0.0.0.0 play-ws.vod.shopee.com
+
+0.0.0.0 down-cvs-sg.vod.susercontent.com
+0.0.0.0 down-cvs-id.vod.susercontent.com
+0.0.0.0 down-cvs-ph.vod.susercontent.com
+
+# Shopee Live
+0.0.0.0 live.shopee.co.id
+0.0.0.0 livetech.shopee.co.id
+0.0.0.0 live-apm.shopee.co.id
+0.0.0.0 chatroom-live.shopee.co.id
+
+0.0.0.0 play-aka.livestream.shopee.co.id
+0.0.0.0 play-aka-src.livestream.shopee.co.id
+0.0.0.0 play-aka-las.livetech.shopee.co.id
+
+0.0.0.0 play-ws.livestream.shopee.co.id
+0.0.0.0 play-ws-src.livestream.shopee.co.id
+0.0.0.0 play-ws-las.livetech.shopee.co.id
+
+0.0.0.0 play-hw.livestream.shopee.co.id
+0.0.0.0 play-hw-src.livestream.shopee.co.id
+0.0.0.0 play-hw-las.livetech.shopee.co.id
+
+0.0.0.0 play-spe.livestream.shopee.co.id
+0.0.0.0 play-spe-src.livestream.shopee.co.id
+0.0.0.0 play-spe-las.livetech.shopee.co.id
+
+0.0.0.0 play-tx.livestream.shopee.co.id
+0.0.0.0 play-tx-src.livestream.shopee.co.id
+0.0.0.0 play-tx-las.livetech.shopee.co.id
+
+0.0.0.0 data-rep.livetech.shopee.co.id
+
+# Features
+# - Shopee Links
+#0.0.0.0 shope.ee
+# - ShopeePay
+#0.0.0.0 api.gw.airpay.co.id
+#0.0.0.0 pay.shopee.sg
+# - ShopeeFood
+#0.0.0.0 foody.shopee.co.id
+#0.0.0.0 food-metric.shopee.co.id
+# - Shopee Games
+0.0.0.0 games.shopee.co.id
+0.0.0.0 games.deo.shopeemobile.com
+0.0.0.0 idgame.shopee.co.id
+#0.0.0.0 games-dailycheckin.shopee.co.id
+# - Shopee Seller
+0.0.0.0 seller.shopee.sg
+# - Shopee Mall
+0.0.0.0 mall.shopee.co.id
+# - Shopee Barokah
+0.0.0.0 crm.shopee.co.id
+
+# (?) etc.
+0.0.0.0 cf.shopee.co.id
+0.0.0.0 cv.shopee.co.id
+0.0.0.0 sv.shopee.co.id
+0.0.0.0 dem.shopee.com
+0.0.0.0 ccms.shopee.io

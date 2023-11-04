@@ -1,34 +1,17 @@
+##################################################
 # Title: Block TikTok
 # Description: Block access to TikTok completely.
-# Homepage: https://github.com/h1toru/hosts
-# Made by h1toru
-#
-#
-#
-# Resolver (DO NOT CHANGE)
-# * Source: https://github.com/StevenBlack/hosts/blob/master/hosts
-127.0.0.1 localhost
-127.0.0.1 localhost.localdomain
-127.0.0.1 local
-255.255.255.255 broadcasthost
-::1 localhost
-::1 ip6-localhost
-::1 ip6-loopback
-fe80::1%lo0 localhost
-ff00::0 ip6-localnet
-ff00::0 ip6-mcastprefix
-ff02::1 ip6-allnodes
-ff02::2 ip6-allrouters
-ff02::3 ip6-allhosts
-0.0.0.0 0.0.0.0
+# Source: https://github.com/h1toru/hosts
+##################################################
+
 
 # https://d3ward.github.io/toolz/adblock.html
+0.0.0.0 ads.tiktok.com
+0.0.0.0 ads-sg.tiktok.com
 0.0.0.0 ads-api.tiktok.com
 0.0.0.0 analytics.tiktok.com
-0.0.0.0 ads-sg.tiktok.com
 0.0.0.0 analytics-sg.tiktok.com
 0.0.0.0 business-api.tiktok.com
-0.0.0.0 ads.tiktok.com
 0.0.0.0 log.byteoversea.com
 
 # DNS requests log (Adaway)

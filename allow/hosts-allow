@@ -1,0 +1,24 @@
+##################################################
+# Title: h1toru's allowlist
+# Description: Allow some domains to fix broken sites caused by hosts blocklist.
+# Source: https://github.com/h1toru/hosts
+##################################################
+
+# Fix YouTube watch history
+s.youtube.com
+
+# Fix banking app
+*.split.io
+#auth.split.io
+#cdn.split.io
+#events.split.io
+#sdk.split.io
+#streaming.split.io
+
+# Fix some elements blocked on apps
+# This is Google Analytics for Firebase. You can remove it for privacy, but some elements may not showing on some apps.
+# More info: https://www.reddit.com/r/privacytoolsIO/comments/d4n6tn/what_is_the_tracker_appmeasurementcom/?rdt=34050
+#app-measurement.com
+
+# Spotify album image
+image-cdn-*.spotifycdn.com
