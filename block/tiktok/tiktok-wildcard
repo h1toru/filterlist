@@ -3,11 +3,11 @@
 # Description: Block TikTok completely, including ads, analytics/tracker and third-party services that related to it.
 # Homepage: https://github.com/h1toru/blocklist
 #
-# Last modified: 2024.02.20 08:44 UTC
+# Last modified: 2024.02.20 14:32 UTC
 # Format/Syntax: Wildcard
 # Total entries/domains: 11
 #
-# raw: https://raw.githubusercontent.com/h1toru/blocklist/master/block/tiktok/hosts-tiktok
+# raw: https://raw.githubusercontent.com/h1toru/blocklist/main/block/tiktok/tiktok-wildcard
 ##################################################
 
 *tiktok*

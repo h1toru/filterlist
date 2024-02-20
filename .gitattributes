@@ -1,5 +1,6 @@
 # Files that will always have LF line endings on checkin and checkout.
 * text eol=lf
+*.md text eol=lf
 
 # Windows batch files
 *.bat text eol=crlf

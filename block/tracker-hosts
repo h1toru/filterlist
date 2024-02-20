@@ -3,11 +3,11 @@
 # Description: Block Analytics/Tracker/Telemetry.
 # Homepage: https://github.com/h1toru/blocklist
 #
-# Last modified: 2024.02.20 08:44 UTC
+# Last modified: 2024.02.20 14:32 UTC
 # Format/Syntax: Hosts
 # Total entries/domains: 1416
 #
-# raw: https://raw.githubusercontent.com/h1toru/blocklist/master/block/tracker-hosts
+# raw: https://raw.githubusercontent.com/h1toru/blocklist/main/block/tracker-hosts
 ##################################################
 
 # Block Android OTA Update from GMS
