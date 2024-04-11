@@ -1,13 +1,14 @@
 # h1toru's Blocklist
 
-A collection of blocklist I made. Submit an [issue](https://github.com/h1toru/Blocklist/issues) if you find false-positive domains or domains that needs to be added to the list.
+A collection of blocklist I made. Submit an [issue](https://github.com/h1toru/filterlist/issues) if you find false-positive domains or domains that needs to be added to the list.
 
-<details><summary open>Format/Syntax</summary>
+<details><summary>Format/Syntax</summary>
 
 | Format | Syntax |
 | :- | :- |
 | Hosts | `0.0.0.0 www.example.com`  |
-| Wildcard | `*example*` / `*example.com` |
+| Domains only | `example.com` / `www.example.com`  | |
+| Wildcard | `*example*` / `*example.com` | YogaDNS |
 | Adblock | `\|\|www.example.com^` ([Cheatsheet](https://adblockplus.org/filter-cheatsheet)) |
 
 </details>
@@ -22,9 +23,10 @@ e.g. Google Analytics, Firebase, Crashreports/Crashlytics., WhatsApp Telemetry (
 
 | Format | Link | Entries |
 | :- | :-: | -: |
-| Hosts | [raw](https://raw.githubusercontent.com/h1toru/blocklist/main/block/tracker-hosts) | 1416 | `0.0.0.0 www.example.com`  |
-| Wildcard | ~~[raw](https://raw.githubusercontent.com/h1toru/blocklist/main/block/tracker-wildcard)~~ | 0 |
-| Adblock | ~~[raw](https://raw.githubusercontent.com/h1toru/blocklist/main/block/tracker-adblock)~~ | 0 |
+| Hosts | [raw](https://raw.githubusercontent.com/h1toru/filterlist/main/filterlist/tracker-hosts) | 1416 | `0.0.0.0 www.example.com`  |
+| Domains only | ~~[raw](https://raw.githubusercontent.com/h1toru/filterlist/main/filterlist/)~~ | 0 |
+| Wildcard | ~~[raw](https://raw.githubusercontent.com/h1toru/filterlist/main/filterlist/tracker-wildcard)~~ | 0 |
+| Adblock/uBlock | ~~[raw](https://raw.githubusercontent.com/h1toru/filterlist/main/filterlist/tracker-adblock)~~ | 0 |
 
 ### TikTok <a name="tiktok"></a>
 
@@ -39,15 +41,16 @@ Entries/Domains source: Adaway DNS requests log (Android), YogaDNS Log (Windows)
 
 | Format | Link | Entries |
 | :- | :-: | -: |
-| Hosts | [raw](https://raw.githubusercontent.com/h1toru/blocklist/main/block/tiktok/tiktok-hosts) | 292 |
-| Wildcard | [raw](https://raw.githubusercontent.com/h1toru/blocklist/main/block/tiktok/tiktok-wildcard) | 11 |
-| Adblock | [raw](https://raw.githubusercontent.com/h1toru/blocklist/main/block/tiktok/tiktok-adblock) | 19 |
+| Hosts | [raw](https://raw.githubusercontent.com/h1toru/filterlist/main/filterlist/tiktok/tiktok-hosts) | 292 |
+| Domains only | ~~[raw](https://raw.githubusercontent.com/h1toru/filterlist/main/filterlist/)~~ | 0 |
+| Wildcard | [raw](https://raw.githubusercontent.com/h1toru/filterlist/main/filterlist/tiktok/tiktok-wildcard) | 11 |
+| Adblock | [raw](https://raw.githubusercontent.com/h1toru/filterlist/main/filterlist/tiktok/tiktok-adblock) | 19 |
 
 ## Recommendation
 
-A collection of filterlist that I used. It is an active/maintained list (updated regularly) and have less false-positive domains.
+Others' filterlist that I used personally. It is active/maintained list (updated regularly) and have less false-positive domains.
 
-<details><summary>Adblock Format/Syntax</summary>
+<details><summary>Adblock/uBlock Format/Syntax</summary>
 
 | Name | Link | Description |
 | :- | :-: | :- |

@@ -1,0 +1,54 @@
+usage() {
+	printf "%-10s%s\n"     "<Filterlist Information Updater>" ""
+	printf "%-10s%s\n\n"   "Usage:"     "${1} FILE"
+	printf "%-10s%s\n"     "Example:"   "${1} adblock/test/whitelist.txt"
+	printf "%-10s%s\n"     ""           "${1} \"blocklist/new hosts.txt\" old_domains.txt"
+
+	printf "\n%s\n"        "OPTIONS:"
+	printf "  %-25s%s\n"   "-h, --help"       "Show this help"
+	printf "\n%-10s%s\n"   "> by h1toru @ GitHub" ""
+}
+
+invalid() {
+	echo "${2:-Error}: ${1}"
+	echo "Try '${2:-[COMMAND]} --help' for more information."
+	N=1 ; return 1
+}
+
+SC=${FUNCNAME:-${0#*/}}
+[ $# -gt 0 ] || invalid "no file(s) were specified" "$SC"
+while [ $# -gt 0 ]; do
+	case "$1" in
+		-h|--help) usage "$SC" ; break ;;
+		--*) invalid "unrecognized option '${1}'" "${SC}" ; break ;;
+		-*) invalid "invalid option -- '${1##*-}'" "${SC}" ; break ;;
+		*)
+			for f in "${@}"; do
+				if [ -f "${f}" ]; then
+					# modify "Last modified" in the file
+					DATE=$(date -u +'%Y.%m.%d %H:%M %Z')
+					echo "$(sed "s|^\(.\ Last\ modified\:\).*|\1 $DATE|" "$f")" > "$f"
+					# modify "Total entries" in the file
+					FORMAT=$(sed -n "s|^.\ Format\:\ ||p" "$f")
+					if [ "${FORMAT,,}" = "hosts" ]; then
+						ENTRIES=$(grep "^0\.0\.0\.0" "$f" | wc -l)
+					elif [ "${FORMAT,,}" = "adblock" ]; then
+						ENTRIES=$(sed 's|^\!.*||g; s/\s//g; /^$/d' "$f" | wc -l)
+					else
+						ENTRIES=$(sed 's|\#.*||g; s/\s//g; /^$/d' "$f" | wc -l)
+					fi
+					echo "$(sed "s|^\(.\ Total\ entries\:\).*|\1 $ENTRIES|" "$f")" > "$f"
+					# stage changes and commit(optional) the file
+					git add "$f"
+					#git commit -m "Update filterlist ($f)"
+					shift
+				else
+					invalid "'${f}' doesn't exist" "$SC"
+					shift
+				fi
+			done
+			;;
+	esac
+done
+
+exit $N

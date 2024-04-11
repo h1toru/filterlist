@@ -1,13 +1,13 @@
 ##################################################
 # Title: h1toru's Allowlist
 # Description: Fix various issues caused by blocklist.
-# Homepage: https://github.com/h1toru/blocklist
+# Homepage: https://github.com/h1toru/filterlist
 #
 # Last modified: 2024.02.20 14:31 UTC
 # Format/Syntax: Wildcard
 # Total entries/domains: 2
 #
-# raw: https://raw.githubusercontent.com/h1toru/blocklist/main/allow/fixes-wildcard
+# raw: https://raw.githubusercontent.com/h1toru/filterlist/main/allow/fixes-wildcard
 ##################################################
 
 # Fix YouTube watch history

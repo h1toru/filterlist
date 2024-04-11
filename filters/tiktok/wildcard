@@ -1,19 +1,19 @@
 ##################################################
 # Title: h1toru's TikTok Blocklist
 # Description: Block TikTok completely, including ads, analytics/tracker and third-party services that related to it.
-# Homepage: https://github.com/h1toru/blocklist
+# Homepage: https://github.com/h1toru/filterlist
 #
 # Last modified: 2024.02.20 14:32 UTC
 # Format/Syntax: Wildcard
 # Total entries/domains: 11
 #
-# raw: https://raw.githubusercontent.com/h1toru/blocklist/main/block/tiktok/tiktok-wildcard
+# raw: https://raw.githubusercontent.com/h1toru/filterlist/main/block/tiktok/tiktok-wildcard
 ##################################################
 
 *tiktok*
 *ttwstatic*
 *ttlivecdn*
-*isnssdk*
+*snssdk*
 *byteoversea*
 *ibyteimg*
 *ibytedtos*

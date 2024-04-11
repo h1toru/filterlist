@@ -1,0 +1,87 @@
+####################################################################################################
+# Title: Tracker Blocklist
+# by h1toru @ GitHub
+# Description: Block Analytics/Tracker/Telemetry.
+# Homepage: https://github.com/h1toru/filterlist
+#
+# Last modified: 2024.02.20 14:32 UTC
+# Format/Syntax: Hosts
+# Total entries/domains: 1416
+#
+# raw: https://raw.githubusercontent.com/h1toru/filterlist/main/filterlist/tracker-hosts
+####################################################################################################
+
+# Block Android OTA Update from GMS
+# * Source: https://github.com/PixelExperience/system_core/commit/c10bc39e416dd43d092060e4593c630ad45053c8
+0.0.0.0 ota.googlezip.net
+0.0.0.0 ota-cache1.googlezip.net
+0.0.0.0 ota-cache2.googlezip.net
+
+# WhatsApp Telemetry (+ to prevent ban for Whatsapp mod user)
+# * Source: https://t.me/WeAreRavenS/907
+# ? Reference:
+#    https://faq.whatsapp.com/538382354780857/
+#    https://www.reddit.com/r/privacytoolsIO/comments/p4lhl7/how_concerning_is_whatsapps_deidentified/
+0.0.0.0 dit.whatsapp.net
+
+# Fix Steam 'Fatal Error'
+# * Source: https://forums.linuxmint.com/viewtopic.php?t=343762
+0.0.0.0 client-download.steampowered.com
+
+# Google Analytics/Trackers
+# Reference: https://www.reddit.com/r/getdelta/comments/g08vsf/we_dont_want_to_be_tracked/?rdt=35353
+0.0.0.0 analytics.google.com
+0.0.0.0 www.google-analytics.com
+0.0.0.0 ssl.google-analytics.com
+# - Firebase
+0.0.0.0 app-measurement.com
+0.0.0.0 launches.appsflyer.com
+0.0.0.0 inapps.appsflyer.com
+0.0.0.0 gcdsdk.appsflyer.com
+0.0.0.0 codepush.appcenter.ms
+
+0.0.0.0 firebaselogging.googleapis.com
+0.0.0.0 firebaselogging-pa.googleapis.com
+0.0.0.0 firebaseremoteconfig.googleapis.com
+0.0.0.0 firebaseremoteconfigrealtime.googleapis.com
+0.0.0.0 firebaseinstallations.googleapis.com
+0.0.0.0 firebase-settings.crashlytics.com
+0.0.0.0 crashlyticsreports-pa.googleapis.com
+
+# Gooogle Ads
+0.0.0.0 googleads.g.doubleclick.net
+0.0.0.0 stats.g.doubleclick.net
+0.0.0.0 adservice.google.com
+0.0.0.0 www.googleadservices.com
+
+# GitHub Telemetry
+0.0.0.0 collector.github.com
+
+# Chinese Analytics/Tracker (DANA)
+0.0.0.0 applog.uc.cn
+0.0.0.0 audid-api.taobao.com
+0.0.0.0 cdn.yellowmessenger.com
+0.0.0.0 r2.cloud.yellow.ai
+# - Alipay
+0.0.0.0 u.alipay.cn
+0.0.0.0 ns1.alipay.com
+0.0.0.0 ns2.alipay.com
+0.0.0.0 ns3.alipay.com
+0.0.0.0 ns4.alipay.com
+0.0.0.0 imgs-ac.alipay.com
+0.0.0.0 imdap-sea.alipay.com
+0.0.0.0 at.alicdn.com
+0.0.0.0 mdn.alipayobjects.com
+
+# DANA
+0.0.0.0 marmot-cloud.com
+0.0.0.0 cdn.marmot-cloud.com
+0.0.0.0 cdn-dana.marmot-cloud.com
+0.0.0.0 site-ac.marmot-cloud.com
+0.0.0.0 lzd.co
+
+# Shopee's third-party
+0.0.0.0 tracking.seabank.co.id
+
+# Tokopedia's third-party
+0.0.0.0 i.gojekapi.com

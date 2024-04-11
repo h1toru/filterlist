@@ -1,13 +1,13 @@
 ##################################################
 # Title: h1toru's TikTok Blocklist
 # Description: Block TikTok completely, including ads, analytics/tracker and third-party services that related to it.
-# Homepage: https://github.com/h1toru/blocklist
+# Homepage: https://github.com/h1toru/filterlist
 #
 # Last modified: 2024.02.20 14:32 UTC
 # Format/Syntax: Hosts
 # Total entries/domains: 292
 #
-# raw: https://raw.githubusercontent.com/h1toru/blocklist/main/block/tiktok/tiktok-hosts
+# raw: https://raw.githubusercontent.com/h1toru/filterlist/main/block/tiktok/tiktok-hosts
 ##################################################
 
 # Main domains & subdomains
