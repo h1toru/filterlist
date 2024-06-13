@@ -37,7 +37,7 @@ while [ $# -gt 0 ]; do
 					else
 						ENTRIES=$(sed 's|\#.*||g; s/\s//g; /^$/d' "$f" | wc -l)
 					fi
-					echo "$(sed "s|^\(.\ Total\ entries\:\).*|\1 $ENTRIES|" "$f")" > "$f"
+					echo "$(sed "s|^\(.\ Entries\:\).*|\1 $ENTRIES|" "$f")" > "$f"
 					# stage changes and commit(optional) the file
 					git add "$f"
 					#git commit -m "Update filterlist ($f)"
