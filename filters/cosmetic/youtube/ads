@@ -1,0 +1,27 @@
+!————————————————————————————————————————————————————————————————————————————————————————————————————!
+! Title: Remove Youtube Ads
+! Description: Remove/Hide ads components on YouTube.
+! Homepage: https://github.com/h1toru/filterlist
+!
+! Last modified: 2024.06.16 10:08 UTC
+! Format: Adblock
+! Entries: 6
+!
+! Please submits/reports any problems on GitHub @ https://github.com/h1toru/ublock-spotify/issues
+!————————————————————————————————————————————————————————————————————————————————————————————————————!
+
+! Remove Ads section
+www.youtube.com###masthead-ad
+
+! Remove Ads in search result
+www.youtube.com##ytd-search-pyv-renderer:has(ytd-ad-slot-renderer)
+
+! Remove Ads in video grid
+www.youtube.com##ytd-rich-item-renderer:has(ytd-ad-slot-renderer)
+
+! Remove Ads in recommendations
+www.youtube.com##ytd-ad-slot-renderer
+www.youtube.com###player-ads
+
+! Fill empty spaces in video grid
+www.youtube.com##ytd-rich-grid-row, #contents.ytd-rich-grid-row:style(display: contents !important)

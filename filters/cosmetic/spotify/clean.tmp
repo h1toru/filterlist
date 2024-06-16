@@ -1,0 +1,186 @@
+!————————————————————————————————————————————————————————————————————————————————————————————————————!
+! Title: Declutters Spotify Web
+! Description: Hide annoyances on Spotify web.
+! Homepage: https://github.com/h1toru/ublock-spotify
+!
+! Last modified: 2024.06.16 10:08 UTC
+! Format: Adblock
+! Entries: 49
+!
+! This list is language-dependent, it may not work properly in languages other than english.
+! Please submits/reports any problems on GitHub @ https://github.com/h1toru/ublock-spotify/issues
+!————————————————————————————————————————————————————————————————————————————————————————————————————!
+
+! Top bar: header[data-testid="topbar"]
+!          header[aria-label="Top bar and user menu"]
+! Left sidebar: nav[aria-label="Main"]
+! Main content: div.main-view-container
+! Homepage: div.main-view-container main[aria-label^="Spotify - Web Player"]
+!           div.main-view-container main[aria-label="Spotify - Web Player: Music for everyone"]
+! Search page: main[aria-label="Spotify – Search"]
+! Podcast profile page: div.main-view-container main[aria-label$=" Podcast | Podcast on Spotify"]
+! Now Playing bar: footer[data-testid="now-playing-bar"]
+
+! Disable `chrome://flags/#enable-force-dark`
+open.spotify.com##:root:style(color-scheme: only light !important;)
+
+! --------------------------------------------------
+! Hide/Remove unnecessary things
+! --------------------------------------------------
+
+! Hide Upgrade / "Explore Premium" button on the top bar
+open.spotify.com##header[data-testid="topbar"] :is(button[aria-label="Upgrade to Premium"], button[title="Upgrade to Premium"], button[data-testid="upgrade-button"]), header[data-testid="topbar"] button:has(span:has-text(/Explore Premium/))
+
+! Hide "Upgrade to premium" dropdown menu on the profile
+open.spotify.com##div > :is(div[data-testid="context-menu"], #context-menu) li:has(> a[href^="https://www.spotify.com/premium"], span:has-text(/Upgrade to Premium/))
+
+! Hide "Install App" button on the top bar
+open.spotify.com##header :is(a[href="/download"], a[href^="https://open.spotify.com/download"]):has-text(/^Install App$/)
+! Hide "Open in Desktop app" dropdown menu
+open.spotify.com##li:has(> button > span:has-text(/^Open in Desktop app$/))
+
+! Hide 'about' sections in main view
+open.spotify.com##div.main-view-container div:has(> nav[data-testid="footer-div"])
+
+! Left Sidebar: Hide Homepage button
+!open.spotify.com##div > nav[aria-la  bel="Main"] li:has(a[href="/"], a[href="https://open.spotify.com/"], a[aria-label="Home"])
+
+! --------------------------------------------------
+! Now playing bar
+! --------------------------------------------------
+
+! Hide Expand/Collapse button on album image
+open.spotify.com##footer[data-testid="now-playing-bar"] div[data-testid="now-playing-widget"] > div > button[aria-label="Now playing view"]
+
+! Show 'Playing on' text on connected device bar, hidden by "Fanboy's Annoyance" filter list (line: 41371)
+~spotify.com##div > div[aria-live="polite"]:not([data-testid="top-result-card"])
+
+! Hide connected device bar
+open.spotify.com##div > footer[data-testid="now-playing-bar"] div:has(> div[aria-live="polite"])
+open.spotify.com##div > footer[data-testid="now-playing-bar"] div > div > div[data-testid="indicator"]
+
+! Hide tips in Spotify connect menu
+open.spotify.com##div > footer[data-testid="now-playing-bar"] div > :is(div[data-testid="context-menu"], #context-menu) div:has(> a[href^="https://support.spotify.com/article/spotify-connect"], > a[href^="https://www.spotify.com/connect"])
+open.spotify.com##div > footer[data-testid="now-playing-bar"] div > :is(div[data-testid="context-menu"], #context-menu) :is(div[data-overlayscrollbars-initialize="true"], div[data-overlayscrollbars="host"]):has(button[data-testid="device-picker-row-flyout"], button[aria-label="This web browser"]):style(min-height: unset !important)
+
+! Hide Queue button
+open.spotify.com##footer[data-testid="now-playing-bar"] :is(button[data-testid="control-button-queue"], button[aria-label="Queue"])
+
+! Hide PiP/Miniplayer button
+!open.spotify.com##footer[data-testid="now-playing-bar"] :is(button[data-testid="pip-toggle-button"], button[aria-label="Open Miniplayer"])
+
+! -----------------------------------
+
+! -----------------------------------
+! Hide sections in homepage
+! -----------------------------------
+
+! Hide filter (All, Music, Podcasts)
+open.spotify.com##div.main-view-container main > div:has(div[aria-label="Home Filters"])
+
+! "Your" sections
+!open.spotify.com##div.main-view-container section[aria-label^="Good"]
+!open.spotify.com##div.main-view-container section[data-testid="home-page"] section[aria-label="Recently played"]
+!open.spotify.com##div.main-view-container section[data-testid="home-page"] section[aria-label="Your playlists"]
+!open.spotify.com##div.main-view-container section[data-testid="home-page"] section[aria-label="Jump back in"]
+!open.spotify.com##div.main-view-container section[data-testid="home-page"] section[aria-label="Made For You"]
+!open.spotify.com##div.main-view-container section[data-testid="home-page"] section[aria-label="Your top mixes"]
+!open.spotify.com##div.main-view-container section[data-testid="home-page"] section[aria-label="Based on your recent listening"]
+!open.spotify.com##div.main-view-container section[data-testid="home-page"] section[aria-label^="More like"]
+!open.spotify.com##div.main-view-container section[data-testid="home-page"] section[aria-label="More of what you like"]
+
+! Unrelated sections
+!open.spotify.com##div.main-view-container section[data-testid="home-page"] section[aria-label="Today's biggest hits"]
+
+! Country-based sections (Whitelist mode)
+! Put all sections you want to whitelist in `section:not([])`, e.g. `section:not([aria-label^="Good"], [aria-label="Recently played"])
+open.spotify.com##div.main-view-container section[data-testid="home-page"] section:not([aria-label^="Good"], [aria-label="Recently played"])
+! Podcast listener
+!open.spotify.com##div.main-view-container section[data-testid="home-page"] section:not([aria-label^="Good"], [aria-label="Your shows"], [aria-label^="Popular with listeners of"], [aria-label^="More like:"], [aria-label="Shows you might like"])
+
+! --------------------------------------------------
+! Dropdown menu/item
+! --------------------------------------------------
+
+! "Add to playlist"
+open.spotify.com##li:has(span:has-text(/Add to playlist/))
+! "Remove from this playlist"
+open.spotify.com##li:has(span:has-text(/Remove from this playlist/))
+! "'Add to|Remove from' your Liked Songs"
+open.spotify.com##li:has(span:has-text(/^(Add to|Remove from) your (Liked Songs|Episodes)$/i))
+! "'Save to|Remove from' Your Episodes"
+open.spotify.com##li:has(span:has-text(/^(Save to|Remove from) Your Episodes$/))
+! "Go to artist"
+open.spotify.com##li:has(a[href^="/artist/"], a[href^="https://open.spotify.com/artist/"])
+! "Go to album"
+open.spotify.com##li:has(a[href^="/album/"], a[href^="https://open.spotify.com/album/"])
+! "Show 'artwork/canvas'"
+open.spotify.com##li:has(span:has-text(/^Show (artwork|canvas)$/))
+
+! --------------------------------------------------
+
+! Hide "Recent searches"
+open.spotify.com##main[aria-label="Spotify – Search"] section[aria-label="Recent searches"]
+
+! Hide "Browse all" section title
+open.spotify.com##main[aria-label="Spotify – Search"] section[aria-label="Browse all"] > div:has(h2:has-text(/^Browse all$/))
+
+! Hide tips dialog
+open.spotify.com##div[role="dialog"]:has(p:has-text(/^You\'ll find settings for /))
+open.spotify.com##div[role="dialog"]:has(p:has-text(/^To reorder your playlists\, choose /))
+open.spotify.com##div[data-tippy-root]:has(p:has-text(/Dig deeper/))
+
+! Hide "no lyrics" text placeholder
+open.spotify.com##span:has-text(/lyrics for this/)
+
+! Hide Share button on Podcast
+open.spotify.com##main[aria-label$=" Podcast | Podcast on Spotify"] button[aria-label="Share"]
+
+! --------------------------------------------------
+! Podcast
+! --------------------------------------------------
+
+! Remove podcast filter button in homepage
+open.spotify.com##div.main-view-container main[aria-label^="Spotify - Web Player"] div[aria-label="Home Filters"] button[aria-label="Podcasts"]:remove()
+
+! Hide podcast sections in homepage
+open.spotify.com##div.main-view-container section[data-testid="home-page"] section[aria-label="Your shows"]:remove()
+open.spotify.com##div.main-view-container section[data-testid="home-page"] section[aria-label="Shows you might like"]:remove()
+open.spotify.com##div.main-view-container section[data-testid="home-page"] section[aria-label="New episodes"]:remove()
+
+open.spotify.com##div.main-view-container section[data-testid="home-page"] section[aria-label="Episodes for you"]:remove()
+open.spotify.com##div.main-view-container section[data-testid="home-page"] section[aria-label^="Popular with listeners of"]:remove()
+
+! Remove 'Your Episodes' page
+open.spotify.com##header[data-testid="topbar"] div[data-testid="topbar-content-wrapper"]:has(button[aria-label="Play Your Episodes"], span:has-text(/^Your Episodes$/)):remove()
+open.spotify.com##div.main-view-container:has(section[data-testid="your-episodes-page"]):remove()
+! Hide 'Your Episodes' in the left sidebar
+open.spotify.com##nav[aria-label="Main"] ul[aria-label="Your Library"] li:has(div[aria-labelledby="listrow-title-spotify:collection:your-episodes"])
+
+! Remove 'Podcasts & Shows' filter in left sidebar
+open.spotify.com##nav[aria-label="Main"] div[aria-label="Filter options"] button > span:has-text(/^Podcasts & Shows$/):remove()
+
+! Remove "following" podcast in left sidebar
+open.spotify.com##nav[aria-label="Main"] ul[aria-label="Your Library"] li:has(div[aria-labelledby^="listrow-title-spotify:show:"])
+
+! Remove podcast in podcast-er profile page
+open.spotify.com##div.main-view-container main:has(span:has-text(/^Podcast$/)) div[data-testid="show-all-episode-list"]:remove()
+open.spotify.com##div.main-view-container main:has(span:has-text(/^Podcast$/)) section[aria-label="More podcasts like this"]:remove()
+open.spotify.com##div.main-view-container main:has(span:has-text(/^Podcast$/)) div:has(> nav[data-testid="footer-div"]):remove()
+open.spotify.com##div.main-view-container div.main-view-container__scroll-node-child:has(main:has(span:has-text(/^Podcast$/))):style(padding-bottom: unset !important;)
+
+! Remove dropdown menu/item "'Save to|Remove from' Your Episodes"
+open.spotify.com##li:has(span:has-text(/^(Save to|Remove from) Your Episodes$/)):remove()
+
+! Hide Share button on Podcast episode
+open.spotify.com##div.main-view-container button[aria-label="Share"]:remove()
+
+! --------------------------------------------------
+
+! Tracking Scripts
+! Source: https://community.brave.com/t/spotify-keeps-crashing-in-brave/532078/42
+||open.spotifycdn.com/cdn/js/retargeting-pixels.
+||open.spotifycdn.com/cdn/js/gtm.
+||gew1-spclient.spotify.com/gabo-receiver-service/
+
+! ----------------------------------------------------------------------------------------------------
