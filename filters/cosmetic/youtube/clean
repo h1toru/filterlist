@@ -3,7 +3,7 @@
 ! Description: Make YouTube cleaner, less intrusive and improve overall experience.
 ! Homepage: https://github.com/h1toru/filterlist
 !
-! Last modified: 2024.06.16 10:08 UTC
+! Last modified: 2024.06.16 12:36 UTC
 ! Format: Adblock
 ! Entries: 55
 !
@@ -76,7 +76,7 @@ www.youtube.com##ytd-watch-flexy:not([hidden]) #related:has(#content.yt-related-
 www.youtube.com##ytd-search:not([hidden]) #more.ytd-vertical-list-renderer
 
 ! Hide 'For You' section
-www.youtube.com##ytd-item-section-renderer:has(#title:has-text(/^For you$/))
+www.youtube.com##ytd-page-manager:not(:has(ytd-search)) ytd-item-section-renderer:has(#title:has-text(/^For you$/))
 www.youtube.com##ytd-shelf-renderer:has(#title:has-text(/^For you$/))
 ! Hide 'For you' filter
 www.youtube.com##yt-chip-cloud-chip-renderer:has([title="For you"])
