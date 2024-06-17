@@ -3,11 +3,11 @@
 ! Description: Make YouTube cleaner, less intrusive and improve overall experience.
 ! Homepage: https://github.com/h1toru/filterlist
 !
-! Last modified: 2024.06.16 12:36 UTC
+! Last modified: 2024.06.17 13:58 UTC
 ! Format: Adblock
 ! Entries: 55
 !
-! Please submits/reports any problems on GitHub @ https://github.com/h1toru/ublock-spotify/issues
+! Please submits/reports any problems on GitHub @ https://github.com/h1toru/filterlist/issues
 !————————————————————————————————————————————————————————————————————————————————————————————————————!
 
 ! --- Parent selectors
@@ -70,7 +70,7 @@ www.youtube.com##ytd-watch-flexy:not([hidden]) #related #contents.ytd-item-secti
 ! Hide recommended videos that has 'New' label and under 1K views in 'All' filter on video player page
 ! > Summary: YouTube now recommending videos that are irrelevant, completely random and under 5K views (mostly).
 !            I couldn't find a better way to remove/hide it. If you have any recommendation please let me know.
-www.youtube.com##ytd-watch-flexy:not([hidden]) #related:has(#content.yt-related-chip-cloud-renderer yt-chip-cloud-chip-renderer[selected] > yt-formatted-string[title="All"]) #contents.ytd-item-section-renderer:has( > ytd-compact-video-renderer ytd-badge-supported-renderer>.badge[aria-label="New"][role="img"]):has(> ytd-compact-video-renderer #metadata span.inline-metadata-item:has-text(/^([1-9]{2} (hours|minutes|seconds)|1 day) ago$/)) > ytd-compact-video-renderer:has(#metadata span.inline-metadata-item:has-text(/^([0-9]{1,3}|No) views$/))
+www.youtube.com##ytd-watch-flexy:not([hidden]) #related:has(yt-chip-cloud-chip-renderer[selected] > yt-formatted-string[title="All"]) #contents.ytd-item-section-renderer:has( > ytd-compact-video-renderer ytd-badge-supported-renderer>.badge[aria-label="New"][role="img"]):has(> ytd-compact-video-renderer #metadata span.inline-metadata-item:has-text(/^([1-9]{2} (hours|minutes|seconds)|1 day) ago$/)) > ytd-compact-video-renderer:has(#metadata span.inline-metadata-item:has-text(/^([0-9]{1,3}|No) views$/))
 
 ! Hide load more in 'Latest from <CHANNEL>' in search result
 www.youtube.com##ytd-search:not([hidden]) #more.ytd-vertical-list-renderer
@@ -96,8 +96,8 @@ www.youtube.com##ytd-browse[page-subtype="home"]:not([hidden]) ytd-rich-section-
 !www.youtube.com##ytd-search:not([hidden]) ytd-shelf-renderer:has(#title:has-text(/^Previously watched$/))
 !www.youtube.com##ytd-search:not([hidden]) ytd-shelf-renderer:has(#title:has-text(/^People also watched$/))
 !www.youtube.com##ytd-search:not([hidden]) ytd-shelf-renderer:has(#title:has-text(/^Channels new to you$/))
-! Hide all unrelated sections in search results
-www.youtube.com##ytd-search:not([hidden]) ytd-shelf-renderer
+! Hide all unrelated sections in search results except 'Latest from <channel>'
+www.youtube.com##ytd-search:not([hidden]) ytd-shelf-renderer:not(#title:has-text(/^Latest from /))
 
 ! Hide 'Creator/Artist on the Rise' sections on trending page
 !www.youtube.com##ytd-browse[page-subtype="trending"]:not([hidden]) ytd-item-section-renderer:has(#title-container #featured-badge > [aria-label$="on the Rise"])
