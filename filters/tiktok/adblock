@@ -1,12 +1,14 @@
+!————————————————————————————————————————————————————————————————————————————————————————————————————!
 ! Title: h1toru's TikTok Blocklist
-! Description: Block TikTok completely, including ads, analytics/tracker and third-party services that related to it.
+! Description: Block TikTok completely. including ads, analytics/tracker and third-party services that related to it.
 ! Homepage: https://github.com/h1toru/filterlist
 !
-! Last modified: 2024.02.20 14:32 UTC
-! Format/Syntax: Adblock
-! Total entries/domains: 19
+! Last modified: 2024.06.17 20:39 UTC
+! Format: Adblock
+! Entries: 17
 !
-!
+! Please submits/reports any problems on GitHub @ https://github.com/h1toru/filterlist/issues
+!————————————————————————————————————————————————————————————————————————————————————————————————————!
 
 ||tiktok.com^
 ||tiktokv.com^
@@ -24,6 +26,9 @@
 ||byteoversea.com^
 ||ibyteimg.com^
 ||ibytedtos.com^
-||whoami.akamai.com^
-||whoami.akamai.net^
-||v16m-default.akamaized.net^
+
+!||whoami.akamai.com^$domain=tiktok.*
+!||whoami.akamai.net^$domain=tiktok.*
+!||v16m-default.akamaized.net^$domain=tiktok.*
+!||storage.googleapis.com^$domain=tiktok.*
+*$domain=tiktok.*
