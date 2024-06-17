@@ -1,14 +1,14 @@
 !————————————————————————————————————————————————————————————————————————————————————————————————————!
 ! Title: Declutters Spotify Web
 ! Description: Hide annoyances on Spotify web.
-! Homepage: https://github.com/h1toru/ublock-spotify
+! Homepage: https://github.com/h1toru/filterlist
 !
 ! Last modified: 2024.06.16 10:08 UTC
 ! Format: Adblock
 ! Entries: 49
 !
 ! This list is language-dependent, it may not work properly in languages other than english.
-! Please submits/reports any problems on GitHub @ https://github.com/h1toru/ublock-spotify/issues
+! Please submits/reports any problems on GitHub @ https://github.com/h1toru/filterlist/issues
 !————————————————————————————————————————————————————————————————————————————————————————————————————!
 
 ! Top bar: header[data-testid="topbar"]

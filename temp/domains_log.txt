@@ -1,0 +1,13 @@
+# MuMuPlayer
+api.mumuglobal.com # MuMuPlayer Updater (Whitelist)
+
+# MuMuPlayer Store & Ads
+# wildcard: *163.com
+# www.163.com
+mumu.163.com
+store-api.mumuglobal.com
+mumu.res.netease.com
+nie.res.netease.com
+
+# DANA app (id.dana)
+audid-api.taobao.com

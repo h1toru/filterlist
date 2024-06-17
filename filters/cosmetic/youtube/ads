@@ -7,7 +7,7 @@
 ! Format: Adblock
 ! Entries: 6
 !
-! Please submits/reports any problems on GitHub @ https://github.com/h1toru/ublock-spotify/issues
+! Please submits/reports any problems on GitHub @ https://github.com/h1toru/filterlist/issues
 !————————————————————————————————————————————————————————————————————————————————————————————————————!
 
 ! Remove Ads section
@@ -15,6 +15,7 @@ www.youtube.com###masthead-ad
 
 ! Remove Ads in search result
 www.youtube.com##ytd-search-pyv-renderer:has(ytd-ad-slot-renderer)
+www.youtube.com##ytd-item-section-renderer:has(ytd-ad-slot-renderer)
 
 ! Remove Ads in video grid
 www.youtube.com##ytd-rich-item-renderer:has(ytd-ad-slot-renderer)

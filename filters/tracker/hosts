@@ -85,3 +85,225 @@
 
 # Tokopedia's third-party
 0.0.0.0 i.gojekapi.com
+
+# —————————— Third-party Services ——————————
+# some (many) domains only achiavable in AdBlockPlus syntax
+
+# ——— Error Tracking
+
+# https://www.reddit.com/r/techsupport/comments/7zls73/what_is_mxpnlcom/?rdt=33063
+#0.0.0.0 mixpanel.com # main website
+0.0.0.0 api-js.mixpanel.com
+0.0.0.0 mxpnl.com
+0.0.0.0 cdn.mxpnl.com
+
+0.0.0.0 rollbar.com
+0.0.0.0 api.rollbar.com
+0.0.0.0 cdn.rollbar.com
+
+0.0.0.0 hotjar.com
+#0.0.0.0 www.hotjar.com # main website
+0.0.0.0 script.hotjar.com
+0.0.0.0 static.hotjar.com
+0.0.0.0 ws.hotjar.com
+0.0.0.0 hotjar.io
+0.0.0.0 content.hotjar.io
+0.0.0.0 metrics.hotjar.io
+
+# ——— Analytics / Data Collection Services
+
+# Google
+0.0.0.0 google-analytics.com
+0.0.0.0 www.google-analytics.com
+0.0.0.0 googletagmanager.com
+0.0.0.0 www.googletagmanager.com
+0.0.0.0 analytics.google.com
+
+0.0.0.0 analytics.twitter.com
+
+0.0.0.0 bat.bing.com # https://answers.microsoft.com/en-us/msadvs/forum/all/does-batbing-track-your-browser-searches-and-sites/0a402f00-60c2-4d54-bd7d-81b67ccc7f13
+
+# Adobe
+0.0.0.0 sstats.adobe.com
+0.0.0.0 demdex.net
+0.0.0.0 www.demdex.net
+0.0.0.0 lnkd.demdex.net
+0.0.0.0 dpm.demdex.net
+0.0.0.0 spotify.demdex.net
+
+#0.0.0.0 gaconnector.com # main website
+0.0.0.0 track.gaconnector.com
+0.0.0.0 tracker.gaconnector.com
+
+0.0.0.0 usercentrics.com
+0.0.0.0 analytics.usercentrics.com
+0.0.0.0 usercentrics.eu
+0.0.0.0 app.usercentrics.eu
+0.0.0.0 api.usercentrics.eu
+0.0.0.0 consent-api.service.consent.usercentrics.eu
+0.0.0.0 v1.api.service.cmp.usercentrics.eu
+0.0.0.0 web.cmp.usercentrics.eu
+0.0.0.0 aggregator.service.usercentrics.eu
+0.0.0.0 uct.service.usercentrics.eu
+
+0.0.0.0 ­contentsquare.com
+0.0.0.0 clicktale.net
+0.0.0.0 c.clicktale.net
+0.0.0.0 cdnssl.clicktale.net
+
+0.0.0.0 clickagy.com
+0.0.0.0 www.clickagy.com
+0.0.0.0 aorta.clickagy.com
+0.0.0.0 hemsync.clickagy.com
+0.0.0.0 tags.clickagy.com
+
+0.0.0.0 omniconvert.com
+0.0.0.0 www.omniconvert.com
+0.0.0.0 app.omniconvert.com
+0.0.0.0 cdn.omniconvert.com
+
+# fingerprint.com is a service used to identify user information/fingerprints. can used to identify user for targeted advertising.
+# e.g. detects device, browser, ip, incognito mode, vpn, etc.
+0.0.0.0 fingerprint.com
+0.0.0.0 fpjs.pro
+0.0.0.0 api.fpjs.pro
+
+0.0.0.0 newrelic.com
+0.0.0.0 js-agent.newrelic.com # https://www.hostinger.in/tutorials/what-is-new-relic#:~:text=New%20Relic%20uses%20an%20agent,task%20requires%20a%20dedicated%20agent.
+0.0.0.0 insights-collector.newrelic.com
+0.0.0.0 nr-data.net
+0.0.0.0 bam.nr-data.net #https://forum.newrelic.com/s/hubtopic/aAX8W0000008YtrWAE/relic-solution-what-is-bamnrdatanet-new-relic-browser-monitoring
+
+#0.0.0.0 sentry.io # main website
+0.0.0.0 o1.ingest.sentry.io
+0.0.0.0 o2129.ingest.sentry.io
+0.0.0.0 o522631.ingest.sentry.io
+
+0.0.0.0 hubspot.com
+0.0.0.0 www.hubspot.com
+0.0.0.0 app.hubspot.com
+0.0.0.0 api.hubspot.com
+0.0.0.0 cta-service-cms2.hubspot.com
+0.0.0.0 js.hubspot.com
+0.0.0.0 forms.hubspot.com
+0.0.0.0 knowledge.hubspot.com
+0.0.0.0 track.hubspot.com
+0.0.0.0 metrics-fe-na1.hubspot.com
+0.0.0.0 static2cdn.hubspot.com
+0.0.0.0 wtcfns.hubspot.com
+0.0.0.0 hubspot.net
+0.0.0.0 cdn2.hubspot.net
+0.0.0.0 hubspotfeedback.com
+0.0.0.0 js.hubspotfeedback.com
+0.0.0.0 hubspotusercontent-na1.net
+0.0.0.0 428357.fs1.hubspotusercontent-na1.net
+0.0.0.0 53.fs1.hubspotusercontent-na1.net
+0.0.0.0 hubapi.com
+0.0.0.0 api.hubapi.com
+0.0.0.0 feedback.hubapi.com
+0.0.0.0 hs-analytics.net
+0.0.0.0 js.hs-analytics.net
+0.0.0.0 hsadspixel.net
+0.0.0.0 js.hsadspixel.net
+0.0.0.0 hs-banner.com
+0.0.0.0 js.hs-banner.com
+0.0.0.0 hsappstatic.net
+0.0.0.0 static.hsappstatic.net
+0.0.0.0 hsforms.com
+0.0.0.0 perf-na1.hsforms.com
+0.0.0.0 hsforms.net
+0.0.0.0 js.hsforms.net
+0.0.0.0 hsleadflows.net
+0.0.0.0 js.hsleadflows.net
+0.0.0.0 usemessages.com
+0.0.0.0 js.usemessages.com
+
+0.0.0.0 firstpromoter.com
+0.0.0.0 cdn.firstpromoter.com
+#0.0.0.0 new.firstpromoter.com # main website
+
+0.0.0.0 getclicky.com
+0.0.0.0 in.getclicky.com
+0.0.0.0 static.getclicky.com
+
+0.0.0.0 onetrust.com
+0.0.0.0 geolocation.onetrust.com
+
+0.0.0.0 amplitude.com
+0.0.0.0 cdn.amplitude.com
+
+0.0.0.0 cookielaw.org
+0.0.0.0 cdn.cookielaw.org
+
+0.0.0.0 cookieyes.com
+#0.0.0.0 www.cookieyes.com # main website
+0.0.0.0 log.cookieyes.com
+0.0.0.0 directory.cookieyes.com
+0.0.0.0 cdn-cookieyes.com
+
+# ——— Advertising Services
+
+0.0.0.0 adsrvr.org
+0.0.0.0 www.adsrvr.org
+0.0.0.0 insight.adsrvr.org
+0.0.0.0 js.adsrvr.org
+
+0.0.0.0 agkn.org
+0.0.0.0 www.agkn.org
+0.0.0.0 aa.agkn.org
+0.0.0.0 d.agkn.org # https://forum.kaspersky.com/topic/removal-of-dagkncom-closed-210/?do=findComment&comment=664
+
+0.0.0.0 criteo.com
+0.0.0.0 www.criteo.com
+0.0.0.0 www2.criteo.com
+0.0.0.0 gum.criteo.com
+
+0.0.0.0 triplelift.com
+0.0.0.0 3lift.com
+0.0.0.0 eb2.3lift.com
+
+# ——— Ads
+0.0.0.0 doubleclick.net
+0.0.0.0 stats.g.doubleclick.net
+0.0.0.0 googleads.g.doubleclick.net
+0.0.0.0 securepubads.g.doubleclick.net
+0.0.0.0 cm.g.doubleclick.net
+0.0.0.0 m.doubleclick.net
+0.0.0.0 9212252.fls.doubleclick.net
+0.0.0.0 11620487.fls.doubleclick.net
+0.0.0.0 adservice.google.com
+0.0.0.0 googleadservices.com
+0.0.0.0 www.googleadservices.com
+0.0.0.0 googlesyndication.com
+0.0.0.0 pagead2.googlesyndication.com
+
+0.0.0.0 amazon-adsystem.com
+0.0.0.0 c.amazon-adsystem.com
+0.0.0.0 s.amazon-adsystem.com
+0.0.0.0 2m1ln5gmga.execute-api.us-east-1.amazonaws.com
+
+0.0.0.0 ads-twitter.com
+0.0.0.0 static.ads-twitter.com
+
+0.0.0.0 px.ads.linkedin.com
+
+# ——— Other
+
+0.0.0.0 api-visitor-analytics.intercom.com
+0.0.0.0 api-iam.intercom.io
+
+0.0.0.0 6sc.co
+0.0.0.0 b.6sc.co
+0.0.0.0 c.6sc.co
+0.0.0.0 ipv6.6sc.co
+0.0.0.0 j.6sc.co
+
+0.0.0.0 pixel.byspotify.com
+
+# 'g2.com' is a peer-to-peer review site
+#0.0.0.0 g2.com # this will block the website
+0.0.0.0 ai.g2.com
+0.0.0.0 collector.g2.com
+0.0.0.0 refer.g2.com
+0.0.0.0 g2crowd.com
+0.0.0.0 tracking.g2crowd.com

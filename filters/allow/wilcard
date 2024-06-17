@@ -1,13 +1,12 @@
 ##################################################
 # Title: h1toru's Allowlist
-# Description: Fix various issues caused by blocklist.
+# Description: Fix various issues caused by blocklists.
 # Homepage: https://github.com/h1toru/filterlist
 #
 # Last modified: 2024.02.20 14:31 UTC
 # Format/Syntax: Wildcard
 # Total entries/domains: 2
 #
-# raw: https://raw.githubusercontent.com/h1toru/filterlist/main/allow/fixes-wildcard
 ##################################################
 
 # Fix YouTube watch history
@@ -23,5 +22,5 @@ s.youtube.com
 
 # Fix some elements blocked on apps
 # This is Google Analytics for Firebase. Blocking it can improve privacy, but some elements may not showing on some apps.
-# ? Reference: https://www.reddit.com/r/privacytoolsIO/comments/d4n6tn/what_is_the_tracker_appmeasurementcom/?rdt=34050
+# Reference: https://www.reddit.com/r/privacytoolsIO/comments/d4n6tn/what_is_the_tracker_appmeasurementcom/?rdt=34050
 #app-measurement.com

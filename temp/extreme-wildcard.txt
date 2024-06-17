@@ -38,7 +38,7 @@
 
 # Analytics/Tracker/Telemetry services:
 #
-# Google Analytics/Firebase 
+# Google Analytics/Firebase
 #app-measurement.com #duplicate: *measure*
 *appsflyer*
 *firebase*
@@ -63,3 +63,24 @@
 *alipay*
 *alicdn*
 *marmot-cloud*
+
+
+# --- Common pattern
+analytics.*
+analytics-*
+tracking.*
+tracking-*
+ads.*
+ads-*
+api.*
+api-*
+stats.*
+stats-*
+geolocation.*
+geolocation-*
+metrics.*
+metrics-*
+collector.*
+collector-*
+insight.*
+insight-*

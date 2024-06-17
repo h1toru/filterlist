@@ -47,24 +47,37 @@
 0.0.0.0 launches.appsflyer.com
 0.0.0.0 adservice.google.com
 0.0.0.0 analytics.google.com
-0.0.0.0 google-analytics.com
-0.0.0.0 www.google-analytics.com
-0.0.0.0 googletagmanager.com
-0.0.0.0 www.googletagmanager.com
+
+# Not achievable on non-Adblock syntax. Will break other sites.
+#facebook.com
+#www.facebook.com
+#facebook.net
+#www.facebook.net
+#connect.facebook.net
+#google.com
+#www.google.com
+# Possibly break 'META' services such as Facebook, Instagram, and WhatsApp.
+# Reference: https://github.com/hagezi/dns-blocklists?#ultimate
+#graph.facebook.com
 
 # ------ Top-Level Domain (TLD)
 0.0.0.0 garena.com
 0.0.0.0 www.garena.com
 0.0.0.0 tongdun.net
 0.0.0.0 www.tongdun.net
-0.0.0.0 doubleclick.net
-0.0.0.0 www.doubleclick.net
 0.0.0.0 flurry.com
 0.0.0.0 www.flurry.com
 0.0.0.0 sentry.io
 0.0.0.0 www.sentry.io
 0.0.0.0 hotjar.com
 0.0.0.0 www.hotjar.com
+
+0.0.0.0 doubleclick.net
+0.0.0.0 www.doubleclick.net
+0.0.0.0 google-analytics.com
+0.0.0.0 www.google-analytics.com
+0.0.0.0 googletagmanager.com
+0.0.0.0 www.googletagmanager.com
 
 # --- API/SDK
 0.0.0.0 api.shopee.co.id
@@ -73,19 +86,21 @@
 0.0.0.0 msdk.shopee.co.id
 
 # --- etc. (?)
-0.0.0.0 cf.shopee.co.id
-0.0.0.0 cv.shopee.co.id
-0.0.0.0 sv.shopee.co.id
 0.0.0.0 dem.shopee.com
+0.0.0.0 cv.shopee.co.id
 0.0.0.0 ccms.shopee.io
 
 # --- Other CDNs
 0.0.0.0 spm.susercontent.com
 0.0.0.0 img.sp.mms.shopee.sg
+# Voucher, Reward, etc. (images)
+#0.0.0.0 cf.shopee.co.id
 
-# ------ Shopee Video
+# ----- Shopee Video
 0.0.0.0 mms.vod.susercontent.com
+0.0.0.0 sv.shopee.co.id
 
+# Autoplay(?)
 0.0.0.0 play-aka.vod.shopee.com
 0.0.0.0 play-ws.vod.shopee.com
 0.0.0.0 play-hw.vod.shopee.com
