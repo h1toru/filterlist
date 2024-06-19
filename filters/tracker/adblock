@@ -1,51 +1,41 @@
-# —————————— Third-party Services ——————————
+!————————————————————————————————————————————————————————————————————————————————————————————————————!
+! Title: Tracker
+! Description: Block Tracker, Analytics / Data Collection, Telemetry.
+! Homepage: https://github.com/h1toru/filterlist
+!
+! Last modified: 2024.06.19 15:56 UTC
+! Format: Adblock
+! Entries: 105
+!
+! Please submits/reports any problems on GitHub @ https://github.com/h1toru/filterlist/issues
+!————————————————————————————————————————————————————————————————————————————————————————————————————!
 
-# ——— Error Tracking
-||mixpanel.com^$third-party
-||*.mixpanel.com^
-||mxpnl.com^
-
-||rollbar.com^$third-party
-||api.rollbar.com^
-||cdn.rollbar.com^
-
-@@||www.hotjar.com^
-||hotjar.com^
-||hotjar.io^
-
-||onetrust.com^$third-party
-
-# ——— Analytics / Data Collection Services
+# --- Analytics / Data Collection Services
 
 # Google
 ||google-analytics.com^$third-party
 ||googletagmanager.com^$third-party
 ||analytics.google.com^
 
-# amazon
-||*api.*amazonaws.com^
-
+||facebook.com^$third-party
 ||twitter.com^$third-party
 ||analytics.twitter.com^
-
-||facebook.com^$third-party
-
 ||analytics.tiktok.com^
+
+||reddit.com^$third-party
+||alb.reddit.com^
+||redditstatic.com^$third-party,domain=~reddit.com|~redd.it
 
 ||bing.com^$third-party
 ||bat.bing.com^
 
-||linkedin.com^$third-party
+||*api.*amazonaws.com^
 
-||vimeo.com^$third-party
-
-# Adobe
 ||sstats.adobe.com^
 ||demdex.net^
 
-||reddit.com^$third-party
-||alb.reddit.com^ # search this domain in google
-||redditstatic.com^$third-party,domain=~reddit.com|~redd.it
+||linkedin.com^$third-party
+||vimeo.com^$third-party
 
 ||gaconnector.com^$third-party
 ||*.gaconnector.com^
@@ -96,7 +86,6 @@
 ||firstpromoter.com^
 ||*.firstpromoter.com^
 
-!@@||clicky.com^
 ||getclicky.com^
 
 ||onetrust.com^
@@ -110,7 +99,20 @@
 ||*.cookieyes.com^
 ||cdn-cookieyes.com^
 
-# ——— Advertising Services
+# --- Error Tracking services
+||mixpanel.com^$third-party
+||*.mixpanel.com^
+||mxpnl.com^
+
+||rollbar.com^$third-party
+||api.rollbar.com^
+||cdn.rollbar.com^
+
+@@||www.hotjar.com^
+||hotjar.com^
+||hotjar.io^
+
+# --- Advertising Services
 
 @@||www.adsrvr.org^
 ||adsrvr.org^$third-party
@@ -127,7 +129,7 @@
 ||triplelift.com^$third-party
 ||3lift.com^
 
-# ——— Ads
+# --- Ads
 
 ||doubleclick.net^
 ||adservice.google.com^
@@ -151,7 +153,6 @@
 
 ||pixel.byspotify.com^
 
-# 'g2.com' is a peer-to-peer review site
 ||g2.com^$third-party
 ||*.g2.com^
 ||g2crowd.com^

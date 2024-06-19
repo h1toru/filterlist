@@ -9,7 +9,7 @@ A collection of blocklist I made. Submit an [issue](https://github.com/h1toru/fi
 | Format | Syntax |
 | :- | :- |
 | Hosts | `0.0.0.0 www.example.com`  |
-| (Sub)Domains | `example.com` / `www.example.com`  | |
+| Domains | `example.com` / `www.example.com`  | |
 | Wildcard | `*example*` / `*example.com` | YogaDNS |
 | Adblock | `\|\|www.example.com^` ([Cheatsheet](https://adblockplus.org/filter-cheatsheet)) |
 
@@ -17,6 +17,7 @@ A collection of blocklist I made. Submit an [issue](https://github.com/h1toru/fi
 
 </details>
 
+<!--
 ### Tracker <a name="tracker"></a>
 
 Block Native, Apps & Services **Tracker/Analytics/Telemetry**
@@ -28,9 +29,11 @@ e.g. Google Analytics, Firebase, Crashreports/Crashlytics., WhatsApp Telemetry (
 | Format | Link | Entries |
 | :- | :-: | -: |
 | Hosts | [raw](https://raw.githubusercontent.com/h1toru/filterlist/main/filterlist/tracker-hosts) | 1416 | `0.0.0.0 www.example.com`  |
-| Domains only | ~~[raw](https://raw.githubusercontent.com/h1toru/filterlist/main/filterlist/)~~ | 0 |
+| Domains only | ~~[raw](https://raw.githubusercontent.com/h1toru/
+filterlist/main/filterlist/)~~ | 0 |
 | Wildcard | ~~[raw](https://raw.githubusercontent.com/h1toru/filterlist/main/filterlist/tracker-wildcard)~~ | 0 |
 | Adblock/uBlock | ~~[raw](https://raw.githubusercontent.com/h1toru/filterlist/main/filterlist/tracker-adblock)~~ | 0 |
+-->
 
 ### TikTok <a name="tiktok"></a>
 
@@ -38,17 +41,12 @@ Block TikTok completely, including its ads, analytics/tracker and third-party se
 
 Note: This blocklist does not block [douyin](https://www.douyin.com) (Chinese TikTok), there's gonna be a different blocklist for douyin.
 
-
-<!--
-Entries/Domains source: Adaway DNS requests log (Android), YogaDNS Log (Windows)
--->
-
 | Format | Link | Entries |
 | :- | :-: | -: |
 | Hosts | [raw](/filters/tiktok/hosts?raw=true) | 292 |
 | Domains only | ~~[raw]()~~ | 0 |
-| Wildcard | [raw](/filters/tiktok/wildcard?raw=true) | 11 |
-| Adblock | [raw](/filters/tiktok/adblock?raw=true) | 19 |
+| Wildcard | [raw](/filters/tiktok/wildcard?raw=true) | 9 |
+| Adblock | [raw](/filters/tiktok/adblock?raw=true) | 17 |
 
 ## Recommendation
 
