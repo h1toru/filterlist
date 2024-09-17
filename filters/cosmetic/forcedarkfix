@@ -1,0 +1,32 @@
+!————————————————————————————————————————————————————————————————————————————————————————————————————!
+! Title: [h1toru] Chromium Force-Dark Fix
+! Description: Fix `chrome://flags/#enable-force-dark` bad inversion by disabling it on media elements such as image.
+! Homepage: https://github.com/h1toru/filterlist
+!
+! Last modified: 2024.06.19 16:00 UTC
+! Format: Adblock
+! Entries: 17
+!
+! Report any problem at: https://github.com/h1toru/filterlist/issues
+!————————————————————————————————————————————————————————————————————————————————————————————————————!
+! Note:
+!   Please choose one of these option on `chrome://flags/#enable-force-dark`:
+!   - `Enabled with selective inversion of non-image elements`
+!   - `Enabled with simple CIELAB-based inversion`
+
+! exclude known patterns from inversion.
+*##img, svg:style(color-scheme: light only !important;)
+*##html[dark], html.tw-root--theme-dark:style(color-scheme: light only !important;)
+*##*:matches-css(background-image: /^url/):style(color-scheme: light only !important;)
+
+! exclude specific sites (site that uses dark mode as default/only)
+spotify.com##:root:style(color-scheme: light only !important;)
+
+! fix site specific
+askubuntu.com#@#*:matches-css(background-image: /^url/):style(color-scheme: light only !important;)
+/^shopee\.([\w]{2}|com?\.[\w]{2})$/##.IEKwEi .YiuE0t:style(color-scheme: auto !important;)
+
+ss64.com##a:style(color-scheme: light only !important)
+ss64.com##body:style(background: none !important;)
+unix.stackexchange.com##body.unified-theme:style(background-image: none !important;)
+linux.die.net##body:style(color: unset !important;)
