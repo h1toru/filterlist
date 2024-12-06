@@ -55,7 +55,7 @@ www.youtube.com##ytd-guide-collapsible-section-entry-renderer.ytd-guide-section-
 ! Hide 'You >' entry
 www.youtube.com##tp-yt-app-drawer #header:has(a[href="/feed/you"], a[title="You"i])
 ! Hide 'Your videos' entry because it's just a shortcut to 'studio.youtube.com'
-www.youtube.com##tp-yt-app-drawer ytd-guide-entry-renderer:has(a:matches-attr("href"="/^https:\/\/studio\.youtube\.com\/channel\/.*\/videos$/"), a[title="Your videos"i])
+www.youtube.com##tp-yt-app-drawer ytd-guide-entry-renderer:has(a[href="https://studio.youtube.com/channel/"], a[title="Your videos"i])
 ! Hide 'Liked videos' entry
 www.youtube.com##tp-yt-app-drawer ytd-guide-entry-renderer:has(a[href="/playlist?list=LL"], a[title="Liked videos"i])
 ! Hide 'Explore' title
@@ -99,7 +99,7 @@ www.youtube.com##ytd-browse[page-subtype="playlist"] #alerts
 
 ! Limits video grid to 8 row on homepage
 ! > Note: it may not be the same amount as the specified number, because Ads, 'Mix' playlist and irrelevant stuff are hidden.
-www.youtube.com##ytd-browse[page-subtype="home"]:not([hidden]) #contents > ytd-rich-grid-row:nth-child(n+8)
+www.youtube.com##ytd-browse[page-subtype="home"]:not([hidden]) #contents > ytd-rich-grid-row:nth-child(n+10)
 ! Don't load more items on homepage
 www.youtube.com##ytd-browse[page-subtype="home"]:not([hidden]) #contents > ytd-continuation-item-renderer
 
