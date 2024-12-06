@@ -23,7 +23,7 @@ www.youtube.com##ytd-mini-guide-renderer ytd-mini-guide-entry-renderer[aria-labe
 www.youtube.com##tp-yt-app-drawer#guide ytd-guide-entry-renderer:has( > [title="Shorts"i])
 
 ! Hide Shorts filter except on playlist page
-www.youtube.com##ytd-page-manager:not(:has(ytd-browse[page-subtype="playlist"])) yt-chip-cloud-chip-renderer:has([title="Shorts"i])
+www.youtube.com##ytd-page-manager:not(:has(ytd-browse[page-subtype="playlist"])) yt-chip-cloud-chip-renderer:has([title*="Shorts"i])
 
 ! Hide Shorts tab
 www.youtube.com##tp-yt-app-toolbar yt-tab-shape[tab-title="Shorts"i]

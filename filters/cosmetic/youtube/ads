@@ -20,7 +20,7 @@ www.youtube.com##ytd-item-section-renderer:has(ytd-ad-slot-renderer)
 ! Remove Ads in video grid
 www.youtube.com##ytd-rich-item-renderer:has(ytd-ad-slot-renderer)
 
-! Remove Ads in recommendations
+! Remove Ads in vertical list
 www.youtube.com##ytd-ad-slot-renderer
 www.youtube.com###player-ads
 
