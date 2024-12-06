@@ -1,0 +1,12 @@
+# Shopee Video
+vod.susercontent.com*
+*.vod.susercontent.com*
+
+# Shopee Games
+games.shopee.*
+idgame.shopee.*
+#games-dailycheckin.shopee.*
+games.deo.susercontent.com
+games.deo.shopeemobile.com
+nlb.sgw.shopeemobile.com
+*.nlb.sgw.shopeemobile.com

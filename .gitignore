@@ -1,3 +1,16 @@
-/.exclude
+# Exclude files/dirs from git
+/.archive
+/.build
+
 *.log
 *.zip
+*.7z
+*.tar
+*.tar.*
+*.tgz
+*.tbz
+*.txz
+*.tzst
+*.apk
+*.abb
+*.exe

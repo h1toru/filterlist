@@ -1,3 +1,0 @@
-https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/public-resolvers.md
-https://raw.githubusercontent.com/DNSCrypt/dnscrypt-resolvers/master/v3/relays.md
-https://raw.githubusercontent.com/Quad9DNS/dnscrypt-settings/main/dnscrypt/quad9-resolvers-dnscrypt.md

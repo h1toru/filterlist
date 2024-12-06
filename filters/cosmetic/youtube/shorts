@@ -7,26 +7,26 @@
 ! Format: Adblock
 ! Entries: 9
 !
-! Please submits/reports any problems on GitHub @ https://github.com/h1toru/filterlist/issues
+! Report any problem at: https://github.com/h1toru/filterlist/issues
 !————————————————————————————————————————————————————————————————————————————————————————————————————!
 
 ! Hide videos that has shorts url
 www.youtube.com##ytd-video-renderer:has(a[href^="/shorts/"])
 
 ! Hide Shorts section
-www.youtube.com##ytd-rich-section-renderer:has([is-short])
+www.youtube.com##ytd-rich-section-renderer:has(ytd-rich-shelf-renderer[is-shorts])
 www.youtube.com##ytd-page-manager:not(:has(ytd-search)) ytd-item-section-renderer:has(ytd-reel-shelf-renderer, ytd-reel-item-renderer)
 www.youtube.com##ytd-reel-shelf-renderer
 
 ! Hide Shorts in the sidebar
-www.youtube.com##ytd-mini-guide-renderer ytd-mini-guide-entry-renderer[aria-label="Shorts"]
-www.youtube.com##tp-yt-app-drawer#guide ytd-guide-entry-renderer:has( > [title="Shorts"])
+www.youtube.com##ytd-mini-guide-renderer ytd-mini-guide-entry-renderer[aria-label="Shorts"i]
+www.youtube.com##tp-yt-app-drawer#guide ytd-guide-entry-renderer:has( > [title="Shorts"i])
 
 ! Hide Shorts filter except on playlist page
-www.youtube.com##ytd-page-manager:not(:has(ytd-browse[page-subtype="playlist"])) yt-chip-cloud-chip-renderer:has([title="Shorts"])
+www.youtube.com##ytd-page-manager:not(:has(ytd-browse[page-subtype="playlist"])) yt-chip-cloud-chip-renderer:has([title="Shorts"i])
 
 ! Hide Shorts tab
-www.youtube.com##tp-yt-app-toolbar yt-tab-shape[tab-title="Shorts"]
+www.youtube.com##tp-yt-app-toolbar yt-tab-shape[tab-title="Shorts"i]
 
 ! Fill empty spaces in video grid
 www.youtube.com##ytd-rich-grid-row, #contents.ytd-rich-grid-row:style(display: contents !important)

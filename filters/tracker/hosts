@@ -1,308 +1,926 @@
 #————————————————————————————————————————————————————————————————————————————————————————————————————#
-# Title: Tracker
-# Description: Block Tracker, Analytics / Data Collection, Telemetry.
+# Title: [h1toru] Tracker
+# Description: Block tracker / analytics / data collection / telemetry.
 # Homepage: https://github.com/h1toru/filterlist
 #
 # Last modified: 2024.06.19 15:54 UTC
 # Format: Hosts
 # Entries: 215
 #
-# Please submits/reports any problems on GitHub @ https://github.com/h1toru/filterlist/issues
+# Report any problem at: https://github.com/h1toru/filterlist/issues
 #————————————————————————————————————————————————————————————————————————————————————————————————————#
 
-# Block Android OTA Update from GMS
-# * Source: https://github.com/PixelExperience/system_core/commit/c10bc39e416dd43d092060e4593c630ad45053c8
-0.0.0.0 ota.googlezip.net
-0.0.0.0 ota-cache1.googlezip.net
-0.0.0.0 ota-cache2.googlezip.net
+#================= App Tracker ==================#
+# --- Adobe
+0.0.0.0 sstats.adobe.com
 
-# WhatsApp Telemetry (+ to prevent ban for Whatsapp mod user)
-# * Source: https://t.me/WeAreRavenS/907
-# ? Reference:
-#    https://faq.whatsapp.com/538382354780857/
-#    https://www.reddit.com/r/privacytoolsIO/comments/p4lhl7/how_concerning_is_whatsapps_deidentified/
-0.0.0.0 dit.whatsapp.net
+# --- Bing
+0.0.0.0 bat.bing.com
 
-# Fix Steam 'Fatal Error'
-# * Source: https://forums.linuxmint.com/viewtopic.php?t=343762
-0.0.0.0 client-download.steampowered.com
-
-# Google Analytics/Trackers
-# Reference: https://www.reddit.com/r/getdelta/comments/g08vsf/we_dont_want_to_be_tracked/?rdt=35353
-0.0.0.0 analytics.google.com
-0.0.0.0 www.google-analytics.com
-0.0.0.0 ssl.google-analytics.com
-# - Firebase
-0.0.0.0 app-measurement.com
-0.0.0.0 launches.appsflyer.com
-0.0.0.0 inapps.appsflyer.com
-0.0.0.0 gcdsdk.appsflyer.com
-0.0.0.0 codepush.appcenter.ms
-
-0.0.0.0 firebaselogging.googleapis.com
-0.0.0.0 firebaselogging-pa.googleapis.com
-0.0.0.0 firebaseremoteconfig.googleapis.com
-0.0.0.0 firebaseremoteconfigrealtime.googleapis.com
-0.0.0.0 firebaseinstallations.googleapis.com
-0.0.0.0 firebase-settings.crashlytics.com
-0.0.0.0 crashlyticsreports-pa.googleapis.com
-
-# Gooogle Ads
-0.0.0.0 googleads.g.doubleclick.net
-0.0.0.0 stats.g.doubleclick.net
-0.0.0.0 adservice.google.com
-0.0.0.0 www.googleadservices.com
-
-# GitHub Telemetry
+# --- GitHub
 0.0.0.0 collector.github.com
 
-# Chinese Analytics/Tracker (DANA)
-0.0.0.0 applog.uc.cn
-0.0.0.0 audid-api.taobao.com
-0.0.0.0 cdn.yellowmessenger.com
-0.0.0.0 r2.cloud.yellow.ai
-# - Alipay
-0.0.0.0 u.alipay.cn
+# --- Reddit
+0.0.0.0 alb.reddit.com
+0.0.0.0 error-tracking.reddit.com
+0.0.0.0 w3-reporting.reddit.com
+0.0.0.0 pixel-config.reddit.com
+
+# --- Twitter
+0.0.0.0 analytics.twitter.comm
+
+# --- ByteDance
+0.0.0.0 log.byteoversea.com
+0.0.0.0 log15.byteoversea.com
+0.0.0.0 rtlog.byteoversea.com
+0.0.0.0 mssdk-sg.byteoversea.com
+0.0.0.0 mon.byteoversea.com
+0.0.0.0 mon-sg.byteoversea.com
+0.0.0.0 mon-va.byteoversea.com
+0.0.0.0 i.byteoversea.com
+0.0.0.0 tnc16-alisg.byteoversea.com
+0.0.0.0 tnc16-useast1a.byteoversea.com
+0.0.0.0 sgali-mcs.byteoversea.com
+0.0.0.0 log.byteoversea.net
+0.0.0.0 api32-sg.gpm.byteoversea.net
+0.0.0.0 topbuzz-lb-alisg.byteoversea.net
+0.0.0.0 inner-all.fe-non-tt-og-sgcentral-rowttp.sg1.bytelb.com
+# TikTok
+0.0.0.0 analytics.tiktok.com
+0.0.0.0 analytics-sg.tiktok.com
+0.0.0.0 analytics-i18n.tiktok.com
+0.0.0.0 analytics-test.tiktok.com
+0.0.0.0 analytics-exp-sg.tiktok.com
+0.0.0.0 analytics-exp-i18n.tiktok.com
+0.0.0.0 analytics-attribution.tiktok.com
+0.0.0.0 analytics-attribution-va.tiktok.com
+0.0.0.0 analytics-useast2a.tiktok.com
+0.0.0.0 analytics-v6.tiktok.com
+0.0.0.0 analytics.us.tiktok.com
+0.0.0.0 analytics-exp.us.tiktok.com
+0.0.0.0 analytics-ttp2.us.tiktok.com
+0.0.0.0 analytics-events-api-sg.tiktokv.com
+0.0.0.0 mon.tiktokv.com
+0.0.0.0 rtlog.tiktokv.com
+0.0.0.0 log.tiktokv.com
+0.0.0.0 log-boot.tiktokv.com
+0.0.0.0 log-va.tiktokv.com
+0.0.0.0 log-va-useast2a.tiktokv.com
+0.0.0.0 log-i18n.tiktokv.com
+0.0.0.0 log-ru.tiktokv.com
+0.0.0.0 log-phx.tiktokv.com
+0.0.0.0 log3-normal-c-alisg.tiktokv.com
+0.0.0.0 log3-normal-c-useast1a.tiktokv.com
+0.0.0.0 log9-normal-c-useast1a.tiktokv.com
+0.0.0.0 log15-normal.tiktokv.com
+0.0.0.0 log15-normal-alisg.tiktokv.com
+0.0.0.0 log15-normal-useast1a.tiktokv.com
+0.0.0.0 log15-normal-useast2a.tiktokv.com
+0.0.0.0 log16-normal.tiktokv.com
+0.0.0.0 log16-normal-alisg.tiktokv.com
+0.0.0.0 log16-normal-useast1a.tiktokv.com
+0.0.0.0 log16-normal-useast2a.tiktokv.com
+0.0.0.0 log16-normal-c-useast1a.tiktokv.com
+0.0.0.0 log16-normal-c-useast2a.tiktokv.com
+0.0.0.0 log16-normal-delay-alisg.tiktokv.com
+0.0.0.0 log16-normal-zr-useast1a.tiktokv.com
+0.0.0.0 log16-normal-ind.tiktokv.com
+0.0.0.0 log16-tmp-normal-useast1a.tiktokv.com
+0.0.0.0 log16-platform-ycru.tiktokv.com
+0.0.0.0 log16-applog-useast5.us.tiktokv.com
+0.0.0.0 log17-normal.tiktokv.com
+0.0.0.0 log17-normal-alisg.tiktokv.com
+0.0.0.0 log17-normal-useast1a.tiktokv.com
+0.0.0.0 log17-normal-useast2a.tiktokv.com
+0.0.0.0 log19-normal.tiktokv.com
+0.0.0.0 log19-normal-alisg.tiktokv.com
+0.0.0.0 log19-normal-useast1a.tiktokv.com
+0.0.0.0 log19-normal-useast2a.tiktokv.com
+0.0.0.0 log19-applog-useast1a.tiktokv.com
+0.0.0.0 log19-applog-useast2a.tiktokv.com
+0.0.0.0 log22-normal.tiktokv.com
+0.0.0.0 log22-normal-alisg.tiktokv.com
+0.0.0.0 log22-normal-useast1a.tiktokv.com
+0.0.0.0 log22-normal-useast2a.tiktokv.com
+0.0.0.0 log22-applog-useast1a.tiktokv.com
+0.0.0.0 log22-applog-useast2a.tiktokv.com
+0.0.0.0 log23-normal-zr-useast1a.tiktokv.com
+0.0.0.0 log31-normal.tiktokv.com
+0.0.0.0 log31-normal-alisg.tiktokv.com
+0.0.0.0 log31-normal-useast1a.tiktokv.com
+0.0.0.0 log31-normal-useast2a.tiktokv.com
+0.0.0.0 log31-normal-zr-alisg.tiktokv.com
+0.0.0.0 log32-normal.tiktokv.com
+0.0.0.0 log32-normal-alisg.tiktokv.com
+0.0.0.0 log32-normal-useast1a.tiktokv.com
+0.0.0.0 log32-normal-useast2a.tiktokv.com
+0.0.0.0 log32-normal-zr-alisg.tiktokv.com
+0.0.0.0 log32-normal-zr-useast1a.tiktokv.com
+0.0.0.0 log53-normal-c-alisg.tiktokv.com
+0.0.0.0 log53-normal-c-useast1a.tiktokv.com
+0.0.0.0 log58-normal.tiktokv.com
+0.0.0.0 log58-normal-alisg.tiktokv.com
+0.0.0.0 log58-normal-c-alisg.tiktokv.com
+0.0.0.0 log58-normal-c-useast1a.tiktokv.com
+0.0.0.0 log58-normal-useast1a.tiktokv.com
+0.0.0.0 log58-normal-useast2a.tiktokv.com
+0.0.0.0 log58-normal-ycru.tiktokv.com
+0.0.0.0 log77-normal-c-alisg.tiktokv.com
+0.0.0.0 log77-normal-c-useast1a.tiktokv.com
+0.0.0.0 gecko-boot.tiktokv.com
+0.0.0.0 gecko-sg.tiktokv.com
+0.0.0.0 gecko-va.tiktokv.com
+0.0.0.0 gecko-ru.tiktokv.com
+0.0.0.0 gecko-phx.tiktokv.com
+0.0.0.0 gecko15-normal.tiktokv.com
+0.0.0.0 gecko15-normal-alisg.tiktokv.com
+0.0.0.0 gecko15-normal-useast1a.tiktokv.com
+0.0.0.0 gecko15-normal-useast2a.tiktokv.com
+0.0.0.0 gecko16-normal.tiktokv.com
+0.0.0.0 gecko16-normal-alisg.tiktokv.com
+0.0.0.0 gecko16-normal-useast1a.tiktokv.com
+0.0.0.0 gecko16-normal-useast2a.tiktokv.com
+0.0.0.0 gecko16-normal-c-useast1a.tiktokv.com
+0.0.0.0 gecko16-normal-c-useast2a.tiktokv.com
+0.0.0.0 gecko16-tmp-normal-useast1a.tiktokv.com
+0.0.0.0 gecko16-platform-ycru.tiktokv.com
+0.0.0.0 gecko16-normal-useast8.us.tiktokv.com
+0.0.0.0 gecko16-platform-useast5.us.tiktokv.com
+0.0.0.0 gecko19-normal.tiktokv.com
+0.0.0.0 gecko19-normal-alisg.tiktokv.com
+0.0.0.0 gecko19-normal-useast1a.tiktokv.com
+0.0.0.0 gecko19-normal-useast2a.tiktokv.com
+0.0.0.0 gecko22-normal.tiktokv.com
+0.0.0.0 gecko22-normal-alisg.tiktokv.com
+0.0.0.0 gecko22-normal-useast1a.tiktokv.com
+0.0.0.0 gecko22-normal-useast2a.tiktokv.com
+0.0.0.0 gecko31-normal.tiktokv.com
+0.0.0.0 gecko31-normal-alisg.tiktokv.com
+0.0.0.0 gecko31-normal-useast1a.tiktokv.com
+0.0.0.0 gecko31-normal-useast2a.tiktokv.com
+0.0.0.0 gecko32-normal-alisg.tiktokv.com
+0.0.0.0 gecko32-normal-useast1a.tiktokv.com
+0.0.0.0 gecko32-normal.tiktokv.com
+0.0.0.0 gecko33-normal-useast1a.tiktokv.com
+0.0.0.0 libra-sg.tiktokv.com
+0.0.0.0 analytics.snssdk.com
+0.0.0.0 mon.snssdk.com
+0.0.0.0 i.snssdk.com
+0.0.0.0 analytics.isnssdk.com
+0.0.0.0 mon.isnssdk.com
+0.0.0.0 i.isnssdk.com
+0.0.0.0 tnc16-useast1a.isnssdk.com
+0.0.0.0 tnc16-alisg.isnssdk.com
+0.0.0.0 tnc31-normal-alisg.isnssdk.com
+0.0.0.0 mon.sgsnssdk.com
+0.0.0.0 i.sgsnssdk.com
+0.0.0.0 i-n.sgsnssdk.com
+
+# --- WhatsApp
+# (also preventing ban for Whatsapp mod users)
+# ref:
+# - https://t.me/WeAreRavenS/907
+# - https://faq.whatsapp.com/538382354780857/
+# - https://www.reddit.com/r/privacytoolsIO/comments/p4lhl7/how_concerning_is_whatsapps_deidentified/
+0.0.0.0 dit.whatsapp.net
+
+# --- Snapchat
+0.0.0.0 tr.snapchat.com
+0.0.0.0 tr6.snapchat.co
+
+# --- Garena
+0.0.0.0 content.garena.com
+0.0.0.0 cache.content.garena.com
+0.0.0.0 vnsync.content.garena.com
+0.0.0.0 content-gcp.garena.com
+0.0.0.0 crashreport.garena.com
+
+# --- Intercom
+0.0.0.0 api-visitor-analytics.intercom.com
+
+# --- Sleeknote
+0.0.0.0 analytics.sleeknote.com
+
+# --- Alibaba Group
+# Alipay
+#0.0.0.0 global.alipay.com
 0.0.0.0 ns1.alipay.com
 0.0.0.0 ns2.alipay.com
 0.0.0.0 ns3.alipay.com
 0.0.0.0 ns4.alipay.com
 0.0.0.0 imgs-ac.alipay.com
 0.0.0.0 imdap-sea.alipay.com
+0.0.0.0 u.alipay.cn
 0.0.0.0 at.alicdn.com
 0.0.0.0 mdn.alipayobjects.com
-
-# DANA
+0.0.0.0 gw.zamcs.com
+# Taobao
+0.0.0.0 audid-api.taobao.com
+# UC Browser
+# https://www.netify.ai/resources/domains/uc.cn
+0.0.0.0 applog.uc.cn
+0.0.0.0 applog-perf.uc.cn
+0.0.0.0 applog.ucdns.uc.cn
+0.0.0.0 gjapplog.uc.cn
+0.0.0.0 track.uc.cn
+0.0.0.0 woodpecker.uc.cn
+0.0.0.0 partner.uc.cn
+# Marmot Cloud
 0.0.0.0 marmot-cloud.com
 0.0.0.0 cdn.marmot-cloud.com
 0.0.0.0 cdn-dana.marmot-cloud.com
 0.0.0.0 site-ac.marmot-cloud.com
-0.0.0.0 lzd.co
 
-# Shopee's third-party
+# --- NetEase
+# MuMuPlayer
+0.0.0.0 mumu.163.com
+0.0.0.0 store-api.mumuglobal.com
+0.0.0.0 mumu.res.netease.com
+0.0.0.0 nie.res.netease.com
+
+# --- DANA (id.dana)
+0.0.0.0 dana.threatcast.guardsquare.com
+0.0.0.0 dana.ingest.threatcast.guardsquare.com
+0.0.0.0 gw-dana.ebuckler.com
+
+# --- Tokopedia
+0.0.0.0 analytics.tokopedia.com
+0.0.0.0 analytics.tokopedia.net
+0.0.0.0 log.tokopedia.net
+0.0.0.0 log-staging.tokopedia.net
+
+# --- Shopee
+0.0.0.0 tracking.shopee.com
+0.0.0.0 dpsentry.shopee.com
+
+0.0.0.0 sentry.shopeemobile.com
+0.0.0.0 wsa-sentry.shopeemobile.com
+0.0.0.0 fe-reporting.shopeemobile.com
+0.0.0.0 datagroup-reporting.shopeemobile.com
+0.0.0.0 stats.shopeemobile.com
+0.0.0.0 stats2.shopeemobile.com
+0.0.0.0 patronus.idata.shopeemobile.com
+0.0.0.0 c-api-bit.shopeemobile.com
+0.0.0.0 secreporter.susercontent.com
+0.0.0.0 api.sentry.susercontent.com
+0.0.0.0 promotion-media-origin.susercontent.com
+0.0.0.0 dem.test.shopee.io
+
+0.0.0.0 tracking.shopee.co.id
+0.0.0.0 apm.tracking.shopee.co.id
+0.0.0.0 dp.tracking.shopee.co.id
+0.0.0.0 ubt.tracking.shopee.co.id
+0.0.0.0 ubta.tracking.shopee.co.id
+0.0.0.0 log-collector.shopee.co.id
+0.0.0.0 log-upload.shopee.co.id
+0.0.0.0 userstats.shopee.co.id
+0.0.0.0 df.infra.sz.shopee.co.id
+0.0.0.0 promotion.shopeekredit.co.id
+0.0.0.0 mms.shopee.co.id
+0.0.0.0 api.mms.shopee.co.id
+0.0.0.0 endpoint.mms.shopee.co.id
+
+0.0.0.0 tracking.shopee.tw
+0.0.0.0 apm.tracking.shopee.tw
+0.0.0.0 dp.tracking.shopee.tw
+0.0.0.0 ubt.tracking.shopee.tw
+0.0.0.0 ubta.tracking.shopee.tw
+0.0.0.0 log-collector.shopee.tw
+0.0.0.0 log-upload.shopee.tw
+0.0.0.0 userstats.shopee.tw
+
+0.0.0.0 tracking.shopee.vn
+0.0.0.0 apm.tracking.shopee.vn
+0.0.0.0 dp.tracking.shopee.vn
+0.0.0.0 ubt.tracking.shopee.vn
+0.0.0.0 ubta.tracking.shopee.vn
+0.0.0.0 log-collector.shopee.vn
+0.0.0.0 log-upload.shopee.vn
+0.0.0.0 userstats.shopee.vn
+
+0.0.0.0 tracking.shopee.co.th
+0.0.0.0 apm.tracking.shopee.co.th
+0.0.0.0 dp.tracking.shopee.co.th
+0.0.0.0 ubt.tracking.shopee.co.th
+0.0.0.0 ubta.tracking.shopee.co.th
+0.0.0.0 log-collector.shopee.co.th
+0.0.0.0 log-upload.shopee.co.th
+0.0.0.0 userstats.shopee.co.th
+
+0.0.0.0 tracking.shopee.ph
+0.0.0.0 apm.tracking.shopee.ph
+0.0.0.0 dp.tracking.shopee.ph
+0.0.0.0 ubt.tracking.shopee.ph
+0.0.0.0 ubta.tracking.shopee.ph
+0.0.0.0 log-collector.shopee.ph
+0.0.0.0 log-upload.shopee.ph
+0.0.0.0 userstats.shopee.ph
+
+0.0.0.0 tracking.shopee.com.my
+0.0.0.0 apm.tracking.shopee.com.my
+0.0.0.0 dp.tracking.shopee.com.my
+0.0.0.0 ubt.tracking.shopee.com.my
+0.0.0.0 ubta.tracking.shopee.com.my
+0.0.0.0 log-collector.shopee.com.my
+0.0.0.0 log-upload.shopee.com.my
+0.0.0.0 userstats.shopee.com.my
+
+0.0.0.0 tracking.shopee.sg
+0.0.0.0 apm.tracking.shopee.sg
+0.0.0.0 dp.tracking.shopee.sg
+0.0.0.0 ubt.tracking.shopee.sg
+0.0.0.0 ubta.tracking.shopee.sg
+0.0.0.0 log-collector.shopee.sg
+0.0.0.0 log-upload.shopee.sg
+0.0.0.0 userstats.shopee.sg
+
+0.0.0.0 tracking.shopee.com.br
+0.0.0.0 apm.tracking.shopee.com.br
+0.0.0.0 dp.tracking.shopee.com.br
+0.0.0.0 ubt.tracking.shopee.com.br
+0.0.0.0 ubta.tracking.shopee.com.br
+0.0.0.0 log-collector.shopee.com.br
+0.0.0.0 log-upload.shopee.com.br
+0.0.0.0 userstats.shopee.com.br
+
+0.0.0.0 tracking.shopee.com.mx
+0.0.0.0 apm.tracking.shopee.com.mx
+0.0.0.0 dp.tracking.shopee.com.mx
+0.0.0.0 ubt.tracking.shopee.com.mx
+0.0.0.0 ubta.tracking.shopee.com.mx
+0.0.0.0 log-collector.shopee.com.mx
+0.0.0.0 log-upload.shopee.com.mx
+0.0.0.0 userstats.shopee.com.mx
+
+0.0.0.0 tracking.shopee.com.co
+0.0.0.0 apm.tracking.shopee.com.co
+0.0.0.0 dp.tracking.shopee.com.co
+0.0.0.0 ubt.tracking.shopee.com.co
+0.0.0.0 ubta.tracking.shopee.com.co
+0.0.0.0 log-collector.shopee.com.co
+0.0.0.0 log-upload.shopee.com.co
+0.0.0.0 userstats.shopee.com.co
+
+0.0.0.0 tracking.shopee.cl
+0.0.0.0 apm.tracking.shopee.cl
+0.0.0.0 dp.tracking.shopee.cl
+0.0.0.0 ubt.tracking.shopee.cl
+0.0.0.0 ubta.tracking.shopee.cl
+0.0.0.0 log-collector.shopee.com.cl
+0.0.0.0 log-upload.shopee.com.cl
+0.0.0.0 userstats.shopee.com.cl
+
+# Unnecessary CDNs
+0.0.0.0 mms.img.susercontent.com
+0.0.0.0 mms.img.susercontent.com.cdn20.com
+0.0.0.0 mms.vod.susercontent.com
+0.0.0.0 mms.vod.susercontent.com.cdn20.com
+0.0.0.0 img.ws.mms.shopee.co.id
+0.0.0.0 img.ws.mms.shopee.co.id.cdn20.com
+0.0.0.0 play-tx.vod.shopee.com
+# --- Shopee Live
+0.0.0.0 live.shopee.co.id
+0.0.0.0 live-apm.shopee.co.id
+0.0.0.0 chatroom-live.shopee.co.id
+
+0.0.0.0 livetech.shopee.co.id
+0.0.0.0 data-rep.livetech.shopee.co.id
+0.0.0.0 play-tx-las.livetech.shopee.co.id
+0.0.0.0 play-ws-las.livetech.shopee.co.id
+0.0.0.0 play-aka-las.livetech.shopee.co.id
+0.0.0.0 play-cvs-las.livetech.shopee.co.id
+0.0.0.0 play-bs-las.livetech.shopee.co.id
+0.0.0.0 play-hw-las.livetech.shopee.co.id
+0.0.0.0 play-spe-las.livetech.shopee.co.id
+
+0.0.0.0 livestream.shopee.co.id
+0.0.0.0 play-tx.livestream.shopee.co.id
+0.0.0.0 play-tx-src.livestream.shopee.co.id
+0.0.0.0 play-tx-src.livestream.shopee.co.id.cdn20.com
+0.0.0.0 play-ws.livestream.shopee.co.id
+0.0.0.0 play-ws-src.livestream.shopee.co.id
+0.0.0.0 play-ws-src.livestream.shopee.co.id.cdn20.com
+0.0.0.0 play-aka.livestream.shopee.co.id
+0.0.0.0 play-aka-src.livestream.shopee.co.id
+0.0.0.0 play-aka-src.livestream.shopee.co.id.cdn20.com
+0.0.0.0 play-cvs.livestream.shopee.co.id
+0.0.0.0 play-cvs-src.livestream.shopee.co.id
+0.0.0.0 play-cvs-src.livestream.shopee.co.id.cdn20.com
+0.0.0.0 play-bs.livestream.shopee.co.id
+0.0.0.0 play-bs-src.livestream.shopee.co.id
+0.0.0.0 play-bs-src.livestream.shopee.co.id.cdn20.com
+0.0.0.0 play-hw.livestream.shopee.co.id
+0.0.0.0 play-hw-src.livestream.shopee.co.id
+0.0.0.0 play-hw-src.livestream.shopee.co.id.cdn20.com
+0.0.0.0 play-spe.livestream.shopee.co.id
+0.0.0.0 play-spe-src.livestream.shopee.co.id
+0.0.0.0 play-spe-src.livestream.shopee.co.id.cdn20.com
+
+0.0.0.0 livesteaming-api-dr.sp-cdn.susercontent.com
+0.0.0.0 livesteaming-api-dr.sp-cdn.susercontent.com.cdn20.com
+
+0.0.0.0 live-smshopv1.v.trpcdn.net
+0.0.0.0 all.huodonghylivecdn.sched.ovscdns.net
+
+# SeaBank
 0.0.0.0 tracking.seabank.co.id
+0.0.0.0 sdktracking.seabank.co.id
+0.0.0.0 etracking.seabank.co.id
+0.0.0.0 tracking-dr.seabank.co.id
 
-# Tokopedia's third-party
-0.0.0.0 i.gojekapi.com
+0.0.0.0 tracking.seabank.ph
+0.0.0.0 sdktracking.seabank.ph
+0.0.0.0 etracking.seabank.ph
 
-# --- Analytics / Data Collection Services
+# --- Omi (sg.omi)
+0.0.0.0 client-tracking.omiapp.me
+0.0.0.0 abtest.omiapp.me
 
-# Google
-0.0.0.0 google-analytics.com
-0.0.0.0 www.google-analytics.com
+# --- Via Browser (mark.via.gp)
+0.0.0.0 us-c.viayoo.com
+
+# --- FloatingMenu (com.ksxkq.floating)
+0.0.0.0 floatingmenu.cn
+0.0.0.0 float.floatingmenu.cn # updater
+0.0.0.0 qiniu.floatingmenu.cn
+
+#================ Error Tracker =================#
+# --- Google Firebase (& Crashlytics)
+0.0.0.0 app-measurement.com
+0.0.0.0 firebaselogging.googleapis.com
+0.0.0.0 firebaseremoteconfig.googleapis.com
+0.0.0.0 firebaseremoteconfigrealtime.googleapis.com
+0.0.0.0 firebaseinstallations.googleapis.com
+0.0.0.0 firebaselogging-pa.googleapis.com
+# https://www.reddit.com/r/pihole/comments/baq4um/do_you_block_reportscrashlyticscom/?rdt=43195
+0.0.0.0 crashlyticsreports-pa.googleapis.com
+0.0.0.0 reports.crashlytics.com
+0.0.0.0 try.crashlytics.com
+0.0.0.0 firebase-settings.crashlytics.com
+0.0.0.0 settings.crashlytics.com
+0.0.0.0 appdistribution-uploads.crashlytics.com
+0.0.0.0 update.crashlytics.com
+0.0.0.0 apps.crashlytics.com
+0.0.0.0 apps-ios.crashlytics.com
+0.0.0.0 kits.crashlytics.com
+0.0.0.0 cm.crashlytics.com
+0.0.0.0 e.crashlytics.com
 0.0.0.0 googletagmanager.com
 0.0.0.0 www.googletagmanager.com
+
+# --- Visual Studio App Center
+0.0.0.0 appcenter.ms
+0.0.0.0 www.appcenter.ms
+0.0.0.0 in.appcenter.ms
+
+# --- Sentry
+0.0.0.0 sentry.io
+0.0.0.0 o1.ingest.sentry.io
+0.0.0.0 o2129.ingest.sentry.io
+0.0.0.0 o13027.ingest.sentry.io
+0.0.0.0 o22381.ingest.sentry.io
+0.0.0.0 o284490.ingest.sentry.io
+0.0.0.0 o468184.ingest.sentry.io
+0.0.0.0 o522631.ingest.sentry.io
+0.0.0.0 o4506001441226752.ingest.sentry.io
+0.0.0.0 o4505518331658240.ingest.us.sentry.io
+0.0.0.0 sentry-cdn.com
+0.0.0.0 js.sentry-cdn.com
+0.0.0.0 browser.sentry-cdn.com
+
+# --- Split
+0.0.0.0 events.split.io
+
+# --- Rollbar
+0.0.0.0 rollbar.com
+0.0.0.0 api.rollbar.com
+0.0.0.0 cdn.rollbar.com
+
+# --- Crashguard
+0.0.0.0 crashguard.me
+0.0.0.0 catch.crashguard.me
+0.0.0.0 api.crashguard.me
+
+# --- Guardsquare
+0.0.0.0 guardsquare.com
+0.0.0.0 www.guardsquare.com
+
+# --- Datahog
+0.0.0.0 browser-intake-datadoghq.com
+0.0.0.0 rum.browser-intake-datadoghq.com
+
+# --- LogRocket
+0.0.0.0 lr-ingest.io
+0.0.0.0 cdn.lr-ingest.io
+
+#============== Analytics Service ===============#
+# --- Google
 0.0.0.0 analytics.google.com
+0.0.0.0 region1.analytics.google.com
+0.0.0.0 google-analytics.com
+0.0.0.0 www.google-analytics.com
+0.0.0.0 region1.google-analytics.com
+0.0.0.0 ssl.google-analytics.com
 
-0.0.0.0 analytics.twitter.com
-0.0.0.0 analytics.tiktok.com
-
-0.0.0.0 alb.reddit.com
-
-0.0.0.0 bat.bing.com # https://answers.microsoft.com/en-us/msadvs/forum/all/does-batbing-track-your-browser-searches-and-sites/0a402f00-60c2-4d54-bd7d-81b67ccc7f13
-
-# Adobe
-0.0.0.0 sstats.adobe.com
+# --- Adobe
 0.0.0.0 demdex.net
 0.0.0.0 www.demdex.net
 0.0.0.0 lnkd.demdex.net
 0.0.0.0 dpm.demdex.net
 0.0.0.0 spotify.demdex.net
+0.0.0.0 bizible.com
+0.0.0.0 cdn.bizible.com
+0.0.0.0 bizibly.com
+0.0.0.0 cdn.bizibly.com
 
-0.0.0.0 gaconnector.com # main website
-0.0.0.0 track.gaconnector.com
-0.0.0.0 tracker.gaconnector.com
+# --- Flurry
+0.0.0.0 flurry.com
+0.0.0.0 www.flurry.com
+0.0.0.0 cfg.flurry.com
+0.0.0.0 data.flurry.com
 
-0.0.0.0 usercentrics.com
-0.0.0.0 analytics.usercentrics.com
-0.0.0.0 usercentrics.eu
-0.0.0.0 app.usercentrics.eu
-0.0.0.0 api.usercentrics.eu
-0.0.0.0 consent-api.service.consent.usercentrics.eu
-0.0.0.0 v1.api.service.cmp.usercentrics.eu
-0.0.0.0 web.cmp.usercentrics.eu
-0.0.0.0 aggregator.service.usercentrics.eu
-0.0.0.0 uct.service.usercentrics.eu
+# --- Mixpanel
+# https://www.reddit.com/r/techsupport/comments/7zls73/what_is_mxpnlcom/?rdt=33063
+0.0.0.0 mixpanel.com
+0.0.0.0 api.mixpanel.com
+0.0.0.0 api-js.mixpanel.com
+0.0.0.0 decide.mixpanel.com
+0.0.0.0 mxpnl.com
+0.0.0.0 cdn.mxpnl.com
 
-0.0.0.0 ­contentsquare.com
-0.0.0.0 clicktale.net
-0.0.0.0 c.clicktale.net
-0.0.0.0 cdnssl.clicktale.net
+# --- AppsFlyer
+0.0.0.0 appsflyer.com
+0.0.0.0 www.appsflyer.com
+0.0.0.0 customlinks.appsflyer.com
+0.0.0.0 appsflyersdk.com
+0.0.0.0 eevegh-launches.appsflyersdk.com
+0.0.0.0 eevegh-inapps.appsflyersdk.com
+0.0.0.0 eevegh-conversions.appsflyersdk.com
+0.0.0.0 eevegh-cdn-settings.appsflyersdk.com
+0.0.0.0 eevegh-gcdsdk.appsflyersdk.com
+0.0.0.0 janama-launches.appsflyersdk.com
+0.0.0.0 janama-inapps.appsflyersdk.com
+0.0.0.0 janama-conversions.appsflyersdk.com
+0.0.0.0 janama-cdn-settings.appsflyersdk.com
+0.0.0.0 janama-gcdsdk.appsflyersdk.com
+0.0.0.0 zurwc3-launches.appsflyersdk.com
+0.0.0.0 zurwc3-inapps.appsflyersdk.com
+0.0.0.0 ifrem0-launches.appsflyersdk.com
+0.0.0.0 ifrem0-inapps.appsflyersdk.com
+0.0.0.0 ifrem0-conversions.appsflyersdk.com
+0.0.0.0 ifrem0-cdn-settings.appsflyersdk.com
 
-0.0.0.0 clickagy.com
-0.0.0.0 www.clickagy.com
-0.0.0.0 aorta.clickagy.com
-0.0.0.0 hemsync.clickagy.com
-0.0.0.0 tags.clickagy.com
+# --- AppLovin
+0.0.0.0 applovin.com
+0.0.0.0 www.applovin.com
+0.0.0.0 dash.applovin.com
 
-0.0.0.0 omniconvert.com
-0.0.0.0 www.omniconvert.com
-0.0.0.0 app.omniconvert.com
-0.0.0.0 cdn.omniconvert.com
-
-# fingerprint.com is a service used to identify user information/fingerprints. can used to identify user for targeted advertising.
-# e.g. detects device, browser, ip, incognito mode, vpn, etc.
-0.0.0.0 fingerprint.com
-0.0.0.0 fpjs.pro
-0.0.0.0 api.fpjs.pro
-
+# --- New Relic
 0.0.0.0 newrelic.com
-0.0.0.0 js-agent.newrelic.com # https://www.hostinger.in/tutorials/what-is-new-relic#:~:text=New%20Relic%20uses%20an%20agent,task%20requires%20a%20dedicated%20agent.
+0.0.0.0 www.newrelic.com
+0.0.0.0 mobile-collector.newrelic.com
+0.0.0.0 fastly-mobile-collector.newrelic.com
 0.0.0.0 insights-collector.newrelic.com
+0.0.0.0 js-agent.newrelic.com
 0.0.0.0 nr-data.net
-0.0.0.0 bam.nr-data.net #https://forum.newrelic.com/s/hubtopic/aAX8W0000008YtrWAE/relic-solution-what-is-bamnrdatanet-new-relic-browser-monitoring
+0.0.0.0 bam.nr-data.net
 
-#0.0.0.0 sentry.io # main website
-0.0.0.0 o1.ingest.sentry.io
-0.0.0.0 o2129.ingest.sentry.io
-0.0.0.0 o522631.ingest.sentry.io
+# --- Hotjar
+0.0.0.0 hotjar.com
+0.0.0.0 www.hotjar.com
+0.0.0.0 hotjar.io
+0.0.0.0 content.hotjar.io
+0.0.0.0 metrics.hotjar.io
 
+# --- SignalFX
+0.0.0.0 splunk.com
+0.0.0.0 www.splunk.com
+0.0.0.0 app.signalfx.com
+0.0.0.0 cdn.signalfx.com
+0.0.0.0 static.signalfx.com
+0.0.0.0 rum-ingest.us1.signalfx.com
+
+# --- HubSpot
 0.0.0.0 hubspot.com
 0.0.0.0 www.hubspot.com
-0.0.0.0 app.hubspot.com
-0.0.0.0 api.hubspot.com
-0.0.0.0 cta-service-cms2.hubspot.com
 0.0.0.0 js.hubspot.com
-0.0.0.0 forms.hubspot.com
-0.0.0.0 knowledge.hubspot.com
-0.0.0.0 track.hubspot.com
-0.0.0.0 metrics-fe-na1.hubspot.com
+0.0.0.0 api.hubspot.com
+0.0.0.0 app.hubspot.com
 0.0.0.0 static2cdn.hubspot.com
+0.0.0.0 cta-service-cms2.hubspot.com
 0.0.0.0 wtcfns.hubspot.com
 0.0.0.0 hubspot.net
 0.0.0.0 cdn2.hubspot.net
 0.0.0.0 hubspotfeedback.com
 0.0.0.0 js.hubspotfeedback.com
 0.0.0.0 hubspotusercontent-na1.net
-0.0.0.0 428357.fs1.hubspotusercontent-na1.net
 0.0.0.0 53.fs1.hubspotusercontent-na1.net
+0.0.0.0 428357.fs1.hubspotusercontent-na1.net
+0.0.0.0 1445333.fs1.hubspotusercontent-na1.net
 0.0.0.0 hubapi.com
-0.0.0.0 api.hubapi.com
-0.0.0.0 feedback.hubapi.com
+0.0.0.0 api-na1.hubapi.com
 0.0.0.0 hs-analytics.net
 0.0.0.0 js.hs-analytics.net
-0.0.0.0 hsadspixel.net
-0.0.0.0 js.hsadspixel.net
+0.0.0.0 hs-scripts.com
+0.0.0.0 js.hs-scripts.com
+0.0.0.0 hs-sites.com
+0.0.0.0 3463800.hs-sites.com
 0.0.0.0 hs-banner.com
 0.0.0.0 js.hs-banner.com
+0.0.0.0 hsadspixel.net
+0.0.0.0 js.hsadspixel.net
 0.0.0.0 hsappstatic.net
 0.0.0.0 static.hsappstatic.net
+0.0.0.0 hsleadflows.net
+0.0.0.0 js.hsleadflows.net
 0.0.0.0 hsforms.com
 0.0.0.0 perf-na1.hsforms.com
 0.0.0.0 hsforms.net
 0.0.0.0 js.hsforms.net
-0.0.0.0 hsleadflows.net
-0.0.0.0 js.hsleadflows.net
+0.0.0.0 hscollectedforms.net
+0.0.0.0 js.hscollectedforms.net
+0.0.0.0 forms.hscollectedforms.net
 0.0.0.0 usemessages.com
 0.0.0.0 js.usemessages.com
 
-0.0.0.0 firstpromoter.com
-0.0.0.0 cdn.firstpromoter.com
-#0.0.0.0 new.firstpromoter.com # main website
+# --- Clearbit
+0.0.0.0 clearbit.com
+0.0.0.0 reveal.clearbit.com
+0.0.0.0 app.clearbit.com
+0.0.0.0 clearbitjs.com
+0.0.0.0 x.clearbitjs.com
+0.0.0.0 clearbitscripts.com
+0.0.0.0 tag.clearbitscripts.com
 
+# --- Clicky
 0.0.0.0 getclicky.com
-0.0.0.0 in.getclicky.com
-0.0.0.0 static.getclicky.com
+0.0.0.0 clicky.com
 
-0.0.0.0 onetrust.com
-0.0.0.0 geolocation.onetrust.com
+# --- Crazy Egg
+0.0.0.0 crazyegg.com
+0.0.0.0 www.crazyegg.com
+0.0.0.0 script.crazyegg.com
+0.0.0.0 crazyeggcdn.com
+0.0.0.0 w3-assets.crazyeggcdn.com
 
+# --- Amplitude
 0.0.0.0 amplitude.com
+0.0.0.0 api-sr.amplitude.com
+0.0.0.0 api2.amplitude.com
 0.0.0.0 cdn.amplitude.com
+0.0.0.0 community.amplitude.com
+0.0.0.0 sky.lab.amplitude.com
+0.0.0.0 sr-client-cfg.amplitude.com
 
+# --- OneTrust
+0.0.0.0 onetrust.com
+0.0.0.0 www.onetrust.com
+0.0.0.0 geolocation.onetrust.com
+0.0.0.0 explore.onetrust.com
+
+# --- GA Connector
+0.0.0.0 gaconnector.com
+0.0.0.0 track.gaconnector.com
+0.0.0.0 tracker.gaconnector.com
+
+# --- Contentsquare
+0.0.0.0 ­contentsquare.com
+0.0.0.0 www.­contentsquare.com
+0.0.0.0 ­csq.contentsquare.com
+0.0.0.0 clicktale.net
+
+# --- Clickagy
+0.0.0.0 clickagy.com
+0.0.0.0 www.clickagy.com
+0.0.0.0 aorta.clickagy.com
+0.0.0.0 hemsync.clickagy.com
+0.0.0.0 tags.clickagy.com
+
+# --- Omniconvert
+0.0.0.0 omniconvert.com
+0.0.0.0 www.omniconvert.com
+0.0.0.0 app.omniconvert.com
+0.0.0.0 cdn.omniconvert.com
+
+# --- FirstPromoter
+0.0.0.0 firstpromoter.com
+0.0.0.0 www.firstpromoter.com
+0.0.0.0 cdn.firstpromoter.com
+0.0.0.0 new.firstpromoter.com
+
+# --- 6sence
+0.0.0.0 6sc.co
+0.0.0.0 b.6sc.co
+0.0.0.0 c.6sc.co
+0.0.0.0 j.6sc.co
+0.0.0.0 ipv6.6sc.co
+0.0.0.0 eps.6sc.co
+0.0.0.0 v.eps.6sc.co
+
+# --- Fingerprint
+# 'fingerprint.com' is a service used to identify user/visitor information or fingerprints.
+# Which also can be used to identify user for targeted advertising.
+# It can detects IP, VPN status, Incognito mode, etc; and generates visitor ID based on those information.
+0.0.0.0 fingerprint.com
+0.0.0.0 www.fingerprint.com
+0.0.0.0 fpjs.pro
+
+# --- ClickCease
+0.0.0.0 clickcease.com
+0.0.0.0 www.clickcease.com
+
+# --- ipify
+0.0.0.0 ipify.org
+0.0.0.0 www.ipify.org
+0.0.0.0 api.ipify.org
+0.0.0.0 api64.ipify.org
+0.0.0.0 geo.ipify.org
+
+# --- Usercentrics
+0.0.0.0 usercentrics.com
+0.0.0.0 analytics.usercentrics.com
+0.0.0.0 usercentrics.eu
+0.0.0.0 web.cmp.usercentrics.eu
+0.0.0.0 privacy-proxy-server.usercentrics.eu
+
+# --- Conversant / SwiftServe
+0.0.0.0 conversant.tv
+0.0.0.0 www.conversant.tv
+0.0.0.0 swiftserve.com
+0.0.0.0 tools.swiftserve.com
+0.0.0.0 conversant.ab-jns.swiftserve.com
+0.0.0.0 radar.cedexis.swiftserve.com
+
+# --- CookieLaw
 0.0.0.0 cookielaw.org
 0.0.0.0 cdn.cookielaw.org
 
+# --- CookieYes
 0.0.0.0 cookieyes.com
-0.0.0.0 www.cookieyes.com # main website
+0.0.0.0 www.cookieyes.com
 0.0.0.0 log.cookieyes.com
 0.0.0.0 directory.cookieyes.com
 0.0.0.0 cdn-cookieyes.com
 
-# --- Error Tracking services
+# --- Tongdun
+0.0.0.0 tongdun.net
+0.0.0.0 portal.tongdun.net
+0.0.0.0 login.tongdun.net
+0.0.0.0 tongdun.cn
+0.0.0.0 badc.tongdun.cn
+0.0.0.0 official-static.tongdun.cn
+0.0.0.0 portal.tongdun.cn
+0.0.0.0 portal-static.tongdun.cn
+0.0.0.0 tongdun.id
+0.0.0.0 www.tongdun.id
 
-# https://www.reddit.com/r/techsupport/comments/7zls73/what_is_mxpnlcom/?rdt=33063
-0.0.0.0 mixpanel.com # main website
-0.0.0.0 api-js.mixpanel.com
-0.0.0.0 mxpnl.com
-0.0.0.0 cdn.mxpnl.com
-
-0.0.0.0 rollbar.com
-0.0.0.0 api.rollbar.com
-0.0.0.0 cdn.rollbar.com
-
-0.0.0.0 hotjar.com
-0.0.0.0 www.hotjar.com # main website
-0.0.0.0 script.hotjar.com
-0.0.0.0 static.hotjar.com
-0.0.0.0 ws.hotjar.com
-0.0.0.0 hotjar.io
-0.0.0.0 content.hotjar.io
-0.0.0.0 metrics.hotjar.io
-
-# --- Advertising Services
-
-0.0.0.0 adsrvr.org
-0.0.0.0 www.adsrvr.org
-0.0.0.0 insight.adsrvr.org
-0.0.0.0 js.adsrvr.org
-
-0.0.0.0 agkn.org
-0.0.0.0 www.agkn.org
-0.0.0.0 aa.agkn.org
-0.0.0.0 d.agkn.org # https://forum.kaspersky.com/topic/removal-of-dagkncom-closed-210/?do=findComment&comment=664
-
-0.0.0.0 criteo.com
-0.0.0.0 www.criteo.com
-0.0.0.0 www2.criteo.com
-0.0.0.0 gum.criteo.com
-
-0.0.0.0 triplelift.com
-0.0.0.0 3lift.com
-0.0.0.0 eb2.3lift.com
-
-# --- Ads
-
-0.0.0.0 doubleclick.net
-0.0.0.0 stats.g.doubleclick.net
-0.0.0.0 googleads.g.doubleclick.net
-0.0.0.0 securepubads.g.doubleclick.net
-0.0.0.0 cm.g.doubleclick.net
-0.0.0.0 m.doubleclick.net
-0.0.0.0 9212252.fls.doubleclick.net
-0.0.0.0 11620487.fls.doubleclick.net
-0.0.0.0 adservice.google.com
-0.0.0.0 googleadservices.com
-0.0.0.0 www.googleadservices.com
-0.0.0.0 googlesyndication.com
-0.0.0.0 pagead2.googlesyndication.com
-
-0.0.0.0 amazon-adsystem.com
-0.0.0.0 c.amazon-adsystem.com
-0.0.0.0 s.amazon-adsystem.com
-0.0.0.0 2m1ln5gmga.execute-api.us-east-1.amazonaws.com
-
-0.0.0.0 ads-twitter.com
-0.0.0.0 static.ads-twitter.com
-
-0.0.0.0 px.ads.linkedin.com
-
-# --- Other
-
-0.0.0.0 api-visitor-analytics.intercom.com
-0.0.0.0 api-iam.intercom.io
-
-0.0.0.0 6sc.co
-0.0.0.0 b.6sc.co
-0.0.0.0 c.6sc.co
-0.0.0.0 ipv6.6sc.co
-0.0.0.0 j.6sc.co
-
-0.0.0.0 pixel.byspotify.com
-
-0.0.0.0 g2.com # main website
+# --- G2
+0.0.0.0 g2.com
+0.0.0.0 www.g2.com
 0.0.0.0 ai.g2.com
 0.0.0.0 collector.g2.com
 0.0.0.0 refer.g2.com
 0.0.0.0 g2crowd.com
 0.0.0.0 tracking.g2crowd.com
+
+# --- Baidu
+0.0.0.0 baidu.com
+0.0.0.0 hm.baidu.com
+0.0.0.0 gsp0.baidu.com
+0.0.0.0 dlswbr.baidu.com
+0.0.0.0 api.map.baidu.com
+
+# --- MediaV
+0.0.0.0 mediav.com
+0.0.0.0 static-ssl.mediav.com
+
+# --- FraudMetrix
+0.0.0.0 fraudmetrix.cn
+0.0.0.0 fp.fraudmetrix.cn
+0.0.0.0 static.fraudmetrix.cn
+
+#===================== Ads ======================#
+
+# --- Google
+0.0.0.0 doubleclick.net
+0.0.0.0 ad.doubleclick.net
+0.0.0.0 static.doubleclick.net
+0.0.0.0 googleads.g.doubleclick.net
+0.0.0.0 pubads.g.doubleclick.net
+0.0.0.0 securepubads.g.doubleclick.net
+0.0.0.0 stats.g.doubleclick.net
+0.0.0.0 m.doubleclick.net
+0.0.0.0 cm.g.doubleclick.net
+0.0.0.0 9212252.fls.doubleclick.net
+0.0.0.0 9469210.fls.doubleclick.net
+0.0.0.0 11620487.fls.doubleclick.net
+
+0.0.0.0 adservice.google.com
+
+0.0.0.0 googleadservices.com
+0.0.0.0 www.googleadservices.com
+0.0.0.0 partner.googleadservices.com
+
+0.0.0.0 googlesyndication.com
+0.0.0.0 www.googlesyndication.com
+0.0.0.0 adservice.googlesyndication.com
+0.0.0.0 ad.googlesyndication.com
+0.0.0.0 pagead.googlesyndication.com
+0.0.0.0 pagead1.googlesyndication.com
+0.0.0.0 pagead2.googlesyndication.com
+
+# --- Amazon
+0.0.0.0 amazon-adsystem.com
+0.0.0.0 c.amazon-adsystem.com
+0.0.0.0 s.amazon-adsystem.com
+
+# --- LinkedIn
+0.0.0.0 ads.linkedin.com
+0.0.0.0 px.ads.linkedin.com
+
+# --- Reddit
+0.0.0.0 ad-delivery.net
+
+# --- Twitter / X
+0.0.0.0 ads-twitter.com
+0.0.0.0 static.ads-twitter.com
+
+# --- Branch IO
+0.0.0.0 branch.io
+0.0.0.0 www.branch.io
+0.0.0.0 www2.branch.io
+0.0.0.0 api.branch.io
+0.0.0.0 api2.branch.io
+0.0.0.0 api3.branch.io
+0.0.0.0 api-safetrack.branch.io
+0.0.0.0 api2-eu.branch.io
+0.0.0.0 api3-eu.branch.io
+0.0.0.0 api-safetrack-eu.branch.io
+0.0.0.0 protected-api.branch.io
+0.0.0.0 protected-api-test.branch.io
+0.0.0.0 cdn.branch.io
+0.0.0.0 cdn2.branch.io
+
+# --- The Trade Desk Ad Server
+0.0.0.0 adsrvr.org
+0.0.0.0 www.adsrvr.org
+0.0.0.0 js.adsrvr.org
+0.0.0.0 insight.adsrvr.org
+0.0.0.0 match.adsrvr.org
+
+# --- adnx.com
+0.0.0.0 adnxs.com
+0.0.0.0 secure.adnxs.com
+
+# --- agkn
+# https://forum.kaspersky.com/topic/removal-of-dagkncom-closed-210/?do=findComment&comment=664
+0.0.0.0 d.agkn.com
+0.0.0.0 agkn.com
+0.0.0.0 www.agkn.com
+0.0.0.0 aa.agkn.com
+
+# --- Criteo
+0.0.0.0 criteo.com
+0.0.0.0 www.criteo.com
+0.0.0.0 www2.criteo.com
+0.0.0.0 gum.criteo.com
+
+# --- TripleLift
+0.0.0.0 triplelift.com
+0.0.0.0 3lift.com
+0.0.0.0 eb2.3lift.com
+
+# --- Drip
+0.0.0.0 drip.com
+0.0.0.0 www.drip.com
+0.0.0.0 ss.drip.com
+0.0.0.0 getdrip.com
+0.0.0.0 tag.getdrip.com
+
+# --- Tapad
+0.0.0.0 tapad.com
+0.0.0.0 pixel.tapad.com
+
+#==================== Native ====================#
+# --- Microsoft
+0.0.0.0 footprintdns.com
+0.0.0.0 msedge.net
+
+# --- Xiaomi
+0.0.0.0 diagnosis.ad.xiaomi.com
+0.0.0.0 m.strack.ad.xiaomi.com
+0.0.0.0 api.ad.xiaomi.com
+0.0.0.0 t1.market.xiaomi.com
+0.0.0.0 t2.market.xiaomi.com
+0.0.0.0 t3.market.xiaomi.com
+0.0.0.0 t4.market.xiaomi.com
+0.0.0.0 t5.market.xiaomi.com
+
+#==================== Other =====================#
+# Block Android OTA Update from GMS
+# ref: https://github.com/PixelExperience/system_core/commit/c10bc39e416dd43d092060e4593c630ad45053c8
+0.0.0.0 ota.googlezip.net
+0.0.0.0 ota-cache1.googlezip.net
+0.0.0.0 ota-cache2.googlezip.net
+
+0.0.0.0 license.vod-control.com

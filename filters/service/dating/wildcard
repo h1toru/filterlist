@@ -1,0 +1,10 @@
+# --- Omi (sg.omi)
+omiapp.me
+omicdn.com
+license.vod-control.com
+omi.sg
+
+*.omiapp.me
+*.omicdn.com
+*.license.vod-control.com
+*.omi.sg

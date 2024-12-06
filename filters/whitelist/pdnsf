@@ -1,0 +1,12 @@
+# Fix YouTube watch history
+!s.youtube.com
+
+# Fix apps problems
+!auth.split.io
+!api.split.io
+!sdk.split.io
+!cdn.split.io
+
+# Fix sync not working in Google apps
+!notes-pa.googleapis.com
+!notes-pa-alv.googleapis.com

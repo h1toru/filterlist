@@ -1,0 +1,13 @@
+{
+  // declare filters file
+  "files.associations": {
+    "hosts": "shellscript",
+    "domain": "shellscript",
+    "wildcard": "shellscript",
+    "pdnsf": "shellscript",
+    "adblock": "adblock",
+    "**/cosmetic/**": "adblock",
+    "*": "shellscript"
+  },
+  "editor.wordWrap": "off"
+}
