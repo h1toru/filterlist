@@ -1,0 +1,19 @@
+!————————————————————————————————————————————————————————————————————————————————————————————————————!
+! Title: YouTube Layout Fixer
+! Description: Fix YouTube layout empty caused by filters' elements hiding.
+! Homepage: https://github.com/h1toru/filterlist
+!
+! Last modified: 2025-01-07 12:57:23 UTC
+! Format: Adblock
+! Entries: 3
+!
+! Report any problem at https://github.com/h1toru/filterlist/issues
+!————————————————————————————————————————————————————————————————————————————————————————————————————!
+
+! Fix incorrect spacing caused by element hiding in grid list on home and subscriptions page
+www.youtube.com##ytd-browse:is([page-subtype="home"], [page-subtype="subscriptions"]) ytd-rich-item-renderer.ytd-rich-grid-renderer[is-in-first-column]:style(margin-left: calc(var(--ytd-rich-grid-item-margin) / 2) !important;)
+www.youtube.com##ytd-browse:is([page-subtype="home"], [page-subtype="subscriptions"]) ytd-rich-item-renderer.ytd-rich-grid-renderer:style(--ytd-rich-item-row-usable-width: 100% !important;)
+www.youtube.com##ytd-two-column-browse-results-renderer.ytd-browse:is([page-subtype="home"], [page-subtype="subscriptions"]) > #primary.ytd-two-column-browse-results-renderer:style(margin: 0 calc(var(--ytd-rich-grid-item-margin) / 2) !important;)
+
+! Fill empty spaces in video grid
+!www.youtube.com##ytd-rich-grid-row, #contents.ytd-rich-grid-row:style(display: contents !important)

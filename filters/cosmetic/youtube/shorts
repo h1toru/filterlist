@@ -1,32 +1,33 @@
 !————————————————————————————————————————————————————————————————————————————————————————————————————!
 ! Title: Hide Youtube Shorts
-! Description: Hide components related to Shorts on YouTube. It does not hide Shorts videos in playlist page including history, liked videos, and watch later.
+! Description: Hide YouTube Shorts components on YouTube. Except in playlist page.
 ! Homepage: https://github.com/h1toru/filterlist
 !
-! Last modified: 2024.06.16 10:08 UTC
+! Last modified: 2025-01-07 12:57:25 UTC
 ! Format: Adblock
-! Entries: 9
+! Entries: 8
 !
 ! Report any problem at: https://github.com/h1toru/filterlist/issues
 !————————————————————————————————————————————————————————————————————————————————————————————————————!
 
-! Hide videos that has shorts url
-www.youtube.com##ytd-video-renderer:has(a[href^="/shorts/"])
+! Block Shorts url
+!||www.youtube.com/shorts/$all
+
+! Hide videos that has shorts url or shorts badge in the thumbnail
+www.youtube.com##ytd-video-renderer.ytd-item-section-renderer:has(a[href^="/shorts/"], ytd-thumbnail-overlay-time-status-renderer.ytd-thumbnail[overlay-style="SHORTS"])
+! Hide Shorts videos in horizontal list
+www.youtube.com##ytm-shorts-lockup-view-model-v2.yt-horizontal-list-renderer
 
 ! Hide Shorts section
-www.youtube.com##ytd-rich-section-renderer:has(ytd-rich-shelf-renderer[is-shorts])
-www.youtube.com##ytd-page-manager:not(:has(ytd-search)) ytd-item-section-renderer:has(ytd-reel-shelf-renderer, ytd-reel-item-renderer)
+www.youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer:has(ytd-rich-shelf-renderer[is-shorts])
 www.youtube.com##ytd-reel-shelf-renderer
+www.youtube.com##ytd-item-section-renderer.ytd-section-list-renderer:is([page-subtype="trending"], [page-subtype="channels"]):has(ytd-reel-shelf-renderer.ytd-item-section-renderer)
 
 ! Hide Shorts in the sidebar
-www.youtube.com##ytd-mini-guide-renderer ytd-mini-guide-entry-renderer[aria-label="Shorts"i]
-www.youtube.com##tp-yt-app-drawer#guide ytd-guide-entry-renderer:has( > [title="Shorts"i])
+www.youtube.com##:is(ytd-guide-entry-renderer.ytd-guide-section-renderer, ytd-mini-guide-entry-renderer.ytd-mini-guide-renderer):has(> a[title="Shorts"])
 
-! Hide Shorts filter except on playlist page
+! Hide Shorts filter chip except on playlist page
 www.youtube.com##ytd-page-manager:not(:has(ytd-browse[page-subtype="playlist"])) yt-chip-cloud-chip-renderer:has([title*="Shorts"i])
 
-! Hide Shorts tab
-www.youtube.com##tp-yt-app-toolbar yt-tab-shape[tab-title="Shorts"i]
-
-! Fill empty spaces in video grid
-www.youtube.com##ytd-rich-grid-row, #contents.ytd-rich-grid-row:style(display: contents !important)
+! Hide Shorts tab on channel page
+www.youtube.com##yt-tab-shape[tab-title="Shorts"]

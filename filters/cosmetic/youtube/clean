@@ -1,186 +1,140 @@
 !————————————————————————————————————————————————————————————————————————————————————————————————————!
 ! Title: Clean Youtube
-! Description: Make YouTube cleaner, less intrusive and improve overall experience.
+! Description: Make YouTube cleaner and less intrusive by hiding unnecessary elements.
 ! Homepage: https://github.com/h1toru/filterlist
 !
-! Last modified: 2024.06.17 14:39 UTC
+! Last modified: 2025-01-07 12:57:23 UTC
 ! Format: Adblock
-! Entries: 55
+! Entries: 48
 !
-! Report any problem at: https://github.com/h1toru/filterlist/issues
+! Report any problem at https://github.com/h1toru/filterlist/issues
 !————————————————————————————————————————————————————————————————————————————————————————————————————!
 
 ! --- Parent selectors
 ! Dark Mode          : html[dark]
-! Homepage           : ytd-browse[page-subtype="home"]:not([hidden])
-! Video player page  : ytd-watch-flexy:not([hidden])
-! Search result page : ytd-search:not([hidden])
-! Subscriptions page : ytd-browse[page-subtype="subscriptions"]:not([hidden])
-! Channel page       : ytd-browse[page-subtype="channels"]:not([hidden])
-! Playlist page      : ytd-browse[page-subtype="playlist"]:not([hidden])
-! Trending page      : ytd-browse[page-subtype="trending"]:not([hidden])
-! -----
-! > Note:
-!   - ':not([hidden])' = apply filters only if it's the current page. (make load times slightly faster)
-!   - ':remove()' can be used to properly fill the empty spaces caused by element hiding, but it may reduce load time significantly.
+! Homepage           : ytd-browse[page-subtype="home"]
+! Video player page  : ytd-watch-flexy
+! Search result page : ytd-search
+! Subscriptions page : ytd-browse[page-subtype="subscriptions"]
+! Channel page       : ytd-browse[page-subtype="channels"]
+! Playlist page      : ytd-browse[page-subtype="playlist"]
+! Trending page      : ytd-browse[page-subtype="trending"]
+! ----- Notes
+! - ':not([hidden])' can be used to apply filters to current page only.
+! - ':remove()' can be used to properly remove an element but it may increase load time significantly.
 
-! Include other filters from this repo's directory
-!#include ads
-!#include shorts
+!========== [Header] ==========!
 
-!------------------------- General -------------------------!
-
-!----- Header -----!
 ! Transparent header
-www.youtube.com##ytd-masthead > #background:style(opacity: 0.5 !important; background: linear-gradient(var(--yt-spec-base-background) 35%, rgba(0, 0, 0, 0.0)) !important;)
-www.youtube.com##ytd-masthead #container.ytd-searchbox:style(background: unset !important; box-shadow: unset !important;)
-www.youtube.com##ytd-masthead #search-icon-legacy.ytd-searchbox:style(background: unset !important;)
-! Filter chips doesn't follow when scrolling in homepage
-www.youtube.com##ytd-browse[page-subtype="home"]:not([hidden]) #chips-wrapper.ytd-feed-filter-chip-bar-renderer:style(position: absolute !important;)
-! Hide microphone button
-www.youtube.com###voice-search-button.ytd-masthead
-! Hide 'Create' button because it's just a shortcut to YouTube Studio
-www.youtube.com##ytd-masthead ytd-topbar-menu-button-renderer:has(button[aria-label="Create"])
-! Hide 'Google Account' in profile dropdown menu
-www.youtube.com##tp-yt-iron-dropdown yt-multi-page-menu-section-renderer ytd-compact-link-renderer:has(a[href^="https://myaccount.google.com/u/0/?utm_source=YouTubeWeb"])
-! Hide 'Help' and 'Send feedback' in profile dropdown menu
-www.youtube.com##tp-yt-iron-dropdown yt-multi-page-menu-section-renderer:has(#label:has-text(/^(Help|Send\ feedback)$/))
+www.youtube.com###background.ytd-masthead:style(opacity: 0.5 !important; background: linear-gradient(var(--yt-spec-base-background) 35%, rgba(0, 0, 0, 0.0)) !important;)
+www.youtube.com##.ytSearchboxComponentInputBoxDark, .ytSearchboxComponentSearchButtonDark:style(background: hsla(0,0%,100%,.08) !important; box-shadow: unset !important; border: unset !important;)
 
-!----- Sidebar -----!
+! Make filter chips doesn't follow when scrolling; on home page
+www.youtube.com##ytd-browse[page-subtype="home"] #chips-wrapper.ytd-feed-filter-chip-bar-renderer:style(position: absolute !important;)
+
+!========== [Sidebar] ==========!
+
 ! Hide 'Home' entry because you can just click the YouTube logo to go back to the homepage
-www.youtube.com##tp-yt-app-drawer ytd-guide-entry-renderer:has(a[href="/"], a[title="Home"i])
+www.youtube.com##:is(ytd-guide-entry-renderer.ytd-guide-section-renderer, ytd-mini-guide-entry-renderer.ytd-mini-guide-renderer):has(> :is(a[href="/"], a[title="Home"], a[href="/feed/you"], a[title="You"]))
 ! Remove separator between the first section and 'You >' section
 www.youtube.com##ytd-guide-collapsible-section-entry-renderer.ytd-guide-section-renderer:not(:first-child):style(border-top: none !important; margin-top: unset !important; padding-top: unset !important;)
 ! Hide 'You >' entry
-www.youtube.com##tp-yt-app-drawer #header:has(a[href="/feed/you"], a[title="You"i])
-! Hide 'Your videos' entry because it's just a shortcut to 'studio.youtube.com'
-www.youtube.com##tp-yt-app-drawer ytd-guide-entry-renderer:has(a[href="https://studio.youtube.com/channel/"], a[title="Your videos"i])
+www.youtube.com##ytd-mini-guide-entry-renderer.ytd-mini-guide-renderer:has(> :is(a[href="/feed/you"], a[title="You"]))
+www.youtube.com###header.ytd-guide-collapsible-section-entry-renderer:has(> ytd-guide-entry-renderer#header-entry > :is(a[href="/feed/you"], a[title="You"]))
+! Hide 'Your videos' entry because it's just a shortcut to YouTube Studio
+www.youtube.com##ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer:has(> :is(a[href$="/videos"], a[title="Your videos"], a[href="/playlist?list=LL"], a[title="Liked videos"]))
 ! Hide 'Liked videos' entry
-www.youtube.com##tp-yt-app-drawer ytd-guide-entry-renderer:has(a[href="/playlist?list=LL"], a[title="Liked videos"i])
-! Hide 'Explore' title
-www.youtube.com##tp-yt-app-drawer h3.ytd-guide-section-renderer:has( > #guide-section-title:has-text(/^Explore$/i))
-! Hide 'Learning' entry
-www.youtube.com##tp-yt-app-drawer ytd-guide-entry-renderer:has(a[href="/channel/UCtFRv9O2AHqOZjjynzrv-xg"], a[title="Learning"])
-||www.youtube.com/channel/UCtFRv9O2AHqOZjjynzrv-xg$all
-! Hide 'More from YouTube'
-www.youtube.com##tp-yt-app-drawer ytd-guide-section-renderer:has(#guide-section-title:has-text(/^More from YouTube$/i))
-! Hide YouTube's information at the bottom of the sidebar
-www.youtube.com##tp-yt-app-drawer #footer
+www.youtube.com##ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer:has(> :is(a[href="/playlist?list=LL"], a[title="Liked videos"]))
+! Hide 'Explore' section title
+www.youtube.com##h3.ytd-guide-section-renderer:has(> #guide-section-title:has-text(/^Explore$/)
+! Hide 'More from YouTube' section
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer:has(ytd-guide-entry-renderer.ytd-guide-section-renderer > a[href="/premium"])
+! Hide footer section
+www.youtube.com###footer.ytd-guide-renderer
+
 ! Hide mini sidebar
-www.youtube.com##ytd-app[mini-guide-visible] ytd-mini-guide-renderer
-www.youtube.com##ytd-app[mini-guide-visible] ytd-page-manager:style(margin-left: unset !important)
-www.youtube.com##ytd-browse[mini-guide-visible] :is(yt-page-header-renderer, ytd-playlist-header-renderer):style(margin-left: unset !important; left: 22px !important;)
+www.youtube.com##ytd-mini-guide-renderer.ytd-app
+www.youtube.com##ytd-app[mini-guide-visible] ytd-page-manager.ytd-app:style(margin-left: unset !important;)
+www.youtube.com##ytd-browse[page-subtype="playlist"][mini-guide-visible] .page-header-sidebar.ytd-browse:style(left: unset !important;)
 
-! Fix incorrect margin caused by element hiding in video grid
-www.youtube.com##ytd-browse[page-subtype="home"]:not([hidden]) ytd-rich-item-renderer[rendered-from-rich-grid][is-in-first-column]:style(margin-left: calc(var(--ytd-rich-grid-item-margin) / 2) !important;)
-! 3 collumn: 100%, 4 collumn: 75%, 6 collumn 50%
-www.youtube.com##ytd-browse[page-subtype="home"]:not([hidden]) ytd-rich-item-renderer[rendered-from-rich-grid]:style(--ytd-rich-item-row-usable-width: 100% !important;)
-! Compact / reduce padding & margin on homepage
-www.youtube.com##ytd-browse[page-subtype="home"]:not([hidden]) #contents.ytd-rich-grid-renderer:style(padding-top: 10px !important;)
-www.youtube.com##ytd-browse[page-subtype="home"]:not([hidden]) ytd-rich-item-renderer:style(margin-bottom: 20px !important;)
+! Hide 'Google Account' in profile dropdown menu
+www.youtube.com##ytd-compact-link-renderer.yt-multi-page-menu-section-renderer:has(> a[href^="https://myaccount.google.com/u/0/?utm_source=YouTubeWeb"].ytd-compact-link-renderer)
+! Hide 'Settings' in profile dropdown menu
+! [info]: it's just a duplicate. can be accessed via sidebar.
+www.youtube.com##yt-multi-page-menu-section-renderer.ytd-multi-page-menu-renderer:has(a[href="/account"].ytd-compact-link-renderer)
+! Hide 'Help' and 'Send feedback' section in profile dropdown menu
+! [info]: it's just a duplicate. can be accessed via sidebar.
+www.youtube.com##yt-multi-page-menu-section-renderer.ytd-multi-page-menu-renderer:has(#label.ytd-compact-link-renderer:has-text(/^Help$/)):has(#label.ytd-compact-link-renderer:has-text(/^Send feedback$/))
 
-! Hide 'Mix' playlist
-www.youtube.com##ytd-radio-renderer
-www.youtube.com##ytd-compact-radio-renderer
-www.youtube.com##ytd-rich-item-renderer:has(a[href$="&start_radio=1"], a[title^="Mix -"], a[title="My Mix"])
-www.youtube.com##yt-lockup-view-model.ytd-item-section-renderer:has(a[href$="&start_radio=1"], a[title^="Mix -"])
-! Hide 'Mixes' filter chip
-www.youtube.com##yt-chip-cloud-chip-renderer:has([title="Mixes"i])
+!========== [Unnecessary Elements] ==========!
 
-! Hide survey 'Looking for something different?' in video grid
-www.youtube.com##ytd-rich-item-renderer.ytd-rich-grid-renderer:has(ytd-feed-nudge-renderer)
-! Hide survey 'How is this recommendation?' in video grid
-www.youtube.com###attached-survey.ytd-rich-grid-media
-! Hide 'Experiencing interruptions?' popup on video player page
-!www.youtube.com###toast:has(:has-text(/^Experiencing interruptions?$/))
-! Hide captions survey in video player page
-www.youtube.com##tp-yt-paper-dialog:has(ytd-single-option-survey-renderer)
-! Hide alerts 'Unavailable videos are hidden' on playlist page
-www.youtube.com##ytd-browse[page-subtype="playlist"] #alerts
-
-! Limits video grid to 8 row on homepage
-! > Note: it may not be the same amount as the specified number, because Ads, 'Mix' playlist and irrelevant stuff are hidden.
-www.youtube.com##ytd-browse[page-subtype="home"]:not([hidden]) #contents > ytd-rich-grid-row:nth-child(n+8)
-! Don't load more items on homepage
-www.youtube.com##ytd-browse[page-subtype="home"]:not([hidden]) #contents > ytd-continuation-item-renderer
-
-! Limits items in recommended section to 10 items on video player page
-! > Note: it may not be the same amount as the specified number because Ads, 'Mix' playlist and irrelevant stuff are hidden.
-www.youtube.com##ytd-watch-flexy:not([hidden]) #related #contents.ytd-item-section-renderer > *:nth-child(n+10)
-! Don't load more items on video player page
-www.youtube.com##ytd-watch-flexy:not([hidden]) #related #contents.ytd-item-section-renderer > ytd-continuation-item-renderer
-
-! Hide load more in 'Latest from <channel>' in search result
-www.youtube.com##ytd-search:not([hidden]) #more.ytd-vertical-list-renderer
-
-! Hide 'For You' section
-www.youtube.com##ytd-item-section-renderer:has(#title:has-text(/^For you$/i))
-www.youtube.com##ytd-shelf-renderer:has(#title:has-text(/^For you$/i))
-! Hide 'For you' filter chip
+! Hide 'For You' section on channel page
+www.youtube.com##ytd-item-section-renderer.ytd-section-list-renderer[page-subtype="channels"]:has(#title.ytd-shelf-renderer:has-text(/^For You$/i))
+! Hide 'For You' filter chip
 www.youtube.com##yt-chip-cloud-chip-renderer:has([title="For you"i])
 
-! Hide posts ('Latest YouTube posts') section
-! > Note: This does not hide posts completely, you still able to see posts in channel page
-www.youtube.com##ytd-rich-section-renderer:has(ytd-rich-item-renderer[is-post], ytd-post-renderer)
-www.youtube.com##ytd-search:not([hidden]) ytd-shelf-renderer:has(ytd-post-renderer)
+! Hide posts section ('Latest YouTube posts') on home page
+! [note]: This does not hide posts completely, you still able to see posts in subscriptions and channel's page
+!www.youtube.com##ytd-browse[page-subtype="home"] ytd-rich-section-renderer.ytd-rich-grid-renderer:has(:is(ytd-rich-item-renderer.ytd-rich-shelf-renderer[is-post], ytd-post-renderer.ytd-rich-item-renderer))
 
-! Hide all sections on homepage
-www.youtube.com##ytd-browse[page-subtype="home"]:not([hidden]) ytd-rich-section-renderer
+! Hide all sections (except Shorts) on home page
+www.youtube.com##ytd-browse[page-subtype="home"] ytd-rich-section-renderer.ytd-rich-grid-renderer:not(:has(ytd-rich-shelf-renderer[is-shorts]))
+! Hide all unrelated sections (except 'Latest from <channel>' and Shorts) on search result page
+www.youtube.com##ytd-search ytd-shelf-renderer.ytd-item-section-renderer:not(:has(#title.ytd-shelf-renderer:has-text(/^Latest from /)))
 
-! Hide all unrelated sections in search results except 'Latest from <channel>'
-www.youtube.com##ytd-search:not([hidden]) ytd-shelf-renderer.ytd-item-section-renderer:not(#title:has-text(/^Latest from /))
+! Hide all sections (that has title) except Shorts on trending page
+www.youtube.com##ytd-item-section-renderer.ytd-section-list-renderer[page-subtype="trending"]:has(#title-container.ytd-shelf-renderer:not([hidden]))
+! Fix spacing for sections that doesn't have any title on trending page
+www.youtube.com##ytd-item-section-renderer.ytd-section-list-renderer[page-subtype="trending"]:has(#title-container.ytd-shelf-renderer[hidden]):style(border-bottom: unset !important;)
+www.youtube.com##ytd-item-section-renderer.ytd-section-list-renderer[page-subtype="trending"]:has(#title-container.ytd-shelf-renderer[hidden]) .grid-subheader.ytd-shelf-renderer
+www.youtube.com##ytd-item-section-renderer.ytd-section-list-renderer[page-subtype="trending"]:has(#title-container.ytd-shelf-renderer[hidden]) #contents.ytd-shelf-renderer:style(margin-top: 16px !important;)
+www.youtube.com##ytd-item-section-renderer.ytd-section-list-renderer[page-subtype="trending"]:has(#title-container.ytd-shelf-renderer[hidden]) ytd-expanded-shelf-contents-renderer.ytd-shelf-renderer:style(margin-bottom: unset !important;)
 
-! Hide all sections (that has title) on trending page
-www.youtube.com##ytd-browse[page-subtype="trending"]:not([hidden]) ytd-item-section-renderer:has(#title-container:not([hidden]))
-! Remove separator and padding for section without any title on trending page
-www.youtube.com##ytd-browse[page-subtype="trending"]:not([hidden]) ytd-item-section-renderer:not(:has(.grid-subheader > #title-container:not([hidden]))):style(border-bottom: unset !important;)
-www.youtube.com##ytd-browse[page-subtype="trending"]:not([hidden]) ytd-item-section-renderer .grid-subheader:has( > #title-container[hidden]):style(margin-top: unset !important;)
-www.youtube.com##ytd-browse[page-subtype="trending"]:not([hidden]) ytd-item-section-renderer:has(.grid-subheader > #title-container[hidden]) #contents.ytd-shelf-renderer:style(margin-top: 16px !important;)
-www.youtube.com##ytd-browse[page-subtype="trending"]:not([hidden]) ytd-item-section-renderer:has(.grid-subheader > #title-container[hidden]) ytd-expanded-shelf-contents-renderer:style(margin-bottom: unset !important;)
+! Hide survey 'What did you think of this video?' in grid list
+www.youtube.com##ytd-rich-section-renderer.ytd-rich-grid-renderer:has(ytd-inline-survey-renderer.ytd-rich-section-renderer)
+! Hide alerts 'Unavailable videos are hidden' on playlist page
+www.youtube.com##ytd-browse[page-subtype="playlist"] #alerts.ytd-browse
 
-! Hide Chapters / Key moments in description box on video player page
-www.youtube.com##ytd-watch-flexy:not([hidden]) #description ytd-horizontal-card-list-renderer[modern-chapters]
-! Hide 'Music' button in description box on video player page
-www.youtube.com##ytd-watch-flexy:not([hidden]) #description ytd-horizontal-card-list-renderer #footer-section:has(a[href="/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ"])
-! Hide Transcript title and description in description box on video player page
-www.youtube.com##ytd-watch-flexy:not([hidden]) #description ytd-video-description-transcript-section-renderer > :is(#header, #sub-header)
-! Hide channel's card in description box on video player page
-! (It's a duplicate button, like the channel button is literaly above the description box)
-www.youtube.com##ytd-watch-flexy:not([hidden]) #description ytd-video-description-infocards-section-renderer
-! Hide shop/store below description box on video player page
-www.youtube.com##ytd-watch-flexy:not([hidden]) ytd-merch-shelf-renderer
+! Hide 'Chapters' section in description box
+www.youtube.com##ytd-horizontal-card-list-renderer.ytd-structured-description-content-renderer[modern-chapters]
+! Hide 'Transcript' section header and subheader in description box
+www.youtube.com##ytd-video-description-transcript-section-renderer.ytd-structured-description-content-renderer > :is(#header, #sub-header)
+! Hide channel section in description box
+! [info]: It's a duplicate button. The channel button is literaly above the description box.
+www.youtube.com##ytd-video-description-infocards-section-renderer.ytd-structured-description-content-renderer[show-creator-custom-url-buttons]
+! Hide 'Gaming' button below description box
+www.youtube.com##ytd-rich-metadata-renderer:has(> a[href="/gaming"])
+www.youtube.com##ytd-rich-metadata-renderer:not([fixie]):style(max-width: 100% !important;)
+! Reduce spacing in description box
+www.youtube.com###collapse.ytd-text-inline-expander, ytd-structured-description-content-renderer.ytd-watch-metadata:style(margin-top: unset !important;)
 
-! Hide filter chips (`:matches-attr` doesn't work in this, i'm not sure why)
-www.youtube.com##yt-chip-cloud-chip-renderer:has([title="All"i], [title="Watched"i], [title="New to you"i], [title="News"i], [title="Audio commentaries"i], [title="Soundtracks"i])
-! Hide video dropdown menu
-www.youtube.com##ytd-menu-service-item-renderer.ytd-menu-popup-renderer:has(yt-formatted-string:has-text(/^(Clip|Thanks|Add to queue|Share|Move to (top|bottom))$/i))
-www.youtube.com##ytd-menu-service-item-download-renderer.ytd-menu-popup-renderer
-! Hide buttons below video player
-www.youtube.com##yt-button-view-model.ytd-menu-renderer:has([aria-label="Share"])
-! Remove 'About these results' button on search result page
-www.youtube.com###about-these-results.ytd-search-header-renderer
-! Hide 'Switch account' and 'Google Account' buttons in '/feed/you'
-www.youtube.com##yt-flexible-actions-view-model:has(button[aria-label="Switch account"], a[aria-label="Google Account"], a[href^="https://myaccount.google.com/u/0/?utm_source=YouTubeWeb"])
+! Hide 'New' badge in related content
+www.youtube.com##ytd-badge-supported-renderer.ytd-compact-video-renderer:has(> [aria-label="New"])
 
-! Remove 'Clips' section on '/feed/you' page
-www.youtube.com##ytd-item-section-renderer:has(a[href="/feed/clips"], a[title="Your clips"i])
+! Hide filter chips
+www.youtube.com##yt-chip-cloud-chip-renderer:has(> :matches-attr("title"="/^(All|Watched|New to you|Audio commentaries)$/"))
 
-! Remove section padding on channel page
-www.youtube.com##ytd-browse[page-subtype="channels"] ytd-two-column-browse-results-renderer.ytd-browse:style(min-height: unset !important;)
+! Don't load more items in grid list on home page
+www.youtube.com##ytd-browse[page-subtype="home"] #contents.ytd-rich-grid-renderer > ytd-continuation-item-renderer.ytd-rich-grid-renderer
+! Don't load more items in related content on video player page
+www.youtube.com###related.ytd-watch-flexy #contents.ytd-item-section-renderer > ytd-continuation-item-renderer.ytd-item-section-renderer
+! Limits items to 10 in related content on video player page
+www.youtube.com###related.ytd-watch-flexy #contents.ytd-item-section-renderer > :is(ytd-compact-video-renderer, yt-lockup-view-model):nth-of-type(n + 10)
+! Hide 'Show more' button in section
+!www.youtube.com##.button-container.ytd-rich-shelf-renderer:has(button[aria-label="Show more"])
+! Hide '+<n> More' button in section
+www.youtube.com###more.ytd-vertical-list-renderer
 
-! Fill empty spaces in video grid
-www.youtube.com##ytd-rich-grid-row, #contents.ytd-rich-grid-row:style(display: contents !important)
+! Hide related videos that has under 1K views and uploaded within 1 digit day in 'All' filter chip on video player page
+! [info]: YouTube is now recommending videos that are completely irrelevant and random and mostly has under 1K views and recently uploaded.
+www.youtube.com###related.ytd-watch-flexy:has(yt-chip-cloud-chip-renderer[selected] [title="All"i]) ytd-compact-video-renderer:has(.inline-metadata-item.ytd-video-meta-block:has-text(/^(No|\d{1,3}) views?$/)):has(.inline-metadata-item.ytd-video-meta-block:has-text(/^(\d{1,2} (second|minute|hour)|\d{1} day)s? ago$/))
 
-!------------------------- Additional -------------------------!
+! Reduce spacing in video grid
+www.youtube.com##ytd-browse:is([page-subtype="home"], [page-subtype="subscriptions"]) #contents.ytd-rich-grid-renderer:style(padding-top: unset !important;)
+www.youtube.com##ytd-rich-item-renderer.ytd-rich-grid-renderer:style(margin-bottom: calc(var(--ytd-rich-grid-row-margin) / 2) !important;)
 
-! Hide channels in the sidebar with no new videos or doesn't currently live stream
-!www.youtube.com##tp-yt-app-drawer ytd-guide-section-renderer:has(#guide-section-title:has-text(/^Subscriptions$/)) ytd-guide-entry-renderer[line-end-style="none"]:not([active], #expander-item.ytd-guide-collapsible-entry-renderer, #collapser-item.ytd-guide-collapsible-entry-renderer, :has(a[href="/feed/channels"]))
-!-
-! Only show channels that currently livestreaming in the sidebar
-!www.youtube.com##tp-yt-app-drawer ytd-guide-section-renderer:has(#guide-section-title:has-text(/^Subscriptions$/)) ytd-guide-entry-renderer:not([line-end-style="badge"], [active], #expander-item.ytd-guide-collapsible-entry-renderer, #collapser-item.ytd-guide-collapsible-entry-renderer, :has(a[href="/feed/channels"]))
-
-! Hide watched videos (videos that has red progress bar in the thumbnail)
-!www.youtube.com##ytd-search:not([hidden]) ytd-video-renderer:has(ytd-thumbnail #overlays.ytd-thumbnail > ytd-thumbnail-overlay-resume-playback-renderer)
-!-
-! Only hide videos that have been watched completely (full red progress bar)
-!www.youtube.com##ytd-search:not([hidden]) ytd-video-renderer:has(ytd-thumbnail #overlays.ytd-thumbnail > ytd-thumbnail-overlay-resume-playback-renderer > #progress[style="width: 100%;"])
+! Include other filters in this repo's directory
+!#include ads
+!#include shorts
+!#include mix
+!#include fix
