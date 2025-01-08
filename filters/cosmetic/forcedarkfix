@@ -1,18 +1,18 @@
 !————————————————————————————————————————————————————————————————————————————————————————————————————!
-! Title: Chromium Dark Fix
-! Description: Fix bad inversion of Chromium's Dark Mode flag.
+! Title: Chrome Force Dark Fix
+! Description: Fix bad inversion of Chrome's Dark Mode flag.
 ! Homepage: https://github.com/h1toru/filterlist
 !
-! Last modified: 2025-01-08 05:03:19 UTC
+! Last modified: 2025-01-08 05:28:22 UTC
 ! Format: Adblock
 ! Entries: 13
 !
 ! Report any problem @ https://github.com/h1toru/filterlist/issues
 !————————————————————————————————————————————————————————————————————————————————————————————————————!
-! [note]:
-! - Choose one of these 'Auto Dark Mode' option on `chrome://flags/`:
-!   - `Enabled with selective inversion of non-image elements`
-!   - `Enabled with simple CIELAB-based inversion`
+! [usage]:
+! 1. Choose one of these Dark Mode option on `chrome://flags/`:
+!    `Enabled with selective inversion of non-image elements`
+!    `Enabled with simple CIELAB-based inversion`
 !
 ! [ref]:
 ! - https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme

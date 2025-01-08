@@ -1,0 +1,30 @@
+!————————————————————————————————————————————————————————————————————————————————————————————————————!
+! Title: Chrome's Force Dark + Extension
+! Description: Make any site in Dark Mode.
+! Homepage: https://github.com/h1toru/filterlist
+!
+! Last modified: 2025-01-08 05:28:40 UTC
+! Format: Adblock
+! Entries: 1
+!
+! Report any problem at: https://github.com/h1toru/filterlist/issues
+!————————————————————————————————————————————————————————————————————————————————————————————————————!
+
+! [usage]:
+! 1. Choose one of these Dark Mode option on `chrome://flags/`:
+!    `Enabled with selective inversion of non-image elements`
+!    `Enabled with simple CIELAB-based inversion`
+! 2. Import this filter to uBO.
+! 3. Install any Dark Mode Extension of your choice.
+
+! [sum]:
+! 1. This filter disables Chrome's force dark flag on any site except restricted pages.
+! 2. Chrome's force dark flag only applied on restricted pages.
+!    (like Chrome Webstore, `chrome-extension://*`, and `chrome://` urls)
+! 3. Dark Mode Extension applied on any website except restricted pages.
+!
+! All this to avoid bad inversion of Chrome's force dark flag.
+
+! `*##` will match any site, but it won't affect restricted pages.
+! (because extension couldn't access restricted pages)
+*##:root:style(color-scheme: only light !important;)
