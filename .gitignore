@@ -1,4 +1,5 @@
 # Exclude files/dirs from git
+/.exclude
 /.archive
 /.build
 
