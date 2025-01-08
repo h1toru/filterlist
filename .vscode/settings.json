@@ -7,7 +7,7 @@
     "pdnsf": "shellscript",
     "adblock": "adblock",
     "**/cosmetic/**": "adblock",
-    "*": "shellscript"
+    "**/cosmetic/**/*.md": "markdown"
   },
   "editor.wordWrap": "off"
 }
