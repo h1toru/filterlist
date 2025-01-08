@@ -1,0 +1,11 @@
+# Abused and untrusted Top Level Domain (TLD)
+pro
+vip
+top
+best
+club
+party
+fun
+online
+site
+info
