@@ -1,3 +1,16 @@
+#————————————————————————————————————————————————————————————————————————————————————————————————————#
+# Title: AntiTrack
+# Description: Block Tracker/Analytics/Telemetry.
+# Homepage: https://github.com/h1toru/filterlist
+#
+# Last modified: 2025-01-08 06:32:09 UTC
+# Format: Wildcard
+# Entries: 302
+#
+# Report any problem at: https://github.com/h1toru/filterlist/issues
+#————————————————————————————————————————————————————————————————————————————————————————————————————#
+# Note for PDNSF: copy and paste to the very top of additonal hosts.
+
 #================= App Tracker ==================#
 sstats.adobe.com
 bat.bing.com

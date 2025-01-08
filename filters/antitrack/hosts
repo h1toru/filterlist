@@ -1,11 +1,11 @@
 #————————————————————————————————————————————————————————————————————————————————————————————————————#
-# Title: [h1toru] Tracker
-# Description: Block tracker / analytics / data collection / telemetry.
+# Title: AntiTrack
+# Description: Block Tracker/Analytics/Telemetry.
 # Homepage: https://github.com/h1toru/filterlist
 #
-# Last modified: 2024.06.19 15:54 UTC
+# Last modified: 2025-01-08 06:32:08 UTC
 # Format: Hosts
-# Entries: 215
+# Entries: 613
 #
 # Report any problem at: https://github.com/h1toru/filterlist/issues
 #————————————————————————————————————————————————————————————————————————————————————————————————————#
@@ -250,15 +250,6 @@
 0.0.0.0 log-staging.tokopedia.net
 
 # --- Shopee
-0.0.0.0 tracking.shopee.com
-0.0.0.0 dpsentry.shopee.com
-
-0.0.0.0 sentry.shopeemobile.com
-0.0.0.0 wsa-sentry.shopeemobile.com
-0.0.0.0 fe-reporting.shopeemobile.com
-0.0.0.0 datagroup-reporting.shopeemobile.com
-0.0.0.0 stats.shopeemobile.com
-0.0.0.0 stats2.shopeemobile.com
 0.0.0.0 patronus.idata.shopeemobile.com
 0.0.0.0 c-api-bit.shopeemobile.com
 0.0.0.0 secreporter.susercontent.com
@@ -272,103 +263,10 @@
 0.0.0.0 ubt.tracking.shopee.co.id
 0.0.0.0 ubta.tracking.shopee.co.id
 0.0.0.0 log-collector.shopee.co.id
-0.0.0.0 log-upload.shopee.co.id
-0.0.0.0 userstats.shopee.co.id
 0.0.0.0 df.infra.sz.shopee.co.id
-0.0.0.0 promotion.shopeekredit.co.id
 0.0.0.0 mms.shopee.co.id
 0.0.0.0 api.mms.shopee.co.id
 0.0.0.0 endpoint.mms.shopee.co.id
-
-0.0.0.0 tracking.shopee.tw
-0.0.0.0 apm.tracking.shopee.tw
-0.0.0.0 dp.tracking.shopee.tw
-0.0.0.0 ubt.tracking.shopee.tw
-0.0.0.0 ubta.tracking.shopee.tw
-0.0.0.0 log-collector.shopee.tw
-0.0.0.0 log-upload.shopee.tw
-0.0.0.0 userstats.shopee.tw
-
-0.0.0.0 tracking.shopee.vn
-0.0.0.0 apm.tracking.shopee.vn
-0.0.0.0 dp.tracking.shopee.vn
-0.0.0.0 ubt.tracking.shopee.vn
-0.0.0.0 ubta.tracking.shopee.vn
-0.0.0.0 log-collector.shopee.vn
-0.0.0.0 log-upload.shopee.vn
-0.0.0.0 userstats.shopee.vn
-
-0.0.0.0 tracking.shopee.co.th
-0.0.0.0 apm.tracking.shopee.co.th
-0.0.0.0 dp.tracking.shopee.co.th
-0.0.0.0 ubt.tracking.shopee.co.th
-0.0.0.0 ubta.tracking.shopee.co.th
-0.0.0.0 log-collector.shopee.co.th
-0.0.0.0 log-upload.shopee.co.th
-0.0.0.0 userstats.shopee.co.th
-
-0.0.0.0 tracking.shopee.ph
-0.0.0.0 apm.tracking.shopee.ph
-0.0.0.0 dp.tracking.shopee.ph
-0.0.0.0 ubt.tracking.shopee.ph
-0.0.0.0 ubta.tracking.shopee.ph
-0.0.0.0 log-collector.shopee.ph
-0.0.0.0 log-upload.shopee.ph
-0.0.0.0 userstats.shopee.ph
-
-0.0.0.0 tracking.shopee.com.my
-0.0.0.0 apm.tracking.shopee.com.my
-0.0.0.0 dp.tracking.shopee.com.my
-0.0.0.0 ubt.tracking.shopee.com.my
-0.0.0.0 ubta.tracking.shopee.com.my
-0.0.0.0 log-collector.shopee.com.my
-0.0.0.0 log-upload.shopee.com.my
-0.0.0.0 userstats.shopee.com.my
-
-0.0.0.0 tracking.shopee.sg
-0.0.0.0 apm.tracking.shopee.sg
-0.0.0.0 dp.tracking.shopee.sg
-0.0.0.0 ubt.tracking.shopee.sg
-0.0.0.0 ubta.tracking.shopee.sg
-0.0.0.0 log-collector.shopee.sg
-0.0.0.0 log-upload.shopee.sg
-0.0.0.0 userstats.shopee.sg
-
-0.0.0.0 tracking.shopee.com.br
-0.0.0.0 apm.tracking.shopee.com.br
-0.0.0.0 dp.tracking.shopee.com.br
-0.0.0.0 ubt.tracking.shopee.com.br
-0.0.0.0 ubta.tracking.shopee.com.br
-0.0.0.0 log-collector.shopee.com.br
-0.0.0.0 log-upload.shopee.com.br
-0.0.0.0 userstats.shopee.com.br
-
-0.0.0.0 tracking.shopee.com.mx
-0.0.0.0 apm.tracking.shopee.com.mx
-0.0.0.0 dp.tracking.shopee.com.mx
-0.0.0.0 ubt.tracking.shopee.com.mx
-0.0.0.0 ubta.tracking.shopee.com.mx
-0.0.0.0 log-collector.shopee.com.mx
-0.0.0.0 log-upload.shopee.com.mx
-0.0.0.0 userstats.shopee.com.mx
-
-0.0.0.0 tracking.shopee.com.co
-0.0.0.0 apm.tracking.shopee.com.co
-0.0.0.0 dp.tracking.shopee.com.co
-0.0.0.0 ubt.tracking.shopee.com.co
-0.0.0.0 ubta.tracking.shopee.com.co
-0.0.0.0 log-collector.shopee.com.co
-0.0.0.0 log-upload.shopee.com.co
-0.0.0.0 userstats.shopee.com.co
-
-0.0.0.0 tracking.shopee.cl
-0.0.0.0 apm.tracking.shopee.cl
-0.0.0.0 dp.tracking.shopee.cl
-0.0.0.0 ubt.tracking.shopee.cl
-0.0.0.0 ubta.tracking.shopee.cl
-0.0.0.0 log-collector.shopee.com.cl
-0.0.0.0 log-upload.shopee.com.cl
-0.0.0.0 userstats.shopee.com.cl
 
 # Unnecessary CDNs
 0.0.0.0 mms.img.susercontent.com
@@ -385,13 +283,10 @@
 
 0.0.0.0 livetech.shopee.co.id
 0.0.0.0 data-rep.livetech.shopee.co.id
-0.0.0.0 play-tx-las.livetech.shopee.co.id
-0.0.0.0 play-ws-las.livetech.shopee.co.id
-0.0.0.0 play-aka-las.livetech.shopee.co.id
-0.0.0.0 play-cvs-las.livetech.shopee.co.id
-0.0.0.0 play-bs-las.livetech.shopee.co.id
-0.0.0.0 play-hw-las.livetech.shopee.co.id
-0.0.0.0 play-spe-las.livetech.shopee.co.id
+
+0.0.0.0 play-spe.livestream.shopee.co.id
+0.0.0.0 play-spe.livestream.shopee.co.iD
+0.0.0.0 play-tx-src.livestream.shopee.co.id
 
 0.0.0.0 livestream.shopee.co.id
 0.0.0.0 play-tx.livestream.shopee.co.id
