@@ -1,12 +1,8 @@
 usage() {
-	printf "%-10s%s\n"     "<Filterlist Information Updater>" ""
-	printf "%-10s%s\n\n"   "Usage:"     "${1} FILE"
-	printf "%-10s%s\n"     "Example:"   "${1} adblock/test/whitelist.txt"
-	printf "%-10s%s\n"     ""           "${1} \"blocklist/new hosts.txt\" old_domains.txt"
-
-	printf "\n%s\n"        "OPTIONS:"
-	printf "  %-25s%s\n"   "-h, --help"       "Show this help"
-	printf "\n%-10s%s\n"   "> by h1toru @ GitHub" ""
+	printf "%-10s%s\n"   "Filterlist Metadata Updater by h1toru @ github" ""
+	printf "%-10s%s\n\n" "Usage:"   "${SC} FILE"
+	printf "%-10s%s\n"   "Example:" "${SC} adblock/test/whitelist.txt"
+	printf "%-10s%s\n"   ""         "${SC} \"blocklist/new hosts.txt\" old_domains.txt"
 }
 
 invalid() {
@@ -25,22 +21,23 @@ while [ $# -gt 0 ]; do
 		*)
 			for f in "${@}"; do
 				if [ -f "${f}" ]; then
-					# modify "Last modified" in the file
-					DATE=$(date -u +'%Y.%m.%d %H:%M %Z')
-					echo "$(sed "s|^\(.\ Last\ modified\:\).*|\1 $DATE|" "$f")" > "$f"
-					# modify "Total entries" in the file
-					FORMAT=$(sed -n "s|^.\ Format\:\ ||p" "$f")
+					# update "Last modified" entry
+					DATE=$(date -u +'%Y-%m-%d %H:%M:%S %Z')
+					sed -E -i "s|^(. Last modified: ).*|\1$DATE|" "$f"
+					
+					# update "Entries" entry
+					S='[[:alpha:]]'
+					FORMAT=$(sed -E -n "s|^. Format: ||p" "$f")
 					if [ "${FORMAT,,}" = "hosts" ]; then
-						ENTRIES=$(grep "^0\.0\.0\.0" "$f" | wc -l)
+						ENTRIES=$(grep -E "^${S}*0\.0\.0\.0" "$f" | wc -l)
 					elif [ "${FORMAT,,}" = "adblock" ]; then
-						ENTRIES=$(sed 's|^\!.*||g; s/\s//g; /^$/d' "$f" | wc -l)
+						ENTRIES=$(( $(grep -E -v "^${S}*\!|^${S}*$" "$f" | wc -l) + $(grep -E "^${S}*\!#" "$f" | wc -l) ))
 					else
-						ENTRIES=$(sed 's|\#.*||g; s/\s//g; /^$/d' "$f" | wc -l)
+						ENTRIES=$(grep -E -v "^${S}*#.*|^${S}*$" "$f" | wc -l)
 					fi
-					echo "$(sed "s|^\(.\ Entries\:\).*|\1 $ENTRIES|" "$f")" > "$f"
+					sed -E -i "s|^(. Entries:).*|\1 $ENTRIES|" "$f"
 					# stage changes and commit(optional) the file
-					git add "$f"
-					#git commit -m "Update filterlist ($f)"
+					# git add "$f"
 					shift
 				else
 					invalid "'${f}' doesn't exist" "$SC"
