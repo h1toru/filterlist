@@ -1,32 +1,40 @@
 !————————————————————————————————————————————————————————————————————————————————————————————————————!
-! Title: [h1toru] Chromium Force-Dark Fix
-! Description: Fix Chrome force-dark flag inversion on media elements.
+! Title: Chromium Dark Fix
+! Description: Fix bad inversion of Chromium's Dark Mode flag.
 ! Homepage: https://github.com/h1toru/filterlist
 !
 ! Last modified: 2024.06.19 16:00 UTC
 ! Format: Adblock
 ! Entries: 17
 !
-! Report any problem at: https://github.com/h1toru/filterlist/issues
+! Report any problem @ https://github.com/h1toru/filterlist/issues
 !————————————————————————————————————————————————————————————————————————————————————————————————————!
-! Note:
-!   Please choose one of these option on `chrome://flags/#enable-force-dark`:
+! [note]:
+! - Choose one of these 'Auto Dark Mode' option on `chrome://flags/`:
 !   - `Enabled with selective inversion of non-image elements`
 !   - `Enabled with simple CIELAB-based inversion`
+!
+! [ref]:
+! - https://developer.mozilla.org/en-US/docs/Web/CSS/color-scheme
+! - https://developer.chrome.com/blog/auto-dark-theme/#per-element-opt-out
 
-! exclude known patterns from inversion.
-*##img, svg:style(color-scheme: light only !important;)
-*##*:matches-css(background-image: /^url/):style(color-scheme: light only !important;)
+! exclude pattern from inversion
+*##img:style(color-scheme: only light;)
+*##*:matches-css(background-image: /^url/):style(color-scheme: only light;)
+askubuntu.com,git-scm.com#@#*:matches-css(background-image: /^url/):style(color-scheme: only light;)
 
-! exclude specific site (site that uses dark mode as default/only)
-*##html[dark], html.tw-root--theme-dark:style(color-scheme: light only !important;)
-spotify.com##:root:style(color-scheme: light only !important;)
-askubuntu.com,git-scm.com#@#*:matches-css(background-image: /^url/):style(color-scheme: light only !important;)
+! exclude dark mode attribute / site that uses dark mode from inversion
+*##html:is([dark], .tw-root--theme-dark, .__fb-dark-mode):style(color-scheme: only light !important;)
+spotify.com##:root:style(color-scheme: only light;)
+
+! allow light mode on sites that has light and dark mode
+www.youtube.com##html:not([dark]):style(color-scheme: only light;)
+*##html:is(.__fb-light-mode):style(color-scheme: only light !important;)
 
 ! fix site-specific
-/^shopee\.([\w]{2}|com?\.[\w]{2})$/##.IEKwEi .YiuE0t:style(color-scheme: auto !important;)
-ss64.com##a:style(color-scheme: light only !important)
 ss64.com##body:style(background: none !important;)
+ss64.com##a:style(color-scheme: only light !important)
 unix.stackexchange.com##body.unified-theme:style(background-image: none !important;)
 linux.die.net##body:style(color: unset !important;)
 git-scm.com##body:style(background: unset !important;)
+/^shopee\.([\w]{2}|com?\.[\w]{2})$/##.VAy83y.mylGx2:style(color-scheme: auto !important;)
