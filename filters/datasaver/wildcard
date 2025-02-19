@@ -1,12 +1,33 @@
+# Shopee Live & Video CDNs
+live.shopee.co.id
+live-apm.shopee.co.id
+chatroom-live.shopee.co.id
+livestream.shopee.co.id
+*.livestream.shopee.co.id
+livesteaming-api-dr.sp-cdn.susercontent.com*
+
+qdown-*.vod.susercontent.com
+mms.vod.susercontent.com*
+edge.shopee.co.id
+*.edge.shopee.co.id
+a311.dscd.akamai.net
+cdngarenanow-a.akamaihd.net
+d34rr1bjme6yp3.cloudfront.net
+
 # Shopee Video
 vod.susercontent.com*
 *.vod.susercontent.com*
+#down-cvs-id.vod.susercontent.com # the only domain that should be whitelisted in order to see product review video from customers
 
 # Shopee Games
 games.shopee.*
 idgame.shopee.*
-#games-dailycheckin.shopee.*
+#games-dailycheckin.shopee.* # to be able to claim daily rewards
 games.deo.susercontent.com
 games.deo.shopeemobile.com
 nlb.sgw.shopeemobile.com
 *.nlb.sgw.shopeemobile.com
+
+# Shopee Food
+food-metric.shopee.co.id
+foody.shopee.co.id
