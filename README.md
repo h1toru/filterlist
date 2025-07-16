@@ -24,9 +24,7 @@ See [DNS.md](/DNS.md) for blocking domains effectively using online DNS services
 | Adblock Warning Removal List (EasyList) | [raw](https://easylist-downloads.adblockplus.org/antiadblockfilters.txt) <br> [Homepage](https://easylist.to/pages/other-supplementary-filter-lists-and-easylist-variants.html) | Remove warning targeted to users who uses an Adblocker. |
 | Fanboy's Annoyance List (EasyList) | [raw](https://secure.fanboy.co.nz/fanboy-annoyance.txt) <br> [Homepage](https://easylist.to) | Remove annoyances; which would also decrease loading times and declutter web pages. <br> Note: *EasyList Cookie List* and *Fanboy's Social Blocking List* are included. |
 | AdGuard URL Tracking filter | [raw](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt) <br> [Homepage](https://github.com/AdguardTeam/FiltersRegistry) | Remove tracking parameters.
-| d3host | [raw](https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.adblock) [Homepage](https://github.com/d3ward/toolz) | Block the most popular advertising and tracking services. |
 | NoCoin | [raw](https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt) <br> [Homepage](https://github.com/hoshsadiq/adblock-nocoin-list) | Block JavaScript and browser-based crypto mining. |
-| CoinBlocker | [raw](https://gitlab.com/ZeroDot1/CoinBlockerLists/-/raw/master/list_browser_AdBlock.txt) <br> [raw_full](https://gitlab.com/ZeroDot1/CoinBlockerLists/-/raw/master/list.txt) <br> [Homepage](https://gitlab.com/ZeroDot1/CoinBlockerLists) | Block crypto mining. |
 | Malware Filter (URLhaus) | [raw](https://malware-filter.gitlab.io/urlhaus-filter/urlhaus-filter-ag-online.txt) <br> [Homepage](https://gitlab.com/malware-filter/urlhaus-filter) | Block malware. |
 | Phishing Filter | [raw](https://malware-filter.gitlab.io/phishing-filter/phishing-filter-ag.txt) <br> [Homepage](https://gitlab.com/malware-filter/phishing-filter) | Block phishing. |
 | Block Outsider Intrusion into LAN | [raw](https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/lan-block.txt) <br> [Homepage](https://github.com/uBlockOrigin/uAssets) | Prevent public internet sites from digging into your local LAN files. |
@@ -42,9 +40,7 @@ See [DNS.md](/DNS.md) for blocking domains effectively using online DNS services
 | Name | Links | Description |
 | :- | :-: | :- |
 | Peter Lowe's hosts | [raw](https://pgl.yoyo.org/as/serverlist.php?hostformat=hosts&mimetype=plaintext&useip=0.0.0.0) <br> [Homepage](https://pgl.yoyo.org/as/) | Block ad and tracking server. |
-| d3host | [raw](https://raw.githubusercontent.com/d3ward/toolz/master/src/d3host.txt) <br> [Homepage](https://github.com/d3ward/toolz) | Block the most popular advertising and tracking services. |
 | NoCoin | [raw](https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt) <br> [Homepage](https://github.com/hoshsadiq/adblock-nocoin-list) | Block JavaScript and browser-based Crypto mining. |
-| CoinBlocker | [raw](https://gitlab.com/ZeroDot1/CoinBlockerLists/-/raw/master/hosts_browser) <br> [raw_full](https://gitlab.com/ZeroDot1/CoinBlockerLists/-/raw/master/hosts) <br> [Homepage](https://gitlab.com/ZeroDot1/CoinBlockerLists) | Block Crypto mining. |
 | Malware Filter (URLhaus) | [raw](https://malware-filter.gitlab.io/urlhaus-filter/urlhaus-filter-hosts-online.txt) <br> [Homepage](https://gitlab.com/malware-filter/urlhaus-filter) | Block malware. |
 | Phishing Filter | [raw](https://malware-filter.gitlab.io/phishing-filter/phishing-filter-hosts.txt) <br> [Homepage](https://gitlab.com/malware-filter/phishing-filter) | Block phishing. |
 
@@ -66,6 +62,7 @@ Using an outdated filterlist could lead into high network delay, high loading ti
 | AdAway hosts | [raw](https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt) <br> [Homepage](https://github.com/AdAway/adaway.github.io) | Block mobile ad providers and some analytics providers. | Outdated. Last updated on 2023-04-30. **(as of 2024-09-30)** |
 | Dan Pollock's hosts | [raw](https://someonewhocares.org/hosts/zero/hosts) <br> [Homepage](https://someonewhocares.org/hosts) | Block various stuff on the internet, including ads, tracking, malware, dangerous sites, etc. | - Contains false-positive domain such as `s.youtube.com` <br> - Contains various filters that are better to be in separate lists. (like porn sites) |
 | WindowsSpyBlocker | [Homepage](https://github.com/crazy-max/WindowsSpyBlocker) | Block Windows tracker. | - Outdated and no longer maintained. <br> - Contains false positive. |
+| d3host | [Homepage](https://github.com/d3ward/toolz) | Block the most popular advertising and tracking services. | Project archived / No longer maintained. |
 
 ---
 
