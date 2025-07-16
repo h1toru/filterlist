@@ -84,7 +84,7 @@ Uses minimal filters that is enough to block ads and trackers.
 | dnswarden | Peter Lowe's Filter | 149.248.217.117 | | `https://dns.dnswarden.com/0000000000000008` | `0000000000000008.dns.dnswarden.com` |
 | RethinkDNS | Peter Lowe's Filter, URLhaus Filter | 137.66.7.89 (**DoT only**) | 2a09:8280:1::3:6e18 (**DoT only**) | `https://sky.rethinkdns.com/1:QBBAAEAA` | `1-iaieaacaaa.max.rethinkdns.com` |
 
-#### Effective
+#### Effective (Recommended)
 Uses HaGeZi's Multi Pro filterlist which is the most effective filters to block any sort of ads and trackers.
 
 | Provider | Filter | IPv4 | IPv6 | DNS-over-HTTPS/3| DNS-over-TLS/QUIC |
