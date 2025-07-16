@@ -4,7 +4,7 @@ List of recommended DNS Services.
 
 The DNS services in this list are chosen based on several factors like speed, security, privacy and transparency; and also filters (domain blocking) availability which is for me is the most important part of using DNS Service.
 
-**Note: Services listed in order (from most recommended to least)**
+**Note: Services listed in order from most recommended to least**
 
 ---
 
@@ -35,7 +35,7 @@ Logging:
 - Quad9 unfiltered server (`9.9.9.10`) doesn't support DNSSEC which is a big downside for better security.
 - RethinkDNS DoH (`sky.rethinkdns.com`) doesn't have static IP, so the IPs may change anytime. The Plain DNS is only for DoT (`max.rethinkdns.com`).
   > See: serverless-dns/serverless-dns#84
-- dnswarden and RethinkDNS often have connection lost.
+- dnswarden and RethinkDNS often have connection lost on Android's built-in Private DNS.
 - Based on my personal experiences, DNS-over-HTTPS/3 are way faster than DoT in term of speed.
 
 ---
@@ -85,7 +85,7 @@ Uses minimal filters that is enough to block ads and trackers.
 | RethinkDNS | Peter Lowe's Filter, URLhaus Filter | 137.66.7.89 (**DoT only**) | 2a09:8280:1::3:6e18 (**DoT only**) | `https://sky.rethinkdns.com/1:QBBAAEAA` | `1-iaieaacaaa.max.rethinkdns.com` |
 
 #### Effective
-Uses HaGeZi's Multi Pro filterlist which is the most effective filters to block any sort ads and trackers.
+Uses HaGeZi's Multi Pro filterlist which is the most effective filters to block any sort of ads and trackers.
 
 | Provider | Filter | IPv4 | IPv6 | DNS-over-HTTPS/3| DNS-over-TLS/QUIC |
 | :- | :- | :- | :- | :- | :- |
@@ -96,7 +96,7 @@ Uses HaGeZi's Multi Pro filterlist which is the most effective filters to block 
 | RethinkDNS | HaGeZi Multi Pro, TIF | 137.66.7.89 (**DoT only**) | 2a09:8280:1::3:6e18 (**DoT only**) | `https://sky.rethinkdns.com/1:AAoACBAA` | `1-aafaacaqaa.max.rethinkdns.com` |
 | RethinkDNS | HaGeZi Multi Pro, TIF, Hoster, DynDNS | 137.66.7.89 (**DoT only**) | 2a09:8280:1::3:6e18 (**DoT only**) | `https://sky.rethinkdns.com/1:ABqAABAIEAA=` | `1-aaniaaaqbaiaa.max.rethinkdns.com` |
 
-See: hagezi/dns-blocklists#dnsservices for more.
+See: [hagezi/dns-blocklists#dnsservices](https://github.com/hagezi/dns-blocklists#dnsservices) for more.
 
 ## Family
 Blocks adult content and explicit sites.
