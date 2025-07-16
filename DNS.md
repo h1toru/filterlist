@@ -2,12 +2,11 @@
 
 List of recommended DNS Services.
 
-The DNS services on this list are chosen based on several factors like security, speed, and transparency; also usability of filters which is for me the most important part of using DNS Service.
+The DNS services in this list are chosen based on several factors like speed, security, privacy and transparency; and also filters (domain blocking) availability which is for me is the most important part of using DNS Service.
 
-Based on my personal experiences, DNS-over-HTTPS/3is way faster than DoT in term of speed. But I don't know if it's better from security standpoint.
+**Note: Services listed in order (from most recommended to least)**
 
-**Note: Services listed in order**
-****
+---
 
 ✅ (Yes) |
 ❌ (No) |
@@ -36,16 +35,21 @@ Logging:
 - Quad9 unfiltered server (`9.9.9.10`) doesn't support DNSSEC which is a big downside for better security.
 - RethinkDNS DoH (`sky.rethinkdns.com`) doesn't have static IP, so the IPs may change anytime. The Plain DNS is only for DoT (`max.rethinkdns.com`).
   > See: serverless-dns/serverless-dns#84
+- dnswarden and RethinkDNS often have connection lost.
+- Based on my personal experiences, DNS-over-HTTPS/3 are way faster than DoT in term of speed.
+
+---
 
 ## Unfiltered
+Doesn't block or filters anything.
 
 | Provider | IPv4 | IPv6 | DNS-over-HTTPS/3 | DNS-over-TLS/QUIC |
 | :- | :- | :- | :- | :- |
 | ControlD | 76.76.2.0 <br> 76.76.10.0 | 2606:1a40:: <br> 2606:1a40:1:: | `https://freedns.controld.com/p0` | `p0.freedns.controld.com` |
 | AdGuard | 94.140.14.140 <br> 94.140.14.141 | 2a10:50c0::1:ff <br> 2a10:50c0::2:ff | `https://unfiltered.adguard-dns.com/dns-query` | `unfiltered.adguard-dns.com` |
 | MullvadDNS | 194.242.2.2 | 2a07:e340::2 | `https://dns.mullvad.net/dns-query` | `dns.mullvad.net` |
-| Quad9 | 9.9.9.10 <br> 149.112.112.10 | 2620:fe::10 <br> 2620:fe::fe:10 | `https://dns10.quad9.net/dns-query` | `dns10.quad9.net` |
 | Cloudflare | 1.1.1.1 <br> 1.0.0.1 | 2606:4700:4700::1111 <br> 2606:4700:4700::1001 | `https://1dot1dot1dot1.cloudflare-dns.com/dns-query` <br> `https://one.one.one.one/dns-query` | `1dot1dot1dot1.cloudflare-dns.com` <br> `one.one.one.one` |
+| Quad9 | 9.9.9.10 <br> 149.112.112.10 | 2620:fe::10 <br> 2620:fe::fe:10 | `https://dns10.quad9.net/dns-query` | `dns10.quad9.net` |
 | dnswarden | 149.248.217.117 | | `https://dns.dnswarden.com/uncensored` | `uncensored.dns.dnswarden.com` |
 | RethinkDNS | 137.66.7.89 (**DoT only**) | 2a09:8280:1::3:6e18 (**DoT only**) | `https://sky.rethinkdns.com/` | `max.rethinkdns.com` |
 
@@ -55,15 +59,15 @@ Blocks malware and malicious domains.
 | Provider | IPv4 | IPv6 | DNS-over-HTTPS/3| DNS-over-TLS/QUIC |
 | :- | :- | :- | :- | :- |
 | ControlD | 76.76.2.1 <br> 76.76.10.1 | 2606:1a40::1 <br> 2606:1a40:1::1 | `https://freedns.controld.com/p1` | `p1.freedns.controld.com` |
+| Quad9 | 9.9.9.9 <br> 149.112.112.112 | 2620:fe::fe <br> 2620:fe::9 | `https://dns.quad9.net/dns-query` | `dns.quad9.net` |
 | Cloudflare | 1.1.1.2 <br> 1.0.0.2 | 2606:4700:4700::1112 <br> 2606:4700:4700::1002 | `https://security.cloudflare-dns.com/dns-query` | `security.cloudflare-dns.com` |
-| Quad9 | 9.9.9.9 <br> 149.112.112.112 | 2620:fe::fe <br> 2620:fe::9 | `https://dns.quad9.net/dns-query` | `dns.quad9.net`
 | RethinkDNS | 137.66.7.89 (**DoT only**) | 2a09:8280:1::3:6e18 (**DoT only**) | `https://sky.rethinkdns.com/1:ABBAAA==` | `1-aaieaaa.max.rethinkdns.com` |
 
 ## Adblock
 Blocks Ads, Tracker, etc.
 
 #### Default
-Filters decided by the provider, which in most cases users wouldn't know which filters are used and not really effective to block ads.
+Filterlists are decided by the DNS provider. Users wouldn't know which filterlists is used and in most cases, it's not really effective to block ads.
 
 | Provider | IPv4 | IPv6 | DNS-over-HTTPS/3| DNS-over-TLS/QUIC |
 | :- | :- | :- | :- | :- |
@@ -72,7 +76,7 @@ Filters decided by the provider, which in most cases users wouldn't know which f
 | MullvadDNS | 194.242.2.4 <br> 2a07:e340::4 | `https://base.dns.mullvad.net/dns-query` | `base.dns.mullvad.net` |
 | dnswarden | 149.248.217.117 | | `https://dns.dnswarden.com/adblock` | `adblock.dns.dnswarden.com` |
 
-#### Enough
+#### Minimal
 Uses minimal filters that is enough to block ads and trackers.
 
 | Provider | Filter | IPv4 | IPv6 | DNS-over-HTTPS/3| DNS-over-TLS/QUIC |
@@ -80,14 +84,19 @@ Uses minimal filters that is enough to block ads and trackers.
 | dnswarden | Peter Lowe's Filter | 149.248.217.117 | | `https://dns.dnswarden.com/0000000000000008` | `0000000000000008.dns.dnswarden.com` |
 | RethinkDNS | Peter Lowe's Filter, URLhaus Filter | 137.66.7.89 (**DoT only**) | 2a09:8280:1::3:6e18 (**DoT only**) | `https://sky.rethinkdns.com/1:QBBAAEAA` | `1-iaieaacaaa.max.rethinkdns.com` |
 
-#### HaGeZi
-Uses HaGeZi's filters which is effective to block ads, trackers, etc.
+#### Effective
+Uses HaGeZi's Multi Pro filterlist which is the most effective filters to block any sort ads and trackers.
 
 | Provider | Filter | IPv4 | IPv6 | DNS-over-HTTPS/3| DNS-over-TLS/QUIC |
 | :- | :- | :- | :- | :- | :- |
 | ControlD | HaGeZi Multi Pro | 76.76.2.41 <br> 76.76.10.41 | 2606:1a40::41 <br> 2606:1a40:1::41 | `https://freedns.controld.com/x-hagezi-pro` | `x-hagezi-pro.freedns.controld.com` |
+| dnswarden | HaGeZi Multi Pro | 149.248.217.117 | | `https://dns.dnswarden.com/0000000000000000000001` | `0000000000000000000001.dns.dnswarden.com` |
+| RethinkDNS | HaGeZi Multi Pro | 137.66.7.89 (**DoT only**) | 2a09:8280:1::3:6e18 (**DoT only**) | `https://sky.rethinkdns.com/1:AAIQAA==` | `1-aabbaaa.max.rethinkdns.com` |
 | dnswarden | HaGeZi Multi Pro, TIF | 149.248.217.117 | | `https://dns.dnswarden.com/00000000000000000000018` | `00000000000000000000018.dns.dnswarden.com` |
+| RethinkDNS | HaGeZi Multi Pro, TIF | 137.66.7.89 (**DoT only**) | 2a09:8280:1::3:6e18 (**DoT only**) | `https://sky.rethinkdns.com/1:AAoACBAA` | `1-aafaacaqaa.max.rethinkdns.com` |
 | RethinkDNS | HaGeZi Multi Pro, TIF, Hoster, DynDNS | 137.66.7.89 (**DoT only**) | 2a09:8280:1::3:6e18 (**DoT only**) | `https://sky.rethinkdns.com/1:ABqAABAIEAA=` | `1-aaniaaaqbaiaa.max.rethinkdns.com` |
+
+See: hagezi/dns-blocklists#dnsservices for more.
 
 ## Family
 Blocks adult content and explicit sites.
