@@ -40,8 +40,13 @@ See [DNS.md](/DNS.md) for blocking domains effectively using online DNS services
 | Name | Links | Description |
 | :- | :-: | :- |
 | Peter Lowe's hosts | [raw](https://pgl.yoyo.org/as/serverlist.php?hostformat=hosts&mimetype=plaintext&useip=0.0.0.0) <br> [Homepage](https://pgl.yoyo.org/as/) | Block ad and tracking server. |
+| Malware Filter (URLhaus) | [raw](https://malware-filter.gitlab.io/urlhaus-filter/urlhaus-filter-hosts-online.txt) <br> [Homepage](https://gitlab.com/malware-filter/urlhaus-filter) | Block malware and malicious domain. |
 | NoCoin | [raw](https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt) <br> [Homepage](https://github.com/hoshsadiq/adblock-nocoin-list) | Block JavaScript and browser-based Crypto mining. |
-| Malware Filter (URLhaus) | [raw](https://malware-filter.gitlab.io/urlhaus-filter/urlhaus-filter-hosts-online.txt) <br> [Homepage](https://gitlab.com/malware-filter/urlhaus-filter) | Block malware. |
+
+### Extras
+
+| Name | Links | Description |
+| :- | :-: | :- |
 | Phishing Filter | [raw](https://malware-filter.gitlab.io/phishing-filter/phishing-filter-hosts.txt) <br> [Homepage](https://gitlab.com/malware-filter/phishing-filter) | Block phishing. |
 
 ---
@@ -54,15 +59,15 @@ See [DNS.md](/DNS.md) for blocking domains effectively using online DNS services
 
 Filterlist that is outdated, unmantained, contains false-positives, or a combined filterlists.
 
-Using an outdated filterlist could lead into high network delay, high loading times and/or other problems.
+Using an outdated filterlist could lead into high network delay/loading times as it most likely to contains dead domains.
 
-| Name | Link | Description | Reason |
-| :- | :-: | :- | :- |
-| StevenBlack's Unified hosts | [raw](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts) <br> [Homepage](https://github.com/StevenBlack/hosts) | Block advertisement and malware. | - A combined filterlist. (To check what's included, open the raw url and search: `# Start`) <br> - Contains false positives. <br> - Includes outdated sources like AdAway hosts, MVPS hosts, etc. |
-| AdAway hosts | [raw](https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt) <br> [Homepage](https://github.com/AdAway/adaway.github.io) | Block mobile ad providers and some analytics providers. | Outdated. Last updated on 2023-04-30. **(as of 2024-09-30)** |
-| Dan Pollock's hosts | [raw](https://someonewhocares.org/hosts/zero/hosts) <br> [Homepage](https://someonewhocares.org/hosts) | Block various stuff on the internet, including ads, tracking, malware, dangerous sites, etc. | - Contains false-positive domain such as `s.youtube.com` <br> - Contains various filters that are better to be in separate lists. (like porn sites) |
-| WindowsSpyBlocker | [Homepage](https://github.com/crazy-max/WindowsSpyBlocker) | Block Windows tracker. | - Outdated and no longer maintained. <br> - Contains false positive. |
-| d3host | [Homepage](https://github.com/d3ward/toolz) | Block the most popular advertising and tracking services. | Project archived / No longer maintained. |
+| Name | Reason |
+| :- | :- |
+| [StevenBlack's Unified hosts](https://github.com/StevenBlack/hosts) ([raw](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts)) | - A combined filterlist (To check what's included, open the raw url and search: `# Start`) <br> - Includes outdated filterlist like *AdAway hosts*, *MVPS hosts*, etc. <br> - Contains false positives |
+| [AdAway hosts](https://github.com/AdAway/adaway.github.io) ([raw](https://raw.githubusercontent.com/AdAway/adaway.github.io/master/hosts.txt)) | Outdated |
+| [Dan Pollock's hosts](https://someonewhocares.org/hosts) ([raw](https://someonewhocares.org/hosts/zero/hosts)) | - Contains false-positive domain such as `s.youtube.com` <br> - Contains various filters that are better to be in separate lists (like porn sites) |
+| [WindowsSpyBlocker](https://github.com/crazy-max/WindowsSpyBlocker) | - Outdated and no longer maintained <br> - Contains false positive |
+| [d3host](https://github.com/d3ward/toolz) | Project archived / No longer maintained |
 
 ---
 
