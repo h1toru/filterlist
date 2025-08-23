@@ -3,9 +3,9 @@
 # Description: Block Tracker/Analytics/Telemetry.
 # Homepage: https://github.com/h1toru/filterlist
 #
-# Last modified: 2025-01-08 06:32:08 UTC
+# Last modified: 2025-08-23 05:54:55 UTC
 # Format: Hosts
-# Entries: 613
+# Entries: 618
 #
 # Report any problem at: https://github.com/h1toru/filterlist/issues
 #————————————————————————————————————————————————————————————————————————————————————————————————————#
@@ -799,7 +799,12 @@
 #==================== Native ====================#
 # --- Microsoft
 0.0.0.0 footprintdns.com
+0.0.0.0 nrb.footprintdns.com
+0.0.0.0 clo.footprintdns.com
 0.0.0.0 msedge.net
+0.0.0.0 fp.msedge.net
+0.0.0.0 k-ring.msedge.net
+0.0.0.0 b-ring.msedge.net
 
 # --- Xiaomi
 0.0.0.0 diagnosis.ad.xiaomi.com
