@@ -5,7 +5,7 @@
 !
 ! Last modified: 2025-01-08 05:30:11 UTC
 ! Format: Adblock
-! Entries: 13
+! Entries: 14
 !
 ! Report any problem @ https://github.com/h1toru/filterlist/issues
 !————————————————————————————————————————————————————————————————————————————————————————————————————!
@@ -20,7 +20,9 @@
 
 ! exclude pattern from inversion
 *##img:style(color-scheme: only light;)
-*##*:matches-css(background-image: /^url/):style(color-scheme: only light;)
+*##*:matches-css(background-image: /^url\(/):style(color-scheme: only light;)
+*##*:matches-css(background: /url\(/):style(color-scheme: only light;)
+
 askubuntu.com,git-scm.com#@#*:matches-css(background-image: /^url/):style(color-scheme: only light;)
 
 ! exclude dark mode attribute / site that uses dark mode from inversion
