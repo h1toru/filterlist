@@ -1,8 +1,6 @@
 # Notes
 
-## Recommendation
-
-<details><summary><b>Tools</b><a name="tools"></a></summary>
+## Tools <a name="tools"></a></summary>
 
 My personal recommendations of tools to use filterlists on. Also to use custom DNS (some of them).
 
@@ -10,12 +8,13 @@ My personal recommendations of tools to use filterlists on. Also to use custom D
 
 #### Android <a name="tools-android"></a>
 
-:white_check_mark: yes :orange_square: yes, but not recommended :x: no
+✅ Yes | ❌ No
 
-| Name | Links | ROOT | NO ROOT | Open Source |
-| :- | :- | :-: | :-: | :-: |
-personalDNSfilter | [Official Website](https://www.zenz-solutions.de/personaldnsfilter-wp/) \| [F-Droid](https://f-droid.org/en/packages/dnsfilter.android/) | :orange_square: | :white_check_mark: | [Source Code](https://github.com/IngoZenz/personaldnsfilter) |
-| AdAway | [Official Website](https://adaway.org) \| [GitHub](https://github.com/AdAway/AdAway/releases) \| [F-Droid](https://f-droid.org/packages/org.adaway/) | :white_check_mark: | :white_check_mark: | [Source Code](https://github.com/AdAway/AdAway) |
+| Name | Links | Remote Filterlist | Custom DNS | NO-ROOT | ROOT | Open Source |
+| :- | :- | :-: | :-: | :-: | :-: | :-: |
+personalDNSfilter | [Official Website](https://www.zenz-solutions.de/personaldnsfilter-wp/) <br> [F-Droid](https://f-droid.org/en/packages/dnsfilter.android/) | ✅ | ✅ | ✅ | ✅ | ✅ <br> [Source Code](https://github.com/IngoZenz/personaldnsfilter) |
+| Rethink | [Official Website](https://rethinkdns.com/download) <br> [GitHub](https://github.com/celzero/rethink-app) <br> [F-Droid](https://f-droid.org/packages/com.celzero.bravedns/) <br> [Google Play](https://play.google.com/store/apps/details?id=com.celzero.bravedns) | ❌ | ✅ | ✅ | ❌ | ✅ <br> [Source Code](https://github.com/celzero/rethink-app) |
+| AdAway | [Official Website](https://adaway.org) <br> [GitHub](https://github.com/AdAway/AdAway/releases) <br> [F-Droid](https://f-droid.org/packages/org.adaway/) | ✅ | ❌ | ✅ | ✅ | ✅ <br> [Source Code](https://github.com/AdAway/AdAway) |
 
 #### Windows <a name="tools-windows"></a>
 
