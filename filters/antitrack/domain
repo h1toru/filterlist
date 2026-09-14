@@ -3,7 +3,7 @@
 # Description: Blocks data collection service and/or provider.
 # Homepage: https://github.com/h1toru/filterlist
 #
-# Last modified: 2026-08-24
+# Last modified: 2026-09-14
 # Format: Domain
 # Entries: -
 #————————————————————————————————————————————————————————————————————————————————————————————————————#
@@ -11,6 +11,7 @@
 # ——— Service / App Tracker
 sstats.adobe.com
 bat.bing.com
+improving.duckduckgo.com
 collector.github.com
 content.garena.com
 alb.reddit.com
