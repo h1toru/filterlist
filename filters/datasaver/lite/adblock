@@ -1,0 +1,30 @@
+!————————————————————————————————————————————————————————————————————————————————————————————————————#
+! Title: Data Saver (Lite)
+! Description: Blocks unnecessary media/CDNs without breaking main functionality.
+! Homepage: https://github.com/h1toru/filterlist
+!
+! Last modified: 2026-09-15
+! Format: Adblock
+! Entries: -
+!————————————————————————————————————————————————————————————————————————————————————————————————————#
+
+! Shopee Live
+||live.shopee.co.id^
+||live-apm.shopee.co.id^
+||livetech.shopee.co.id^
+
+! Shopee Video
+||vod.susercontent.com^
+||vod.susercontent.com.eo.dnse1.com^
+||vod.susercontent.com.cdn20.com^
+! Customer product review (video)
+@@||down-aka-id.vod.susercontent.com^
+!||down-cvs-id.vod.susercontent.com^
+
+! Shopee Games
+||games.shopee.co.id^
+||idgame.shopee.co.id^
+!||games-dailycheckin.shopee.co.id^ # ability to claim daily rewards
+||games.deo.susercontent.com^
+||games.deo.shopeemobile.com^
+||nlb.sgw.shopeemobile.com^
