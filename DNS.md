@@ -1,42 +1,42 @@
-# DNS Services
+# Online DNS Service
 
-List of recommended DNS Services.
+List of recommended public DNS services.
 
-The DNS services in this list are chosen based on several factors like speed, security, privacy and transparency; and also filters (domain blocking) availability which is for me is the most important part of using DNS Service.
+These services are chosen based on several factors, like speed, security, privacy and transparency; and also filtering (domain blocking) ability - which for me is the most important part of using public DNS service.
 
 **Note: Services listed in order from most recommended to least**
 
 ---
 
-✅ (Yes) |
-❌ (No) |
-❔ (Unknown) |
-🟣 (Depends on server choice) |
-🔵 (Depends on user choice; configurable)
-
-Logging:
-🔴 (Yes) |
-🟡 (Some)
-
-| Provider             | Logging | Adblock Filter | QUIC Support | DNSCrypt | DNSSEC Validation  | QNAME Minimization |
+| Provider | Logging | Adblock Filter | QUIC Support | DNSCrypt | DNSSEC Validation  | QNAME Minimization |
 | :-                   | :-: | :-: | :-: | :-: | :-: | :-: |
-| ControlD (Free tier) | 🔵 | 🟣 | ❌ | ❌ | ✅ | ✅ |
-| AdGuard (Free tier)  | 🟡 | 🟣 | ✅ | ✅ | ✅ | ✅ |
-| MullvadDNS           | ❌ | 🟣 | ❔ | ❔ | ✅ | ✅ |
-| Quad9                | ❌ | ❌ | ❌ | ❔ | ✅ | ✅ |
-| Cloudflare           | 🟡 | ❌ | ✅ | ❔ | ✅ | ✅ |
-| dnswarden            | ❌ | 🔵 | ✅ | ✅ | ✅ | ✅ |
-| RethinkDNS           | ❌ | 🔵 | ❔ | ❔ | ✅ | ✅ |
+| ControlD (Public) | 🔵 | 🟣 | ❌ | ❌ | ✅ | ✅ |
+| AdGuard DNS (Public) | 🟡 | 🟣 | ✅ | ✅ | ✅ | ✅ |
+| AdGuard DNS (Private) | ? | 🔵 | ✅ | ❔ | ❔ | ❔ |
+| DNSBunker.org | ❌ | ✅ | ✅ | ? | ✅ | ✅ |
+| Quad9 | ❌ | ❌ | ❌ | ❔ | ✅ | ✅ |
+| Cloudflare | 🟡 | ❌ | ✅ | ❔ | ✅ | ✅ |
+| dnswarden | ❌ | 🔵 | ✅ | ✅ | ✅ | ✅ |
+| RethinkDNS | ❌ | 🔵 | ❔ | ❔ | ✅ | ✅ |
+
+- ✅ (Yes)
+- ❌ (No)
+- ? (Unknown, not confirmed)
+- 🟡 (Yes, some)
+- 🟣 (Yes, but depends on server choice)
+- 🔵 (Yes, but depends on user choice)
+- 🟢 (Yes, and completely customizable)
 
 ### Notes
 - **EDNS Client Subnet (ECS)** makes DNS communication less private and reduce the efficiency of DNS caching. So it is recommended to not use/enable it.<br>
   > See: https://adguard-dns.io/en/blog/privacy-friendly-edns-client-subnet.html
-- Mullvad, dnswarden, RethinkDNS; Plain DNS cannot be used as *Plain DNS* (TCP/53 or UDP/53).
-- Quad9 unfiltered server (`9.9.9.10`) doesn't support DNSSEC which is a big downside for better security.
+- MullvadDNS, dnswarden, RethinkDNS; Plain DNS cannot be used as *Plain DNS*. (TCP/53 or UDP/53)
+- ~~***Quad9 Unfiltered/Unsecured Server*** (`9.9.9.10`) doesn't comes with **DNSSEC validation**; which is a big downside for better security.~~  
+  See: https://quad9.net/news/blog/quad9-enables-dnssec-on-all-service-endpoints/
 - RethinkDNS DoH (`sky.rethinkdns.com`) doesn't have static IP, so the IPs may change anytime. The Plain DNS is only for DoT (`max.rethinkdns.com`).
   > See: serverless-dns/serverless-dns#84
 - dnswarden and RethinkDNS often have connection lost on Android's built-in Private DNS.
-- Based on my personal experiences, DNS-over-HTTPS/3 are way faster than DoT in term of speed.
+- Always use these protocols (in order) **DoH3** > **DoQ** > **DoH** > **DoT** where it is possible, avoids using unsecured **Plain DNS**.
 
 ---
 
@@ -116,18 +116,20 @@ Blocks adult content and explicit sites.
 - Quad9: https://quad9.net/service/service-addresses-and-features
 - dnswarden: https://dnswarden.com
 - RethinkDNS: https://rethinkdns.com/configure
-  -  https://github.com/serverless-dns/serverless-dns
 
 ### Reference
 https://avoidthehack.com/best-dns-privacy<br>
 https://github.com/hagezi/dns-blocklists#dnsservices<br>
-https://en.wikipedia.org/wiki/Extension_Mechanisms_for_DNS
+https://en.wikipedia.org/wiki/Extension_Mechanisms_for_DNS  
+https://quad9.net/news/blog/quad9-enables-dnssec-on-all-service-endpoints/
 
 ### Testing
 https://www.dnscheck.tools<br>
 https://wander.science/projects/dns/dnssec-resolver-test<br>
 https://ipleak.net<br>
 https://dnsleaktest.com<br>
-https://one.one.one.one/help<br>
+Cloudflare DNS test: https://one.one.one.one/help<br>
 https://check-host.net/check-ping<br>
 https://dohjs.org<br>
+
+Mullvad VPN test: 
