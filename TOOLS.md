@@ -1,52 +1,26 @@
-# Notes
+# Tools
 
-## Tools <a name="tools"></a></summary>
+My personal recommendations of tools to use filterlists on.
 
-My personal recommendations of tools to use filterlists on. Also to use custom DNS (some of them).
+To learn more about filterlist format, see: [README.md#format](/README.md#format)
 
->Recommendations in order.
+#### Android
 
-#### Android <a name="tools-android"></a>
+✅ Yes | ❌ No | 🟠 Service's choice only
 
-✅ Yes | ❌ No
+| Name | Links | Supported Format | Remote Filterlist | Local Filterlist | Custom DNS | NO-ROOT | ROOT | Open Source |
+| :- | :- | :- | :-: | :-: | :-: | :-: | :-: | :-: |
+personalDNSfilter | [Official Website](https://www.zenz-solutions.de/personaldnsfilter-wp/) <br> [F-Droid](https://f-droid.org/en/packages/dnsfilter.android/) | domain (remote), wildcard (local) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ <br> [Source Code](https://github.com/IngoZenz/personaldnsfilter) |
+| Rethink | [Official Website](https://rethinkdns.com/download) <br> [GitHub](https://github.com/celzero/rethink-app) <br> [F-Droid](https://f-droid.org/packages/com.celzero.bravedns/) <br> [Google Play](https://play.google.com/store/apps/details?id=com.celzero.bravedns) | doesn't support custom filterlist | 🟠 | 🟠 | ✅ | ✅ | ❌ | ✅ <br> [Source Code](https://github.com/celzero/rethink-app) |
+| AdAway | [Official Website](https://adaway.org) <br> [GitHub](https://github.com/AdAway/AdAway/releases) <br> [F-Droid](https://f-droid.org/packages/org.adaway/) | hosts | ✅ | ✅ | ❌ | ✅ | ✅ | ✅ <br> [Source Code](https://github.com/AdAway/AdAway) |
 
-| Name | Links | Remote Filterlist | Custom DNS | NO-ROOT | ROOT | Open Source |
-| :- | :- | :-: | :-: | :-: | :-: | :-: |
-personalDNSfilter | [Official Website](https://www.zenz-solutions.de/personaldnsfilter-wp/) <br> [F-Droid](https://f-droid.org/en/packages/dnsfilter.android/) | ✅ | ✅ | ✅ | ✅ | ✅ <br> [Source Code](https://github.com/IngoZenz/personaldnsfilter) |
-| Rethink | [Official Website](https://rethinkdns.com/download) <br> [GitHub](https://github.com/celzero/rethink-app) <br> [F-Droid](https://f-droid.org/packages/com.celzero.bravedns/) <br> [Google Play](https://play.google.com/store/apps/details?id=com.celzero.bravedns) | ❌ | ✅ | ✅ | ❌ | ✅ <br> [Source Code](https://github.com/celzero/rethink-app) |
-| AdAway | [Official Website](https://adaway.org) <br> [GitHub](https://github.com/AdAway/AdAway/releases) <br> [F-Droid](https://f-droid.org/packages/org.adaway/) | ✅ | ❌ | ✅ | ✅ | ✅ <br> [Source Code](https://github.com/AdAway/AdAway) |
-
-#### Windows <a name="tools-windows"></a>
+#### Windows
 
 :white_check_mark: yes :x: no
 
 | Name | Links | Open Source |
 | :- | :- | :-: |
 | YogaDNS | [Official Website](https://www.yogadns.com) | :x: |
-
-</details>
-
-<details><summary><b>Online DNS Services</b><a name="dns"></a></summary><br>
-
-Use online DNS services as an ad-blocker with **DoH (DNS over HTTPS)** or **DoT (DNS over TLS)**.
-
-You're able choose which filterlists to be included in the DNS address. But these DNS services only provides well-known filterlists, so you cannot use a custom filterlists (including my filterlists atm).
-
-Note: I've tested so many times, **DoH** is way faster than **DoT**.
-
-- [RethinkDNS](https://rethinkdns.com/configure) - free  
-    > [!NOTE]  
-    > The filterlists are only updated once a week.
-
-    > My configuration:  
-    > - DoH: `https://sky.rethinkdns.com/1:YBuAAxAIEAAQEERAwL8=`
-    > - DoT: `1-manyaayqbaiaaeaqirambpy.max.rethinkdns.com`
-    >
-    > Check or configure the filterlists that I used: https://rethinkdns.com/configure?s=added#1:YBuAAxAIEAAQEERAwL8=
-
-- [dnswarden](https://dnswarden.com/customfilter.html) - free
-
-</details>
 
 ## Troubleshoot
 
@@ -98,6 +72,6 @@ Reference: https://xdaforums.com/t/fix-android-scroll-lag-caused-by-host-file.32
 Using too much filters in `/etc/hosts` can make the device slow, lagging, stutter, hang or other problems as the device needs time to load the `hosts` file/reads the entries inside the `hosts` file. To put it simply **MORE ENTRY = MORE TIME TO LOAD**.
 
 The best way to prevent this are avoid using too much blocklists/using blocklists that has so much entries.  
-More blocklists doesn't necessarily mean more ads/trackers blocked, a small, well-maintained blocklists can be enough to block ads/trackers, like those in [my recommendation](/../../../#recommendation-hosts).
+More blocklists doesn't necessarily mean more ads/trackers blocked, a small, well-maintained blocklists can be enough to block ads/trackers, like those in [my recommendation](README.md#filterlist-recommendation).
 
 Another alternatives is using browser-based ad-blocker (either using a browser that has inbuilt ad-blocking features, like [Via Browser](https://play.google.com/store/apps/details?id=mark.via.gp) on Android; or a browser extensions, like [uBlock Origin](https://github.com/gorhill/uBlock) on any browser you prefer) or using [Online DNS Services](#dns).
