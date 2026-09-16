@@ -4,10 +4,11 @@
 
 | Format | Syntax | Tools |
 | :- | :- | :- |
-| Hosts | `0.0.0.0 www.example.com` | [Native **hosts**](#native-hosts), [AdAway](https://github.com/AdAway/AdAway), [SwitchHosts](https://github.com/oldj/SwitchHosts), etc.
-| Domains | `example.com` `example.com.io` | [PersonalDNSFilter](https://github.com/IngoZenz/personaldnsfilter), etc. |
-| Wildcard | `promo*.example.com` `example.*` | [PersonalDNSFilter's **additional hosts**](#pdnsf-additional-hosts), [YogaDNS](https://www.yogadns.com), etc. |
-| Adblock | `\|\|example.com^` `www.example.com##.ads` | [uBlock Origin](https://github.com/gorhill/uBlock), etc. |
+| Hosts | `0.0.0.0 www.example.com` | [Native **hosts**](#native-hosts), [AdAway](https://github.com/AdAway/AdAway), [SwitchHosts](https://github.com/oldj/SwitchHosts)
+| Domains | `example.com` `example.com.io` | [PersonalDNSFilter](https://github.com/IngoZenz/personaldnsfilter), [Technitium DNS Server](https://technitium.com/dns/) |
+| Wildcard | `promo*.example.com` `example.*` | [PersonalDNSFilter's **additional hosts**](#pdnsf-additional-hosts), [YogaDNS](https://www.yogadns.com) |
+| Adblock | `\|\|example.com^` `www.example.com##.ads` | [uBlock Origin](https://github.com/gorhill/uBlock) |
+
 
 #### Native hosts location: <a name="native-hosts"></a>
 - Windows: `%SYSTEMROOT%\System32\drivers\etc\hosts`
@@ -26,7 +27,7 @@ See: [DNS.md](/DNS.md#adblock)
 #### PersonalDNSFilter's additional hosts <a name="pdnsf-additional-hosts"></a>
 `Advanced settings` > `additional hosts`
 
-## Recommendation
+## Filterlist Recommendation
 
 <details>
 <summary>Adblock Format</summary>
