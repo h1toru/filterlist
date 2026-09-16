@@ -1,8 +1,6 @@
 # Tools
 
-My personal recommendations of tools to use filterlists on.
-
-To learn more about filterlist format, see: [README.md#format](/README.md#format)
+My personal recommendations of network-filtering tool/ad blocker.
 
 #### Android
 
@@ -16,15 +14,33 @@ personalDNSfilter | [Official Website](https://www.zenz-solutions.de/personaldns
 
 #### Windows
 
-:white_check_mark: yes :x: no
+✅ Yes | ❌ No
 
 | Name | Links | Open Source |
 | :- | :- | :-: |
-| YogaDNS | [Official Website](https://www.yogadns.com) | :x: |
+| YogaDNS | [Official Website](https://www.yogadns.com) | ❌ |
 
-## Troubleshoot
+## More Information
 
-### Fix lag, stutter, hang, etc. caused by `hosts` file. <a name="fix-hosts"></a>
+#### Native hosts file location: <a name="native-hosts"></a>
+- Windows: `%SYSTEMROOT%\System32\drivers\etc\hosts`
+- macOS & Linux: `/etc/hosts`
+- Android: `/system/etc/hosts`
+
+<details>
+  <summary>Important Notes</summary>
+
+Large number of entries in **hosts** file could adds additional network latency or even slows down your system.
+> I have encountered high network latency/delay and system freezing on Windows and Android, which caused by large number of entries in the *hosts file*.
+
+*hosts file* is better to be used **only** for basic filtering, such as blocking native tracker / OS telemetry, common tracking domains, and to bypass ISP restrictions (*host redirection*).
+
+For heavy filtering, I'd recommend using third-party software or network-level filtering instead.  
+See [DNS.md](/DNS.md) for network-level filtering
+
+</details>
+
+#### Fix lag, stutter, hang, etc. caused by `hosts` file. <a name="fix-hosts"></a>
 
 <details><summary><b>Android</b><a name="fix-hosts-android"></a></summary><br>
 
@@ -72,6 +88,4 @@ Reference: https://xdaforums.com/t/fix-android-scroll-lag-caused-by-host-file.32
 Using too much filters in `/etc/hosts` can make the device slow, lagging, stutter, hang or other problems as the device needs time to load the `hosts` file/reads the entries inside the `hosts` file. To put it simply **MORE ENTRY = MORE TIME TO LOAD**.
 
 The best way to prevent this are avoid using too much blocklists/using blocklists that has so much entries.  
-More blocklists doesn't necessarily mean more ads/trackers blocked, a small, well-maintained blocklists can be enough to block ads/trackers, like those in [my recommendation](README.md#filterlist-recommendation).
-
-Another alternatives is using browser-based ad-blocker (either using a browser that has inbuilt ad-blocking features, like [Via Browser](https://play.google.com/store/apps/details?id=mark.via.gp) on Android; or a browser extensions, like [uBlock Origin](https://github.com/gorhill/uBlock) on any browser you prefer) or using [Online DNS Services](#dns).
+More blocklists doesn't necessarily mean more ads/trackers blocked, a small, well-maintained blocklists can be enough to block ads/trackers, like those in [my recommendation](/README.md#filterlist-recommendation).
