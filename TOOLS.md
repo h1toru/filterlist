@@ -28,64 +28,57 @@ personalDNSfilter | [Official Website](https://www.zenz-solutions.de/personaldns
 - Android: `/system/etc/hosts`
 
 <details>
-  <summary>Important Notes</summary>
+  <summary>
+    Important Notes
+  </summary>
+
+---
 
 Large number of entries in **hosts** file could adds additional network latency or even slows down your system.
 > I have encountered high network latency/delay and system freezing on Windows and Android, which caused by large number of entries in the *hosts file*.
 
 *hosts file* is better to be used **only** for basic filtering, such as blocking native tracker / OS telemetry, common tracking domains, and to bypass ISP restrictions (*host redirection*).
 
+More blocklists doesn't necessarily mean more ads/trackers blocked, a small, well-maintained blocklists can be enough to block ads/trackers (like those listed in [my recommendation](/README.md#filterlist-recommendation)).
+
 For heavy filtering, I'd recommend using third-party software or network-level filtering instead.  
 See [DNS.md](/DNS.md) for network-level filtering
-
-</details>
-
-#### Fix lag, stutter, hang, etc. caused by `hosts` file. <a name="fix-hosts"></a>
-
-<details><summary><b>Android</b><a name="fix-hosts-android"></a></summary><br>
-
->I'm assuming that the **device is rooted**, because the only way to modify the `hosts` file on Android is using root.
-
-**Changing the `hosts` file permissions**
-
-Fix the issues by restricting/removing `other` from `hosts` file permissions.
-
->I don't know any down side or "bad" impact of removing `other` permissions, but it definitely fix the issues (I have tried it myself).
->
->Related: https://github.com/AdAway/AdAway/issues/881
-
-<details><summary><b>Method 1 (Simple)</b></summary>
-
-1. Download [Systemless-hosts](/../../../Systemless-hosts/releases/latest) module
-2. Install it through Magisk or KernelSU
-3. Reboot
-
->The module will automatically change the `hosts` file permissions every boot or every period of time.
-
-</details>
-
-<details><summary><b>Method 2 (Advanced)</b></summary>
-
-1. Download **Terminal** app (choose one)
-    - **Terminal Emulator for Android** (outdated) : [F-Droid](https://f-droid.org/en/packages/jackpal.androidterm/)
-    - **Termux** : [GitHub](https://github.com/termux/termux-app/releases/latest) | [F-Droid](https://f-droid.org/en/packages/com.termux/)
-    - or other terminal app you prefer
-2. Execute commands below in terminal:
-    ```shell
-    su
-    chmod 640 /system/etc/hosts
-    ```
-    **Note: You have to execute this everytime you modify the `hosts` file**
-
-Reference: https://xdaforums.com/t/fix-android-scroll-lag-caused-by-host-file.3286993/  
-
-</details>
 
 ---
 
 </details>
 
-Using too much filters in `/etc/hosts` can make the device slow, lagging, stutter, hang or other problems as the device needs time to load the `hosts` file/reads the entries inside the `hosts` file. To put it simply **MORE ENTRY = MORE TIME TO LOAD**.
+<details>
+  <summary>
+    Fix lag caused by the *hosts file* on Android
+  </summary>
 
-The best way to prevent this are avoid using too much blocklists/using blocklists that has so much entries.  
-More blocklists doesn't necessarily mean more ads/trackers blocked, a small, well-maintained blocklists can be enough to block ads/trackers, like those in [my recommendation](/README.md#filterlist-recommendation).
+---
+
+— by removing `other` from hosts file permissions.
+
+>I don't know the downside of removing `other` permissions, but it's definitely fix the issue.
+
+1. Download **Terminal** app
+    - Terminal Emulator for Android (outdated) : [F-Droid](https://f-droid.org/en/packages/jackpal.androidterm/)
+    - Termux : [GitHub](https://github.com/termux/termux-app/releases/latest) | [F-Droid](https://f-droid.org/en/packages/com.termux/)
+    - Other terminal app you prefer.
+2. Execute commands below in terminal:
+    ```shell
+    su
+    chmod 640 /system/etc/hosts
+    ```
+    Or
+    ```shell
+    su
+    chmod a-o /system/etc/hosts
+    ```
+    **Note: You have to execute those commands everytime the hosts file is modified.**
+
+Reference:  
+https://xdaforums.com/t/fix-android-scroll-lag-caused-by-host-file.3286993/  
+https://github.com/AdAway/AdAway/issues/88
+
+---
+
+</details>
