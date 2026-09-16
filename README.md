@@ -5,10 +5,9 @@
 | Format | Syntax | Tools |
 | :- | :- | :- |
 | Hosts | `0.0.0.0 www.example.com` | [Native **hosts**](#native-hosts), [AdAway](https://github.com/AdAway/AdAway), [SwitchHosts](https://github.com/oldj/SwitchHosts)
-| Domains | `example.com` `example.com.io` | [PersonalDNSFilter](https://github.com/IngoZenz/personaldnsfilter), [Technitium DNS Server](https://technitium.com/dns/) |
+| Domain | `example.com` `example.com.io` | [PersonalDNSFilter](https://github.com/IngoZenz/personaldnsfilter), [Technitium DNS Server](https://technitium.com/dns/) |
 | Wildcard | `promo*.example.com` `example.*` | [PersonalDNSFilter's **additional hosts**](#pdnsf-additional-hosts), [YogaDNS](https://www.yogadns.com) |
-| Adblock | `\|\|example.com^` `www.example.com##.ads` | [uBlock Origin](https://github.com/gorhill/uBlock) |
-
+| Adblock | `\|\|example.com^` | [Pi-Hole](), [uBlock Origin](https://github.com/gorhill/uBlock) |
 
 #### Native hosts location: <a name="native-hosts"></a>
 - Windows: `%SYSTEMROOT%\System32\drivers\etc\hosts`
