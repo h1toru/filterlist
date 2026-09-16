@@ -1,32 +1,15 @@
 # Filterlist
 
-### Format <a name="format"></a>
+### Filterlist Format
 
 | Format | Syntax | Tools |
 | :- | :- | :- |
-| Hosts | `0.0.0.0 www.example.com` | [Native **hosts**](#native-hosts), [AdAway](https://github.com/AdAway/AdAway), [SwitchHosts](https://github.com/oldj/SwitchHosts)
-| Domain | `example.com` `example.com.io` | [PersonalDNSFilter](https://github.com/IngoZenz/personaldnsfilter), [Technitium DNS Server](https://technitium.com/dns/) |
-| Wildcard | `promo*.example.com` `example.*` | [PersonalDNSFilter's **additional hosts**](#pdnsf-additional-hosts), [YogaDNS](https://www.yogadns.com) |
+| Hosts | `0.0.0.0 www.example.com` | [Native hosts file](/TOOLS.md/#native-hosts), [AdAway](https://github.com/AdAway/AdAway), [SwitchHosts](https://github.com/oldj/SwitchHosts)
+| Domain | `example.com` `example.co.jp` | [PersonalDNSFilter](https://github.com/IngoZenz/personaldnsfilter), [Technitium DNS Server](https://technitium.com/dns/) |
+| Wildcard | `promo*.example.com` `example.*` | [PersonalDNSFilter](https://github.com/IngoZenz/personaldnsfilter)'s *additional hosts*, [YogaDNS](https://www.yogadns.com) |
 | Adblock | `\|\|example.com^` | [Pi-Hole](), [uBlock Origin](https://github.com/gorhill/uBlock) |
 
-#### Native hosts location: <a name="native-hosts"></a>
-- Windows: `%SYSTEMROOT%\System32\drivers\etc\hosts`
-- macOS & Linux: `/etc/hosts`
-- Android: `/system/etc/hosts`
-
-Large number of entries in **hosts** file could adds additional network latency and even slows down your system.
-> I have encountered high network latency/delay and system freezing on Windows and Android, which caused by large number of entries in the **hosts** file.
-
-**hosts** file is better to be used **only** for basic filtering, eg. to block native/OS telemetry, tracker domain, malware, and to bypass ISP restrictions (*host redirection*).<br>
-For advanced filtering (large number of filters), I recommend to use network-level filtering instead.
-
-For network-level filtering, I'd recommend using online DNS service because it's broadly supported by many operating systems and software and it is very easy to setup.<br>
-See: [DNS.md](/DNS.md#adblock)
-
-#### PersonalDNSFilter's additional hosts <a name="pdnsf-additional-hosts"></a>
-`Advanced settings` > `additional hosts`
-
-## Filterlist Recommendation
+### Filterlist Recommendation
 
 <details>
 <summary>Adblock Format</summary>
@@ -92,11 +75,3 @@ Using an outdated filterlist could lead into high network delay/loading times as
 ---
 
 </details>
-
-## Tools 
-Tool used to collect domains.
-
-- uBlock Origin
-- PersonalDNSFilter
-- AdAway
-- YogaDNS
