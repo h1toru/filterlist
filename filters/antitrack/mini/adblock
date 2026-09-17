@@ -27,7 +27,10 @@
 ||tracking.shopee.co.id^
 ||log-collector.shopee.co.id^
 ||df.infra.sz.shopee.co.id^
+||msdk.shopee.co.id^
 ||patronus.idata.shopeemobile.com^
+||dem.shopee.com^
+||ccms.shopee.io^
 ||client-tracking.omiapp.me^
 ||abtest.omiapp.me^
 ||report.mc.moontontech.com^
