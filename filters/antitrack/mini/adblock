@@ -35,34 +35,19 @@
 ||abtest.omiapp.me^
 ||report.mc.moontontech.com^
 
-||snssdk.com^
-||isnssdk.com^
-||sgsnssdk.com^
-||byteoversea.com^
-||byteoversea.net^
-||bytelb.com^
-||bytegsdk.com^
-||ibytedtos.com^
-||ibyteimg.com^
-
 ! ——— Native Tracker / OS Telemetry
 ||footprintdns.com^
 ||msedge.net^
 ||ad.xiaomi.com^
 ||market.xiaomi.com^
-||shalltry.com^
 
 ! ——— Data Collector Service
-||analytics.google.com^
-||google-analytics.com^
 ||demdex.net^
 ||bizible.com^
 ||bizibly.com^
 ||flurry.com^
 ||mixpanel.com^
 ||mxpnl.com^
-||appsflyer.com^
-||appsflyersdk.com^
 ||applovin.com^
 ||newrelic.com^
 ||nr-data.net^
@@ -121,11 +106,6 @@
 ||clevertap-prod.com^
 
 ! ——— Error Collector Service
-||app-measurement.com^
-||crashlytics.com^
-||googletagmanager.com^
-||appcenter.ms^
-||sentry.io^
 ||sentry-cdn.com^
 ||events.split.io^
 ||rollbar.com^
@@ -134,10 +114,6 @@
 ||browser-intake-datadoghq.com^
 
 ! ——— Ad Service
-||doubleclick.net^
-||adservice.google.com^
-||googleadservices.com^
-||googlesyndication.com^
 ||amazon-adsystem.com^
 ||ads.linkedin.com^
 ||ad-delivery.net^
