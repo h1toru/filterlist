@@ -1,4 +1,4 @@
-# AdGuard DNS Configuration Guide <a name=""></a>
+# AdGuard DNS Configuration Guide <a name="-"></a>
 
 Guide to optimize your AdGuard DNS setup.
 
