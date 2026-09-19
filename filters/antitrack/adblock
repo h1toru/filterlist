@@ -1,25 +1,41 @@
-!————————————————————————————————————————————————————————————————————————————————————————————————————#
+!————————————————————————————————————————————————————————————————————————————————————————————————————
 ! Title: AntiTrack
-! Description: Blocks data collection service/provider.
+! Description: Blocks data collector service/provider.
 ! Homepage: https://github.com/h1toru/filterlist
 !
-! Last modified: 2026-09-17
-! Format: Domain
+! Last modified: 2026-09-19
+! Format: Adblock
 ! Entries: -
-!————————————————————————————————————————————————————————————————————————————————————————————————————#
+!————————————————————————————————————————————————————————————————————————————————————————————————————
 
-! ——— Service / App Tracker
-||sstats.adobe.com^
+! ——— App/Service Tracker
 ||bat.bing.com^
 ||improving.duckduckgo.com^
 ||collector.github.com^
-||content.garena.com^
-||alb.reddit.com^
 ||error-tracking.reddit.com^
 ||w3-reporting.reddit.com^
+||alb.reddit.com^
+||pi.reddit.com^
+||sstats.adobe.com^
 ||dit.whatsapp.net^
 ||analytics.twitter.com^
 ||analytics.tiktok.com^
+||analytics.us.tiktok.com^
+||analytics.crdroid.net^
+||client-tracking.omiapp.me^
+||abtest.omiapp.me^
+||report.mc.moontontech.com^
+||analytics.tokopedia.com^
+||analytics.tokopedia.net^
+||gw-dana.ebuckler.com^
+||tracking.shopee.co.id^
+||log-collector.shopee.co.id^
+||df.infra.sz.shopee.co.id^
+||msdk.shopee.co.id^
+||patronus.idata.shopeemobile.com^
+||dem.shopee.com^
+||ccms.shopee.io^
+
 ||snssdk.com^
 ||isnssdk.com^
 ||sgsnssdk.com^
@@ -29,24 +45,20 @@
 ||bytegsdk.com^
 ||ibytedtos.com^
 ||ibyteimg.com^
-||analytics.crdroid.net^
-||gw-dana.ebuckler.com^
-||analytics.tokopedia.com^
-||analytics.tokopedia.net^
-||tracking.shopee.co.id^
-||log-collector.shopee.co.id^
-||client-tracking.omiapp.me^
-||abtest.omiapp.me^
-||report.mc.moontontech.com^
 
-! ——— Native Tracker
+! ——— App/Service Ad
+||amazon-adsystem.com^
+||ads.linkedin.com^
+||ads-twitter.com^
+
+! ——— Native Tracker / OS Telemetry
 ||footprintdns.com^
 ||msedge.net^
 ||ad.xiaomi.com^
 ||market.xiaomi.com^
 ||shalltry.com^
 
-! ——— Analytics Service
+! ——— Data Collector Service
 ||analytics.google.com^
 ||google-analytics.com^
 ||demdex.net^
@@ -113,16 +125,15 @@
 ||fraudmetrix.cn^
 ||clevertap.com^
 ||clevertap-prod.com^
+||content.garena.com^
 
 ! ——— Ad Service
 ||doubleclick.net^
 ||adservice.google.com^
 ||googleadservices.com^
 ||googlesyndication.com^
-||amazon-adsystem.com^
-||ads.linkedin.com^
+||tsyndicate.com^
 ||ad-delivery.net^
-||ads-twitter.com^
 ||branch.io^
 ||adsrvr.org^
 ||adnxs.com^
@@ -134,7 +145,7 @@
 ||getdrip.com^
 ||tapad.com^
 
-! ——— Error Tracking Service
+! ——— Log Collector Service
 ||app-measurement.com^
 ||crashlytics.com^
 ||googletagmanager.com^
