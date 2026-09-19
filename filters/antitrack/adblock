@@ -12,6 +12,7 @@
 ||bat.bing.com^
 ||improving.duckduckgo.com^
 ||collector.github.com^
+||analytics.githubassets.com^
 ||error-tracking.reddit.com^
 ||w3-reporting.reddit.com^
 ||alb.reddit.com^
@@ -132,6 +133,7 @@
 ||adservice.google.com^
 ||googleadservices.com^
 ||googlesyndication.com^
+||ogads-pa.clients6.google.com^
 ||tsyndicate.com^
 ||ad-delivery.net^
 ||branch.io^
@@ -144,19 +146,31 @@
 ||drip.com^
 ||getdrip.com^
 ||tapad.com^
+||exoclick.com^
+||magsrv.com^
 
-! ——— Log Collector Service
+! ——— Error Tracking Service
 ||app-measurement.com^
 ||crashlytics.com^
+||firebaselogging.googleapis.com^
+||firebaselogging-pa.googleapis.com^
 ||googletagmanager.com^
 ||appcenter.ms^
 ||sentry.io^
 ||sentry-cdn.com^
+||bugsnag.com^
 ||events.split.io^
 ||rollbar.com^
 ||crashguard.me^
 ||guardsquare.com^
 ||browser-intake-datadoghq.com^
+
+! ——— Malicious Tracker
+||afafb.com^
+||cloudlogobox.com^
+||mushroomtrack.com^
+
+||twinrdengine.com^
 
 ! ——— Cookie Management Service
 ||cookielaw.org^
