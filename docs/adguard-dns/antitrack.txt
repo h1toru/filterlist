@@ -1,19 +1,3 @@
-!————————————————————————————————————————————————————————————————————————————————————————————————————
-! Title: AntiTrack (AdGuard DNS)
-! Description: See below
-! Homepage: https://github.com/h1toru/filterlist
-!
-! Last modified: 2026-09-20
-! Format: Adblock
-! Entries: -
-!————————————————————————————————————————————————————————————————————————————————————————————————————
-
-! This version only covers tracking domains
-! that is not included in most popular blocklists;
-! and intended to be used only in AdGuard DNS free.
-! (along with the *Top Tracking Domains*)
-! For paid user, please use the regular AntiTrack instead.
-
 ! ——— Analytics Service
 ||demdex.net^
 ||bizible.com^
@@ -108,12 +92,8 @@
 ||mushroomtrack.com^
 
 ! ——— App/Service Tracker
-||analytics.crdroid.net^
-||client-tracking.omiapp.me^
 ||abtest.omiapp.me^
 ||report.mc.moontontech.com^
-||analytics.tokopedia.com^
-||analytics.tokopedia.net^
 ||gw-dana.ebuckler.com^
 
 ||ibytedtos.com^
