@@ -15,7 +15,7 @@ Guide to optimize your AdGuard DNS setup.
 4. [Other settings](#other-settings)
    - [Respond to blocked domains](#other-settings--blocked-domain-responses)
    - [TTL of the blocked request (seconds)](#other-settings--ttl)
-   - [...](other-settings--)
+   - [...](#other-settings--)
 
 ---
 
@@ -95,7 +95,7 @@ Reduce the request/query usage to save the monthly quota.
 - **Top Tracking Domains**
   > Block common tracking domains that made the most frequent requests.
   >
-  [[top-tracker.txt](/top-tracker.txt)]
+  [top-tracker.txt](top-tracker.txt)
 
 ---
 
