@@ -1,0 +1,120 @@
+!————————————————————————————————————————————————————————————————————————————————————————————————————
+! Title: AntiTrack (AdGuard DNS)
+! Description: See below
+! Homepage: https://github.com/h1toru/filterlist
+!
+! Last modified: 2026-09-20
+! Format: Adblock
+! Entries: -
+!————————————————————————————————————————————————————————————————————————————————————————————————————
+
+! This version only covers tracking domains
+! that is not included in most popular blocklists;
+! and intended to be used only in AdGuard DNS free.
+! (along with the *Top Tracking Domains*)
+! For paid user, please use the regular AntiTrack instead.
+
+! ——— Analytics Service
+||demdex.net^
+||bizible.com^
+||bizibly.com^
+||flurry.com^
+||mixpanel.com^
+||mxpnl.com^
+||applovin.com^
+||newrelic.com^
+||nr-data.net^
+||hotjar.com^
+||hotjar.io^
+||splunk.com^
+||signalfx.com^
+||hubspot.com^
+||hubspot.net^
+||hubspotfeedback.com^
+||hubspotusercontent-na1.net^
+||hubapi.com^
+||hs-analytics.net^
+||hs-scripts.com^
+||hs-sites.com^
+||hs-banner.com^
+||hsadspixel.net^
+||hsappstatic.net^
+||hsleadflows.net^
+||hsforms.com^
+||hsforms.net^
+||hscollectedforms.net^
+||usemessages.com^
+||clearbit.com^
+||clearbitjs.com^
+||clearbitscripts.com^
+||getclicky.com^
+||clicky.com^
+||crazyegg.com^
+||crazyeggcdn.com^
+||amplitude.com^
+||onetrust.com^
+||gaconnector.com^
+||contentsquare.com^
+||clicktale.net^
+||clickagy.com^
+||omniconvert.com^
+||firstpromoter.com^
+||6sc.co^
+||clickcease.com^
+||ipify.org^
+||usercentrics.com^
+||usercentrics.eu^
+||conversant.tv^
+||swiftserve.com^
+||tongdun.net^
+||tongdun.cn^
+||tongdun.id^
+||g2.com^
+||g2crowd.com^
+||mediav.com^
+||fraudmetrix.cn^
+||clevertap.com^
+||clevertap-prod.com^
+||content.garena.com^
+
+! ——— Ad Service
+||tsyndicate.com^
+||ad-delivery.net^
+||branch.io^
+||adsrvr.org^
+||adnxs.com^
+||agkn.com^
+||criteo.com^
+||triplelift.com^
+||3lift.com^
+||drip.com^
+||getdrip.com^
+||tapad.com^
+||exoclick.com^
+||adsupply.com^
+||twinrdengine.com^
+
+! ——— Error Tracking Service
+||sentry-cdn.com^
+||bugsnag.com^
+||events.split.io^
+||rollbar.com^
+||crashguard.me^
+||guardsquare.com^
+||browser-intake-datadoghq.com^
+
+! ——— Malicious Tracking Domains
+||cloudlogobox.com^
+||mushroomtrack.com^
+
+! ——— App/Service Tracker
+||analytics.crdroid.net^
+||client-tracking.omiapp.me^
+||abtest.omiapp.me^
+||report.mc.moontontech.com^
+||analytics.tokopedia.com^
+||analytics.tokopedia.net^
+||gw-dana.ebuckler.com^
+
+||ibytedtos.com^
+||ibyteimg.com^
