@@ -11,8 +11,11 @@
 ! ——— Media CDNs
 ||googlevideo.com^
 ||googleusercontent.com^
+||encrypted-tbn0.gstatic.com^
+||encrypted-tbn1.gstatic.com^
+||encrypted-tbn2.gstatic.com^
+||encrypted-vtbn0.gstatic.com^
 ||c.youtube.com^
-||gstatic.com^
 ||ytimg.com^
 ||ggpht.com^
 ||redditstatic.com^
