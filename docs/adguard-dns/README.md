@@ -1,4 +1,4 @@
-# AdGuard DNS Configuration Guide <a name="-"></a>
+# AdGuard DNS Configuration Guide <a name=""></a>
 
 Guide to optimize your AdGuard DNS setup.
 
@@ -19,7 +19,7 @@ Guide to optimize your AdGuard DNS setup.
 
 ---
 
-## *Blocklists* [ON] <a name="blocklists"></a>
+## *Blocklists* <a name="blocklists"></a>
 - [x] Peter Lowe's Blocklist
 - [x] HaGeZi's
   + [x] Pro
@@ -52,7 +52,7 @@ Guide to optimize your AdGuard DNS setup.
 
 <div align="right">[<a href="#toc">back-to-toc</a>]</div>
 
-## *Security* [ON] <a name="security"></a>
+## *Security* <a name="security"></a>
 
 - [x] Block malicious, phishing, and scam domains
 - [x] Block newly registered domains
@@ -63,7 +63,7 @@ Guide to optimize your AdGuard DNS setup.
 
 <div align="right">[<a href="#toc">back-to-toc</a>]</div>
 
-## *Access settings* [ON] <a name="access-settings"></a>
+## *Access settings* <a name="access-settings"></a>
 
 Reduce the request/query usage to save the monthly quota.
 
