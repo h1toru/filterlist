@@ -59,7 +59,6 @@
 ||fraudmetrix.cn^
 ||clevertap.com^
 ||clevertap-prod.com^
-||content.garena.com^
 
 ! ——— Ad Provider
 ||tsyndicate.com^
@@ -92,6 +91,7 @@
 ||mushroomtrack.com^
 
 ! ——— Service Tracker
+||content.garena.com^
 ||abtest.omiapp.me^
 ||report.mc.moontontech.com^
 ||gw-dana.ebuckler.com^
