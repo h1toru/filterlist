@@ -1,0 +1,19 @@
+!————————————————————————————————————————————————————————————————————————————————————————————————————
+! Title: OTA Update Blocker
+! Description: Blocks System OTA Update.
+! Homepage: https://github.com/h1toru/filterlist
+!
+! Last modified: 2026-09-21
+! Format: Adblock
+! Entries: -
+!————————————————————————————————————————————————————————————————————————————————————————————————————
+
+! ——————————
+! Reference:
+! https://github.com/PixelExperience/system_core/commit/c10bc39e416dd43d092060e4593c630ad45053c8
+! ——————————
+
+! Block Android OTA Update from GMS
+||ota.googlezip.net^
+||ota-cache1.googlezip.net^
+||ota-cache2.googlezip.net^
