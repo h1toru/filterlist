@@ -74,7 +74,6 @@
 ||fraudmetrix.cn^
 ||clevertap.com^
 ||clevertap-prod.com^
-||content.garena.com^
 
 ! ——— Ad Provider
 ||doubleclick.net^
@@ -133,6 +132,7 @@
 ||client-tracking.omiapp.me^
 ||abtest.omiapp.me^
 ||report.mc.moontontech.com^
+||content.garena.com^
 ||analytics.tokopedia.com^
 ||analytics.tokopedia.net^
 ||gw-dana.ebuckler.com^
