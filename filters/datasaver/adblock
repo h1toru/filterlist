@@ -10,14 +10,16 @@
 
 ! ——— Media CDNs
 ||googlevideo.com^
-||googleusercontent.com^
+||lh3.googleusercontent.com^
 ||encrypted-tbn0.gstatic.com^
 ||encrypted-tbn1.gstatic.com^
 ||encrypted-tbn2.gstatic.com^
 ||encrypted-vtbn0.gstatic.com^
 ||c.youtube.com^
+||img.youtube.com^
 ||ytimg.com^
-||ggpht.com^
+||yt3.googleusercontent.com^
+||yt3.ggpht.com^
 ||redditstatic.com^
 ||redditmedia.com^
 ||redd.it^
@@ -34,7 +36,6 @@
 ! Shopee Live
 ||live.shopee.co.id^
 ||live-apm.shopee.co.id^
-||livetech.shopee.co.id^
 
 ! Shopee Games
 ||games.shopee.co.id^
