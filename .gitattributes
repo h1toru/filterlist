@@ -1,12 +1,12 @@
 ##################################################
-# File attributes modification
+# File Attributes Modification
 ##################################################
 # This will be applied on checkin and checkout
 
 # Any unspecified file will have Unix line endings. (fallback)
 * text eol=lf
 
-# Files that are truly binary and should not be modified
+# Files that should not be modified
 *.zip binary
 *.7z binary
 *.rar binary
