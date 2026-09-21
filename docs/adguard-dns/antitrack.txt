@@ -1,4 +1,4 @@
-! ——— Analytics Service
+! ——— Analytics Provider
 ||demdex.net^
 ||bizible.com^
 ||bizibly.com^
@@ -61,7 +61,7 @@
 ||clevertap-prod.com^
 ||content.garena.com^
 
-! ——— Ad Service
+! ——— Ad Provider
 ||tsyndicate.com^
 ||ad-delivery.net^
 ||branch.io^
@@ -78,7 +78,7 @@
 ||adsupply.com^
 ||twinrdengine.com^
 
-! ——— Error Tracking Service
+! ——— Error Tracking Provider
 ||sentry-cdn.com^
 ||bugsnag.com^
 ||events.split.io^
@@ -91,7 +91,7 @@
 ||cloudlogobox.com^
 ||mushroomtrack.com^
 
-! ——— App/Service Tracker
+! ——— Service Tracker
 ||abtest.omiapp.me^
 ||report.mc.moontontech.com^
 ||gw-dana.ebuckler.com^
