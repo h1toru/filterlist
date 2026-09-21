@@ -1,12 +1,12 @@
-!————————————————————————————————————————————————————————————————————————————————————————————————————#
+!————————————————————————————————————————————————————————————————————————————————————————————————————
 ! Title: Gambling Extra
-! Description: Use this in addition to other gambling filters; to block even more gambling sites.
+! Description: Use this in addition to other gambling filters —to block even more gambling sites.
 ! Homepage: https://github.com/h1toru/filterlist
 !
 ! Last modified: 2026-09-21
 ! Format: Adblock
 ! Entries: -
-!————————————————————————————————————————————————————————————————————————————————————————————————————#
+!————————————————————————————————————————————————————————————————————————————————————————————————————
 
 ! Game Provider
 ||pragmaticplay.com^
