@@ -4,8 +4,8 @@
     "hosts": "shellscript",
     "domain": "shellscript",
     "wildcard": "shellscript",
-    "pdnsf": "shellscript",
     "adblock": "adblock",
+    "pdnsf": "shellscript",
     "**/cosmetic/**": "adblock",
     "**/cosmetic/**/*.md": "markdown"
   },
