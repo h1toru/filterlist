@@ -1,67 +1,17 @@
 !————————————————————————————————————————————————————————————————————————————————————————————————————
 ! Title: AntiTrack
-! Description: Blocks data collector service/provider.
+! Description: Blocks any sort of data collection (analytics, ads, tracker, telemetry).
 ! Homepage: https://github.com/h1toru/filterlist
 !
-! Last modified: 2026-09-20
+! Last modified: 2026-09-21
 ! Format: Adblock
 ! Entries: -
 !————————————————————————————————————————————————————————————————————————————————————————————————————
 
-! ——— App/Service Tracker
-||bat.bing.com^
-||improving.duckduckgo.com^
-||collector.github.com^
-||analytics.githubassets.com^
-||error-tracking.reddit.com^
-||w3-reporting.reddit.com^
-||alb.reddit.com^
-||pi.reddit.com^
-||sstats.adobe.com^
-||dit.whatsapp.net^
-||analytics.twitter.com^
-||analytics.tiktok.com^
-||analytics.us.tiktok.com^
-||analytics.crdroid.net^
-||client-tracking.omiapp.me^
-||abtest.omiapp.me^
-||report.mc.moontontech.com^
-||analytics.tokopedia.com^
-||analytics.tokopedia.net^
-||gw-dana.ebuckler.com^
-||tracking.shopee.co.id^
-||log-collector.shopee.co.id^
-||df.infra.sz.shopee.co.id^
-||msdk.shopee.co.id^
-||patronus.idata.shopeemobile.com^
-||dem.shopee.com^
-||ccms.shopee.io^
-
-||snssdk.com^
-||isnssdk.com^
-||sgsnssdk.com^
-||byteoversea.com^
-||byteoversea.net^
-||bytelb.com^
-||bytegsdk.com^
-||ibytedtos.com^
-||ibyteimg.com^
-
-! ——— App/Service Ad
-||amazon-adsystem.com^
-||ads.linkedin.com^
-||ads-twitter.com^
-
-! ——— Native Tracker / OS Telemetry
-||footprintdns.com^
-||msedge.net^
-||ad.xiaomi.com^
-||market.xiaomi.com^
-||shalltry.com^
-
-! ——— Data Collector Service
+! ——— Analytics Provider
 ||analytics.google.com^
 ||google-analytics.com^
+||cloudflareinsights.com^
 ||demdex.net^
 ||bizible.com^
 ||bizibly.com^
@@ -109,8 +59,6 @@
 ||omniconvert.com^
 ||firstpromoter.com^
 ||6sc.co^
-||fingerprint.com^
-||fpjs.pro^
 ||clickcease.com^
 ||ipify.org^
 ||usercentrics.com^
@@ -128,7 +76,7 @@
 ||clevertap-prod.com^
 ||content.garena.com^
 
-! ——— Ad Service
+! ——— Ad Provider
 ||doubleclick.net^
 ||adservice.google.com^
 ||googleadservices.com^
@@ -151,7 +99,7 @@
 ||adsupply.com^
 ||twinrdengine.com^
 
-! ——— Error Tracking Service
+! ——— Error Tracking Provider
 ||app-measurement.com^
 ||crashlytics.com^
 ||firebaselogging.googleapis.com^
@@ -167,10 +115,63 @@
 ||guardsquare.com^
 ||browser-intake-datadoghq.com^
 
-! ——— Malicious Tracker
+! ——— Service Tracker
+||bat.bing.com^
+||improving.duckduckgo.com^
+||collector.github.com^
+||analytics.githubassets.com^
+||error-tracking.reddit.com^
+||w3-reporting.reddit.com^
+||alb.reddit.com^
+||pi.reddit.com^
+||sstats.adobe.com^
+||dit.whatsapp.net^
+||analytics.twitter.com^
+||analytics.tiktok.com^
+||analytics.us.tiktok.com^
+||analytics.crdroid.net^
+||client-tracking.omiapp.me^
+||abtest.omiapp.me^
+||report.mc.moontontech.com^
+||analytics.tokopedia.com^
+||analytics.tokopedia.net^
+||gw-dana.ebuckler.com^
+||tracking.shopee.co.id^
+||log-collector.shopee.co.id^
+||livetech.shopee.co.id^
+||df.infra.sz.shopee.co.id^
+||msdk.shopee.co.id^
+||patronus.idata.shopeemobile.com^
+||dem.shopee.com^
+||ccms.shopee.io^
+
+||snssdk.com^
+||isnssdk.com^
+||sgsnssdk.com^
+||byteoversea.com^
+||byteoversea.net^
+||bytelb.com^
+||bytegsdk.com^
+||ibytedtos.com^
+||ibyteimg.com^
+
+! ——— Service Ad
+||amazon-adsystem.com^
+||ads.linkedin.com^
+||ads-twitter.com^
+
+! ——— Native Tracker (Telemetry)
+||footprintdns.com^
+||msedge.net^
+||ad.xiaomi.com^
+||market.xiaomi.com^
+||shalltry.com^
+
+! ——— Malicious Tracking Domains
 ||afafb.com^
 ||cloudlogobox.com^
 ||mushroomtrack.com^
+||my-imcloud.com^
 
 ! ——— Cookie Management Service
 ||cookielaw.org^
