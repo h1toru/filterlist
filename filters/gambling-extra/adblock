@@ -3,19 +3,28 @@
 ! Description: Use this in addition to other gambling filters —to block even more gambling sites.
 ! Homepage: https://github.com/h1toru/filterlist
 !
-! Last modified: 2026-09-21
+! Last modified: 2026-09-22
 ! Format: Adblock
 ! Entries: -
 !————————————————————————————————————————————————————————————————————————————————————————————————————
 
-! Game Provider
+! ——— Game Provider
 ||pragmaticplay.com^
 ||slotlaunch.com^
 
-! [ID]
+! ——— [ID]
 ||vpndordor.com^
 ||dapatdisini.com^
+||dewanaga77e.com^
+||dewanaga77-super.com^
 ||dewanaga77kl.com^
-
 ||yyrr.io^
 ||yyrrc2.com^
+||logindewanaga.com^
+||padangdewanaga.ink^
+||dewanaga.gg^
+||dewanaga178.com^
+||domecolour.com^
+||squarespace.com^
+||base44.app^
+||naturalxcellencespa.com^
