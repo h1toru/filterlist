@@ -3,7 +3,7 @@
 ! Description: Blocks any sort of data collection (analytics, ads, tracker, telemetry).
 ! Homepage: https://github.com/h1toru/filterlist
 !
-! Last modified: 2026-09-21
+! Last modified: 2026-09-22
 ! Format: Adblock
 ! Entries: -
 !————————————————————————————————————————————————————————————————————————————————————————————————————
@@ -119,6 +119,7 @@
 ||improving.duckduckgo.com^
 ||collector.github.com^
 ||analytics.githubassets.com^
+||performance.squarespace.com^
 ||error-tracking.reddit.com^
 ||w3-reporting.reddit.com^
 ||alb.reddit.com^
