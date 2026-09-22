@@ -15,11 +15,11 @@
 ||sgsnssdk.com^
 ||byteoversea.com^
 ||byteoversea.net^
-||appcenter.ms^
-||sentry.io^
-||appsflyer.com^
-||appsflyersdk.com^
-||branch.io^
 ||magsrv.com^
 ||afafb.com^
 ||shalltry.com^
+||dit.whatsapp.net^
+||ccms.shopee.io^
+||tracking.shopee.co.id^
+||df.infra.sz.shopee.co.id^
+||msdk.shopee.co.id^
