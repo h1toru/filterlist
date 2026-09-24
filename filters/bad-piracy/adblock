@@ -1,0 +1,27 @@
+!————————————————————————————————————————————————————————————————————————————————————————————————————
+! Title: Bad Piracy
+! Description: Blocks piracy sites that is most likely providing malware, a scam/phishing/fake sites, or other illegitimate purposes.
+! Homepage: https://github.com/h1toru/filterlist
+!
+! Last modified: 2026-09-24
+! Format: Adblock
+! Entries: -
+!————————————————————————————————————————————————————————————————————————————————————————————————————
+
+||happymod.com^
+||m.happymod.com^
+||down.happymod.com^
+||www.happymodpro.com^
+||apkmody.com^
+||apkmody.mobi^
+||apkmody.xyz^
+||allmodapk.de^
+||getmodsapk.com^
+||playmods.net^
+||ihackedit.com^
+||appvipo.com^
+||winkapkdl.com^
+||capckutapk.com^
+||alightmotionproapks.com^
+||inshotspro.com^
+||spotifypremiumapk.com.co^
