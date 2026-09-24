@@ -27,7 +27,7 @@ Guide to optimize your AdGuard DNS setup.
   + [x] All Native Tracker (Windows/Office, Apple, Samsung, Xiaomi, OPPO & Realme, Vivo)
   + [x] DNS Rebind Protection
   + [x] DynDNS
-  + [x] Badware Hoster
+  + [ ] Badware Hoster (Optional)
   + [ ] URL Shortener (Optional)
   + [ ] Encrypted DNS/VPN/Proxy Bypass (Optional)
     > Use this only if you want to prevent users from bypassing your configured DNS server.
@@ -37,15 +37,14 @@ Guide to optimize your AdGuard DNS setup.
 > The rest is up to your preferences.
 
 #### *Custom* <a name="blocklists--custom"></a>
-- **AntiTrack**  
-  For free-tier user, use:
-  > Important Note: Use this in addition to *Top Tracking Domains* (See: [Disallowed domains](#access-settings--disallowed-domains))
-  ```
-    https://raw.githubusercontent.com/h1toru/filterlist/refs/heads/main/docs/adguard-dns/antitrack.txt
-  ```
-  For paid user, use the regular version instead:
+- **h1toru's General Blocklist**  
   ```
   https://raw.githubusercontent.com/h1toru/filterlist/refs/heads/main/filters/antitrack/adblock
+  ```
+  > For free-tier user, use this addon 
+  > Important Note: Use this in addition to *Top Tracking Domains* (See: [Disallowed domains](#access-settings--disallowed-domains))
+  ```
+    https://raw.githubusercontent.com/h1toru/filterlist/refs/heads/main/docs/adguard-dns/addon.txt
   ```
 
 ---
