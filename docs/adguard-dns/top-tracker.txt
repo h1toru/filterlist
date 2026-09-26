@@ -15,9 +15,14 @@
 ||sgsnssdk.com^
 ||byteoversea.com^
 ||byteoversea.net^
+||tiktokpangle.us^
+||tiktokpangle-b.us^
+||tiktokpangle-cdn-us.com^
+||shalltry.com^
+||mintegral.net^
+||mosspf.net^
 ||magsrv.com^
 ||afafb.com^
-||shalltry.com^
 ||dit.whatsapp.net^
 ||ccms.shopee.io^
 ||tracking.shopee.co.id^
