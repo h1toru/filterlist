@@ -1,15 +1,57 @@
 # Filterlist
 
-### Filterlist Format
+| Name | Link | Description | Total Entries |
+| :- | :-: | :- | :- |
+| General Blocklist | [adblock](filters/adblock?raw=true) | Block any sort of data collection domain/service/provider. (analytics, tracker, telemetry, ad, scam/phishing, etc.) | |
+| Data Saver | [adblock](filters/datasaver/adblock?raw=true) | Block media CDNs to reduce data usage. | |
+| Data Saver (Lite) | [adblock](filters/datasaver/lite/adblock?raw=true) | Block unnecessary media CDNs to reduce data usage —without breaking main functionality. | |
+| System Updater | [adblock](filters/ota-update/adblock?raw=true) | Block system/OS updater (OTA Update). | |
+| App Updater | [adblock](filters/updater/adblock?raw=true) | Block software self/in-app updater. | |
+| Bad Piracy | [adblock](filters/bad-piracy/adblock?raw=true) | Block piracy sites that serves malware or fake (scam/phishing, ad-campaign, etc.). | |
+| Gambling Addon | [adblock](filters/gambling-addon/adblock?raw=true) | A list to enhance the blockage of gambling sites. | |
+| Bad TLDs | [adblock](filters/bad-tlds/adblock?raw=true) | Block most abused *Top Level Domain* (TLDs) that is known for scam/phishing, ad, and malware campaign. | |
 
-| Format | Syntax | Tools |
+#### Service
+
+Block (or allow) access to specific service/categories.
+
+| Name | Category | Link | Description | Total Entries |
+| :- | :- | :-: | :- | :- |
+| (All) | Chat | | Block Chat services. | |
+| (All) | Social | | Block Social services. | |
+| (All) | Dating | | Block Dating services. | |
+| (All) | Shopping | | Block Shopping services. | |
+| (All) | Streaming | | Block Streaming services. | |
+| META | Social | | Block META services. (Facebook, Instagram, Threads, WhatsApp) | |
+
+<details>
+  <summary><b>Chat</b></summary>
+  <a name="chat"></a>
+  <br>
+
+| Service | Link | Description | Total Entries |
+| :- | :-: | :- | :- |
+| WhatsApp | | Block WhatsApp. | |
+
+---
+
+</details>
+
+| Facebook | Social | | Block Facebook. | |
+| Instagram | Social | | Block Instagram. | |
+| TikTok | Social | | Block TikTok. | |
+| YouTube | Streaming | | Block Social services. | |
+
+### Format
+
+| Format | Syntax | Tool |
 | :- | :- | :- |
 | Hosts | `0.0.0.0 www.example.com` | [Native hosts file](/TOOLS.md/#native-hosts), [AdAway](https://github.com/AdAway/AdAway), [SwitchHosts](https://github.com/oldj/SwitchHosts)
 | Domain | `example.com` `example.co.jp` | [PersonalDNSFilter](https://github.com/IngoZenz/personaldnsfilter), [Technitium DNS Server](https://technitium.com/dns/) |
 | Wildcard | `promo*.example.com` `example.*` | [PersonalDNSFilter](https://github.com/IngoZenz/personaldnsfilter)'s *additional hosts*, [YogaDNS](https://www.yogadns.com) |
 | Adblock | `\|\|example.com^` | [Pi-Hole](), [uBlock Origin](https://github.com/gorhill/uBlock) |
 
-### Filterlist Recommendation
+### Recommendation
 
 <details>
 <summary>Adblock Format</summary>
