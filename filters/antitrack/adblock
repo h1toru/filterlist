@@ -11,6 +11,7 @@
 ! ——— Analytics Provider
 ||analytics.google.com^
 ||google-analytics.com^
+||report.appmetrica.yandex.net^
 ||cloudflareinsights.com^
 ||demdex.net^
 ||bizible.com^
@@ -81,7 +82,12 @@
 ||googleadservices.com^
 ||googlesyndication.com^
 ||ogads-pa.clients6.google.com^
-||tsyndicate.com^
+||ad-host-backup-asia.s3.ap-southeast-1.amazonaws.com^
+||ad-host-backup-europe.s3.eu-central-1.amazonaws.com^
+||ad-host-backup-america.s3.us-west-1.amazonaws.com^
+||ad-host-backup-asia.oss-ap-southeast-1.aliyuncs.com^
+||ad-host-backup-europe.oss-eu-central-1.aliyuncs.com^
+||ad-host-backup-america.oss-us-west-1.aliyuncs.com^
 ||ad-delivery.net^
 ||branch.io^
 ||adsrvr.org^
@@ -93,6 +99,7 @@
 ||drip.com^
 ||getdrip.com^
 ||tapad.com^
+||tsyndicate.com^
 ||exoclick.com^
 ||magsrv.com^
 ||adsupply.com^
@@ -156,6 +163,9 @@
 ||bytegsdk.com^
 ||ibytedtos.com^
 ||ibyteimg.com^
+||tiktokpangle.us^
+||tiktokpangle-b.us^
+||tiktokpangle-cdn-us.com^
 
 ! ——— Service Ad
 ||amazon-adsystem.com^
@@ -188,3 +198,34 @@
 ||store-api.mumuglobal.com^
 ||mumu.res.netease.com^
 ||nie.res.netease.com^
+||wshareit.com^
+||shareitlite.com^
+||shareitgames.com^
+
+||vungle.com^
+||gdl.news-cdn.site^
+||rayjump.com^
+||dollphoin.site^
+||firwinds.site^
+||mkickoffo.site^
+||infeng.site^
+||beyla.site^
+
+||mnbvcxzq.com^
+||midas-tracker.hellay.net^
+||tracker.zmaticoo.com^
+||pullcf.com^
+||dalyfeds.com^
+||fnyfeds.com^
+||hpyfeds.com^
+||pullcm.com^
+||liftoff.io^
+||liftoff-creatives.io^
+||antibanads.com^
+||lacunads.com^
+
+||rqmob.com^
+||mintegral.net^
+||mosspf.com^
+||mosspf.net^
+||mossru.com^
