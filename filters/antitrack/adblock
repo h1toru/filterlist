@@ -13,14 +13,14 @@
 ||google-analytics.com^
 ||report.appmetrica.yandex.net^
 ||cloudflareinsights.com^
+||appsflyer.com^
+||appsflyersdk.com^
 ||demdex.net^
 ||bizible.com^
 ||bizibly.com^
 ||flurry.com^
 ||mixpanel.com^
 ||mxpnl.com^
-||appsflyer.com^
-||appsflyersdk.com^
 ||applovin.com^
 ||newrelic.com^
 ||nr-data.net^
@@ -199,7 +199,7 @@
 ||mumu.res.netease.com^
 ||nie.res.netease.com^
 ||wshareit.com^
-ushareit.org
+||ushareit.org^
 ||shareitlite.com^
 ||shareitgames.com^
 
@@ -209,7 +209,7 @@ ushareit.org
 ||dollphoin.site^
 ||firwinds.site^
 ||mkickoffo.site^
-api.inmense.site
+||api.inmense.site^
 ||infeng.site^
 ||beyla.site^
 
@@ -232,6 +232,6 @@ api.inmense.site
 ||mosspf.net^
 ||mossru.com^
 
-gdl.news-cdn.site
-api.gov-img.site
-news-api.tpnful.online
+||gdl.news-cdn.site^
+||api.gov-img.site^
+||news-api.tpnful.online^
