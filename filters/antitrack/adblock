@@ -3,7 +3,7 @@
 ! Description: Blocks any sort of data collection (analytics, ads, tracker, telemetry).
 ! Homepage: https://github.com/h1toru/filterlist
 !
-! Last modified: 2026-09-26
+! Last modified: 2026-10-13
 ! Format: Adblock
 ! Entries: -
 !————————————————————————————————————————————————————————————————————————————————————————————————————
@@ -204,23 +204,27 @@
 ||shareitgames.com^
 
 ||vungle.com^
-||gdl.news-cdn.site^
 ||rayjump.com^
+
+||news-cdn.site^
+||gov-img.site^
+||inmense.site^
 ||dollphoin.site^
 ||firwinds.site^
 ||mkickoffo.site^
-||api.inmense.site^
 ||infeng.site^
 ||beyla.site^
 
 ||mnbvcxzq.com^
-||midas-tracker.hellay.net^
-||tracker.zmaticoo.com^
+||hellay.net^
+||zmaticoo.com^
 ||pullcf.com^
+||pullcm.com^
+
 ||dalyfeds.com^
 ||fnyfeds.com^
 ||hpyfeds.com^
-||pullcm.com^
+
 ||liftoff.io^
 ||liftoff-creatives.io^
 ||antibanads.com^
@@ -232,6 +236,4 @@
 ||mosspf.net^
 ||mossru.com^
 
-||gdl.news-cdn.site^
-||api.gov-img.site^
 ||news-api.tpnful.online^
