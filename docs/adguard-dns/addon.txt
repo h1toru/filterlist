@@ -1,3 +1,4 @@
+||us-c.viayoo.com^
 ||floatingmenu.cn^
 ||mumu.163.com^
 ||store-api.mumuglobal.com^
