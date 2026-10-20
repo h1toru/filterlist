@@ -75,6 +75,7 @@
 ||fraudmetrix.cn^
 ||clevertap.com^
 ||clevertap-prod.com^
+||detailroi.com^
 
 ! ——— Ad Provider
 ||doubleclick.net^
@@ -104,6 +105,7 @@
 ||magsrv.com^
 ||adsupply.com^
 ||twinrdengine.com^
+||adsmoloco.com^
 
 ! ——— Error Tracking Provider
 ||app-measurement.com^
@@ -155,18 +157,22 @@
 ||dem.shopee.com^
 ||ccms.shopee.io^
 
-||snssdk.com^
-||isnssdk.com^
-||sgsnssdk.com^
+||xy.fbcdn.net^
+
 ||byteoversea.com^
 ||byteoversea.net^
 ||bytelb.com^
 ||bytegsdk.com^
 ||ibytedtos.com^
 ||ibyteimg.com^
+||snssdk.com^
+||isnssdk.com^
+||sgsnssdk.com^
+||pangle.io^
 ||tiktokpangle.us^
 ||tiktokpangle-b.us^
 ||tiktokpangle-cdn-us.com^
+||mon-boot.tiktokv.com^
 
 ! ——— Service Ad
 ||amazon-adsystem.com^
