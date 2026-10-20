@@ -16,9 +16,10 @@
 ||mintegral.net^
 ||mosspf.net^
 ||rayjump.com^
-||shalltry.com^
 ||mcc-intl.inf.miui.com^
 ||authbe.sec.intl.miui.com^
+||shalltry.com^
+||shtranssion.com^
 ||byteoversea.com^
 ||byteoversea.net^
 ||snssdk.com^
