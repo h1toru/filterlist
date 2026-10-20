@@ -11,6 +11,7 @@
 ||report.mc.moontontech.com^
 ||content.garena.com^
 
+||ibyteimg.com^
 ||pullcf.com^
 ||pullcm.com^
 
