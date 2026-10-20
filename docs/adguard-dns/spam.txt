@@ -20,6 +20,7 @@
 ||adsmoloco.com^
 ||byteoversea.com^
 ||byteoversea.net^
+||ibyteimg.com^
 ||snssdk.com^
 ||isnssdk.com^
 ||sgsnssdk.com^
