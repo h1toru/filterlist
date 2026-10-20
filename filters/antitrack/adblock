@@ -3,7 +3,7 @@
 ! Description: Blocks any sort of data collection (analytics, ads, tracker, telemetry).
 ! Homepage: https://github.com/h1toru/filterlist
 !
-! Last modified: 2026-10-13
+! Last modified: 2026-10
 ! Format: Adblock
 ! Entries: -
 !————————————————————————————————————————————————————————————————————————————————————————————————————
@@ -176,8 +176,10 @@
 ||footprintdns.com^
 ||msedge.net^
 ||ad.xiaomi.com^
-||market.xiaomi.com^
+||mcc-intl.inf.miui.com^
+||authbe.sec.intl.miui.com^
 ||shalltry.com^
+||shtranssion.com^
 
 ! ——— Malicious Tracking Domains
 ||afafb.com^
