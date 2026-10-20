@@ -1,3 +1,4 @@
+||content.garena.com^
 ||floatingmenu.cn^
 ||mumu.163.com^
 ||store-api.mumuglobal.com^
@@ -9,9 +10,6 @@
 ||shareitgames.com^
 ||abtest.omiapp.me^
 ||report.mc.moontontech.com^
-
-||content.garena.com^
-||ibyteimg.com^
 
 ||pullcf.com^
 ||pullcm.com^
