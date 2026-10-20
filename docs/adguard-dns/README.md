@@ -1,8 +1,6 @@
 # AdGuard DNS Configuration Guide <a name=""></a>
 
-Guide to optimize your AdGuard DNS setup.
-
-> This guide is also suitable for free-tier user.
+Guide to optimize your AdGuard DNS settings —Improving privacy and security and also reducing the number of queries to save the monthly requests limit.
 
 ### Table of Content <a name="toc"></a>
 1. [Blocklists](#blocklists)
@@ -29,20 +27,19 @@ Guide to optimize your AdGuard DNS setup.
   + [x] DynDNS
   + [ ] Badware Hoster (Optional)
   + [ ] URL Shortener (Optional)
-  + [ ] Encrypted DNS/VPN/Proxy Bypass (Optional)
-    > Use this only if you want to prevent users from bypassing your configured DNS server.
+  + [ ] Encrypted DNS/VPN/Proxy Bypass (Optional, recommended)
+    > Use this only if you want to prevent users from bypassing the configured DNS server.
 - [ ] AdGuard DNS Popup Hosts filter (Optional, recommended)
 - [ ] AdGuard DNS filter (Optional, only for extra protection)
 
 > The rest is up to your preferences.
 
 #### *Custom* <a name="blocklists--custom"></a>
-- **h1toru's General Blocklist**  
+- **General Blocklist**  
   ```
   https://raw.githubusercontent.com/h1toru/filterlist/refs/heads/main/filters/antitrack/adblock
   ```
-  > For free-tier user, use this addon 
-  > Important Note: Use this in addition to *Top Tracking Domains* (See: [Disallowed domains](#access-settings--disallowed-domains))
+  > For free-tier user, use this instead.
   ```
     https://raw.githubusercontent.com/h1toru/filterlist/refs/heads/main/docs/adguard-dns/addon.txt
   ```
@@ -64,12 +61,10 @@ Guide to optimize your AdGuard DNS setup.
 
 ## *Access settings* <a name="access-settings"></a>
 
-Reduce the request/query usage to save the monthly quota.
-
 > [!IMPORTANT]
 > This configuration can only be set manually
-> (via *CopyPaste*), you can't add this
-> to or as a (remote) custom blocklist.
+> (via *Copy-Paste*), you can't add this
+> to or as (remote) custom blocklist.
 
 #### *Allowed clients* <a name="access-settings--allowed-clients"></a>
 
@@ -91,10 +86,10 @@ Reduce the request/query usage to save the monthly quota.
   ||*^$dnstype=HTTPS
   ```
   > This type of background-query are commonly used on Apple devices.
-- **Top Tracking Domains**
-  > Block common tracking domains that made the most frequent requests.
+- **Top Domain**
+  > Block tracking domains that makes frequent, or spamming requests which increases the number of queries.
   >
-  [top-tracker.txt](top-tracker.txt)
+  [top-domain.txt](top-domain.txt)
 
 ---
 
@@ -109,7 +104,7 @@ Reduce the request/query usage to save the monthly quota.
 #### *TTL of the blocked request (seconds)* <a name="other-settings--ttl"></a>
 
 ```
-300
+3600
 ```
 
 ## <a name="other-settings--"></a>
