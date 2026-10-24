@@ -2,6 +2,7 @@
 ||google-analytics.com^
 ||app-measurement.com^
 ||crashlytics.com^
+||crashlyticsreports-pa.googleapis.com^
 ||firebaselogging.googleapis.com^
 ||firebaselogging-pa.googleapis.com^
 ||googletagmanager.com^
@@ -10,7 +11,10 @@
 ||googleadservices.com^
 ||googlesyndication.com^
 ||ogads-pa.clients6.google.com^
+||appsgrowthpromo-pa.googleapis.com^
 ||appsflyersdk.com^
+||applovin.com^
+||applvn.com^
 ||afafb.com^
 ||magsrv.com^
 ||mintegral.net^
@@ -18,6 +22,7 @@
 ||rayjump.com^
 ||detailroi.com^
 ||adsmoloco.com^
+||hisavana.com^
 ||byteoversea.com^
 ||byteoversea.net^
 ||ibyteimg.com^
@@ -29,13 +34,16 @@
 ||tiktokpangle-b.us^
 ||mon-boot.tiktokv.com^
 ||xy.fbcdn.net^
+||xz.fbcdn.net^
 ||dit.whatsapp.net^
+||trace.free-reels.com^
 ||tracing.roblox.com^
 ||ccms.shopee.io^
 ||tracking.shopee.co.id^
 ||df.infra.sz.shopee.co.id^
 ||msdk.shopee.co.id^
 ||livetech.shopee.co.id^
+||live-apm.shopee.co.id^
 ||mcc-intl.inf.miui.com^
 ||authbe.sec.intl.miui.com^
 ||shalltry.com^
