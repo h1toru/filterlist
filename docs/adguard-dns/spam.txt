@@ -23,6 +23,8 @@
 ||detailroi.com^
 ||adsmoloco.com^
 ||hisavana.com^
+||tradplusad.com^
+||clarity.ms^
 ||byteoversea.com^
 ||byteoversea.net^
 ||ibyteimg.com^
@@ -38,6 +40,7 @@
 ||dit.whatsapp.net^
 ||trace.free-reels.com^
 ||tracing.roblox.com^
+||content.garena.com^
 ||ccms.shopee.io^
 ||tracking.shopee.co.id^
 ||df.infra.sz.shopee.co.id^
