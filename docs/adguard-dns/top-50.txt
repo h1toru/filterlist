@@ -1,4 +1,3 @@
-*$dnstype=HTTPS
 ||app-measurement.com^
 ||crashlytics.com^
 ||doubleclick.net^
@@ -21,6 +20,7 @@
 ||ccms.shopee.io^
 ||mcc-intl.inf.miui.com^
 ||authbe.sec.intl.miui.com^
+||resolver.msg.global.xiaomi.net^
 ||shalltry.com^
 ||shtranssion.com^
 /^([^./]+\.)*(crashlyticsreports|firebaselogging|appsgrowthpromo)(-pa)?\.googleapis\.com$/
@@ -31,5 +31,6 @@
 /^([^./]+\.)*byteoversea\.(com|net)$/
 /^([^./]+\.)*(i|sg)?snssdk\.com$/
 /^([^./]+\.)*tiktokpangle(-b)?\.us$/
+/^[^./]+-sg\.capcutapi\.com$/
 /^([^./]+\.)*x(y|z).fbcdn\.net$/
 /^([^./]+\.)*(tracking|log-collector|msdk|df\.infra\.sz|livetech|live-apm)\.shopee\.co\.id$/
