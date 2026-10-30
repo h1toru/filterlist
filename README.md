@@ -16,7 +16,7 @@
 Block access to specific service or category.
 
 > [!TIP]
-> To allow a service just add `-` at the end of the raw url, e.g. `../whatsapp/adblock-`.
+> To allow specific service (instead of blocking) just add `-` at the end of the raw url, e.g. `../whatsapp/adblock-`.
 > 
 > This can be useful if you want to block the whole category but wanted to allow certain service.
 
@@ -94,10 +94,13 @@ Block access to specific service or category.
 
 | Format | Syntax | Tool |
 | :- | :- | :- |
-| Hosts | `0.0.0.0 www.example.com` | [Native hosts file](/TOOLS.md/#native-hosts), [AdAway](https://github.com/AdAway/AdAway), [SwitchHosts](https://github.com/oldj/SwitchHosts)
+| Generic |
+| Hosts | `0.0.0.0 www.example.com` | [Native hosts file](/TOOLS.md/#native-hosts), [AdAway](https://github.com/AdAway/AdAway), [SwitchHosts](https://github.com/oldj/SwitchHosts) |
 | Domain | `example.com` `example.co.jp` | [PersonalDNSFilter](https://github.com/IngoZenz/personaldnsfilter), [Technitium DNS Server](https://technitium.com/dns/) |
 | Wildcard | `promo*.example.com` `example.*` | [PersonalDNSFilter](https://github.com/IngoZenz/personaldnsfilter)'s *additional hosts*, [YogaDNS](https://www.yogadns.com) |
 | Adblock | `\|\|example.com^` | [Pi-Hole](), [uBlock Origin](https://github.com/gorhill/uBlock) |
+| Adblock (Cosmetic) | `example.com##.ad` | [uBlock Origin](https://github.com/gorhill/uBlock) |
+| RegEx | `/^example\.(com\|net)$/` | [AdGuard DNS]() |
 
 ### Filterlist Recommendation
 
