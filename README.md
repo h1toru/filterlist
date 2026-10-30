@@ -11,38 +11,86 @@
 | Gambling Addon | [adblock](filters/gambling-addon/adblock?raw=true) | A list to enhance the blockage of gambling sites. | |
 | Bad TLDs | [adblock](filters/bad-tlds/adblock?raw=true) | Block most abused *Top Level Domain* (TLDs) that is known for scam/phishing, ad, and malware campaign. | |
 
-#### Service
+### Service Filter
 
-Block (or allow) access to specific service/categories.
+Block access to specific service or category.
 
-| Name | Category | Link | Description | Total Entries |
-| :- | :- | :-: | :- | :- |
-| (All) | Chat | | Block Chat services. | |
-| (All) | Social | | Block Social services. | |
-| (All) | Dating | | Block Dating services. | |
-| (All) | Shopping | | Block Shopping services. | |
-| (All) | Streaming | | Block Streaming services. | |
-| META | Social | | Block META services. (Facebook, Instagram, Threads, WhatsApp) | |
+> [!TIP]
+> To allow a service just add `-` at the end of the raw url, e.g. `../whatsapp/adblock-`.
+> 
+> This can be useful if you want to block the whole category but wanted to allow certain service.
 
 <details>
   <summary><b>Chat</b></summary>
   <a name="chat"></a>
   <br>
 
-| Service | Link | Description | Total Entries |
-| :- | :-: | :- | :- |
-| WhatsApp | | Block WhatsApp. | |
+| Service | Link | Entries |
+| :- | :-: | :- |
+| (All) | | |
+| WhatsApp | | |
 
 ---
 
 </details>
 
-| Facebook | Social | | Block Facebook. | |
-| Instagram | Social | | Block Instagram. | |
-| TikTok | Social | | Block TikTok. | |
-| YouTube | Streaming | | Block Social services. | |
+<details>
+  <summary><b>Social</b></summary>
+  <a name="social"></a>
+  <br>
 
-### Format
+| Service | Link | Entries |
+| :- | :-: | :- |
+| (All) | | |
+| META | | |
+| Facebook | | |
+| Instagram | | |
+| TikTok | | |
+
+---
+
+</details>
+
+<details>
+  <summary><b>Dating</b></summary>
+  <a name="dating"></a>
+  <br>
+
+| Service | Link | Entries |
+| :- | :-: | :- |
+| (All) | | |
+
+---
+
+</details>
+
+<details>
+  <summary><b>Shopping</b></summary>
+  <a name="shopping"></a>
+  <br>
+
+| Service | Link | Entries |
+| :- | :-: | :- |
+| (All) | | |
+
+---
+
+</details>
+
+<details>
+  <summary><b>Streaming</b></summary>
+  <a name="streaming"></a>
+  <br>
+
+| Service | Link | Entries |
+| :- | :-: | :- |
+| (All) | | |
+
+---
+
+</details>
+
+### Filter Format
 
 | Format | Syntax | Tool |
 | :- | :- | :- |
@@ -51,7 +99,7 @@ Block (or allow) access to specific service/categories.
 | Wildcard | `promo*.example.com` `example.*` | [PersonalDNSFilter](https://github.com/IngoZenz/personaldnsfilter)'s *additional hosts*, [YogaDNS](https://www.yogadns.com) |
 | Adblock | `\|\|example.com^` | [Pi-Hole](), [uBlock Origin](https://github.com/gorhill/uBlock) |
 
-### Recommendation
+### Filterlist Recommendation
 
 <details>
 <summary>Adblock Format</summary>
