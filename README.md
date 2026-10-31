@@ -1,15 +1,20 @@
 # Filterlist
 
-| Name | Link | Description | Total Entries |
+| Name | Link | Description | Entries |
 | :- | :-: | :- | :- |
-| General Blocklist | [adblock](filters/adblock?raw=true) | Block any sort of data collection domain/service/provider. (analytics, tracker, telemetry, ad, scam/phishing, etc.) | |
+| General Blocklist | [adblock](filters/adblock?raw=true) | Block analytics, tracker, telemetry, ads, and malicious domain. | |
 | Data Saver | [adblock](filters/datasaver/adblock?raw=true) | Block media CDNs to reduce data usage. | |
-| Data Saver (Lite) | [adblock](filters/datasaver/lite/adblock?raw=true) | Block unnecessary media CDNs to reduce data usage —without breaking main functionality. | |
-| System Updater | [adblock](filters/ota-update/adblock?raw=true) | Block system/OS updater (OTA Update). | |
-| App Updater | [adblock](filters/updater/adblock?raw=true) | Block software self/in-app updater. | |
-| Bad Piracy | [adblock](filters/bad-piracy/adblock?raw=true) | Block piracy sites that serves malware or fake (scam/phishing, ad-campaign, etc.). | |
-| Gambling Addon | [adblock](filters/gambling-addon/adblock?raw=true) | A list to enhance the blockage of gambling sites. | |
-| Bad TLDs | [adblock](filters/bad-tlds/adblock?raw=true) | Block most abused *Top Level Domain* (TLDs) that is known for scam/phishing, ad, and malware campaign. | |
+| Data Saver (Lite) | [adblock](filters/datasaver/lite/adblock?raw=true) | Block unnecessary media CDNs to reduce data usage without breaking core functionality. | |
+| OTA Update | [adblock](filters/ota-update/adblock?raw=true) | Block system OTA update. | |
+| App Updater | [adblock](filters/updater/adblock?raw=true) | Block software's in-app updater / self-updater. | |
+| Bad Piracy | [adblock](filters/bad-piracy/adblock?raw=true) | Block fake piracy sites that serve malware, scam/phishing, or ads). | |
+| Bad TLDs | [adblock](filters/bad-tld/adblock?raw=true) | Block most abused *Top Level Domain* (TLD) that is known for scam/phishing, ad, and malware campaign. | |
+
+### Addon
+
+| Name | Link | Description | Entries |
+| :- | :-: | :- | :- |
+| Gambling Extra | [adblock](filters/gambling-extra/adblock?raw=true) | A list to enhance the blockage of gambling sites. | |
 
 ### Service Filter
 
@@ -90,7 +95,7 @@ Block access to specific service or category.
 
 </details>
 
-### Filter Format
+## Filter Format
 
 | Format | Syntax | Tool |
 | :- | :- | :- |
@@ -102,7 +107,7 @@ Block access to specific service or category.
 | Adblock (Cosmetic) | `example.com##.ad` | [uBlock Origin](https://github.com/gorhill/uBlock) |
 | RegEx | `/^example\.(com\|net)$/` | [AdGuard DNS]() |
 
-### Filterlist Recommendation
+## Filterlist Recommendation
 
 <details>
 <summary>Adblock Format</summary>

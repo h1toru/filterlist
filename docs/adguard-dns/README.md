@@ -1,6 +1,6 @@
 # AdGuard DNS Configuration Guide <a name=""></a>
 
-Guide to optimize your AdGuard DNS settings —Improving privacy and security and also reducing the number of queries to save the monthly requests limit.
+Guide to optimize your AdGuard DNS settings —Improving privacy and security and reducing the number of queries to save DNS monthly requests limit.
 
 ### Table of Content <a name="toc"></a>
 1. [Blocklists](#blocklists)
@@ -18,28 +18,23 @@ Guide to optimize your AdGuard DNS settings —Improving privacy and security an
 ---
 
 ## *Blocklists* <a name="blocklists"></a>
-- [x] Peter Lowe's Blocklist
 - [x] HaGeZi's
   + [x] Pro
   + [x] Threat Intelligence Feeds
   + [x] All Native Tracker (Windows/Office, Apple, Samsung, Xiaomi, OPPO & Realme, Vivo)
   + [x] DNS Rebind Protection
   + [x] DynDNS
-  + [ ] Badware Hoster (Optional)
-  + [ ] URL Shortener (Optional)
+  + [ ] Badware Hoster (Optional, recommended)
   + [ ] Encrypted DNS/VPN/Proxy Bypass (Optional, recommended)
     > Use this only if you want to prevent users from bypassing the configured DNS server.
 - [ ] AdGuard DNS Popup Hosts filter (Optional, recommended)
-- [ ] AdGuard DNS filter (Optional, only for extra protection)
-
-> The rest is up to your preferences.
 
 #### *Custom* <a name="blocklists--custom"></a>
 - **General Blocklist**  
   ```
-  https://raw.githubusercontent.com/h1toru/filterlist/refs/heads/main/filters/antitrack/adblock
+  https://raw.githubusercontent.com/h1toru/filterlist/refs/heads/main/filters/adblock
   ```
-  > For free-tier user, use this instead.
+  > For user with free plan, use this instead.
   ```
     https://raw.githubusercontent.com/h1toru/filterlist/refs/heads/main/docs/adguard-dns/addon.txt
   ```
@@ -89,7 +84,8 @@ Guide to optimize your AdGuard DNS settings —Improving privacy and security an
 - **Top Domain**
   > Block tracking domains that makes frequent, or spamming requests which increases the number of queries.
   >
-  [top-domain.txt](top-domain.txt)
+  [top.txt](top.txt) : Suitable for paid user.  
+  [top-mini.txt](top-mini.txt) : Suitable for user with free plan which has 100 access rules limit and 2 servers limit. ()
 
 ---
 
