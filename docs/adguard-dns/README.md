@@ -85,7 +85,7 @@ Guide to optimize your AdGuard DNS settings —Improving privacy and security an
   > Block tracking domains that makes frequent, or spamming requests which increases the number of queries.
   >
   [top.txt](top.txt) : Suitable for paid user.  
-  [top-mini.txt](top-mini.txt) : Suitable for user with free plan which has 100 access rules limit and 2 servers limit. ()
+  [top-mini.txt](top-mini.txt) : Suitable for user with free plan which has 100 access rules limit and 2 servers limit.
 
 ---
 

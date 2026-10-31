@@ -99,13 +99,14 @@ Block access to specific service or category.
 
 | Format | Syntax | Tool |
 | :- | :- | :- |
-| Generic |
-| Hosts | `0.0.0.0 www.example.com` | [Native hosts file](/TOOLS.md/#native-hosts), [AdAway](https://github.com/AdAway/AdAway), [SwitchHosts](https://github.com/oldj/SwitchHosts) |
-| Domain | `example.com` `example.co.jp` | [PersonalDNSFilter](https://github.com/IngoZenz/personaldnsfilter), [Technitium DNS Server](https://technitium.com/dns/) |
-| Wildcard | `promo*.example.com` `example.*` | [PersonalDNSFilter](https://github.com/IngoZenz/personaldnsfilter)'s *additional hosts*, [YogaDNS](https://www.yogadns.com) |
+| Generic | `example.co.jp` `ads.example.co.jp` | |
+| Hosts | `0.0.0.0 example.co.jp` `0.0.0.0 ads.example.co.jp` | [Native hosts file](/TOOLS.md/#native-hosts), [AdAway](https://github.com/AdAway/AdAway), [SwitchHosts](https://github.com/oldj/SwitchHosts) |
+| Domain | `example.co.jp` | [PersonalDNSFilter](https://github.com/IngoZenz/personaldnsfilter), [Technitium DNS Server](https://technitium.com/dns/) |
+| Wildcard | `*.example.co.jp` | |
 | Adblock | `\|\|example.com^` | [Pi-Hole](), [uBlock Origin](https://github.com/gorhill/uBlock) |
-| Adblock (Cosmetic) | `example.com##.ad` | [uBlock Origin](https://github.com/gorhill/uBlock) |
-| RegEx | `/^example\.(com\|net)$/` | [AdGuard DNS]() |
+| RegEx | `/^([^./]\.)*example\.co\.[a-z]{2}$/` | [AdGuard DNS]() |
+| Wildcard (Full) | `example.co.*` `*.example.co.*` | [PersonalDNSFilter](https://github.com/IngoZenz/personaldnsfilter)'s *additional hosts*, [YogaDNS](https://www.yogadns.com) |
+| Adblock (Cosmetic) | `example.com##.ads` | [uBlock Origin](https://github.com/gorhill/uBlock) |
 
 ## Filterlist Recommendation
 
