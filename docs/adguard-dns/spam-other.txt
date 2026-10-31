@@ -1,3 +1,0 @@
-ota-checker.transsion-os.com
-weather.transsion-os.com
-test-exrate.transsion-os.com

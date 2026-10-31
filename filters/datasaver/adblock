@@ -1,6 +1,6 @@
 !————————————————————————————————————————————————————————————————————————————————————————————————————
 ! Title: Data Saver
-! Description: Blocks media CDNs to save data.
+! Description: Block media CDNs to reduce data usage.
 ! Homepage: https://github.com/h1toru/filterlist
 !
 ! Last modified: 2026-10
@@ -10,12 +10,20 @@
 
 ! ——— Media CDNs
 ||googlevideo.com^
+||patreonusercontent.com^
+||video-v6.mydramawave.com^
+||video-v81.mydramawave.com^
+||video-v7.mydramawave.com^
+||vod.susercontent.com^
+||vod.susercontent.com.eo.dnse1.com^
+||vod.susercontent.com.cdn20.com^
+
+! ——— Static CDNs
 ||lh3.googleusercontent.com^
 ||encrypted-tbn0.gstatic.com^
 ||encrypted-tbn1.gstatic.com^
 ||encrypted-tbn2.gstatic.com^
 ||encrypted-vtbn0.gstatic.com^
-||c.youtube.com^
 ||img.youtube.com^
 ||ytimg.com^
 ||yt3.googleusercontent.com^
@@ -24,17 +32,16 @@
 ||redditmedia.com^
 ||redd.it^
 ||scdn.co^
-||patreonusercontent.com^
 ||avatars.githubusercontent.com^
 ||thumbnails.roblox.com^
 ||avatar.roblox.com^
 ||static-v1.mydramawave.com^
-||video-v6.mydramawave.com^
-||video-v81.mydramawave.com^
-||susercontent.com^
-||susercontent.com.eo.dnse1.com^
-||susercontent.com.cdn20.com^
+||img.susercontent.com^
+||img.susercontent.com.eo.dnse1.com^
+||img.susercontent.com.cdn20.com^
 ||zshopee.v.baishan-cloud.net^
+||img.cocdn.co^
+||cdn.crushon.ai^
 
 ! ——— Other CDNs
 

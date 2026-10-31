@@ -6,7 +6,7 @@
 | Data Saver | [adblock](filters/datasaver/adblock?raw=true) | Block media CDNs to reduce data usage. | |
 | Data Saver (Lite) | [adblock](filters/datasaver/lite/adblock?raw=true) | Block unnecessary media CDNs to reduce data usage without breaking core functionality. | |
 | OTA Update | [adblock](filters/ota-update/adblock?raw=true) | Block system OTA update. | |
-| App Updater | [adblock](filters/updater/adblock?raw=true) | Block software's in-app updater / self-updater. | |
+| App Updater | [adblock](filters/updater/adblock?raw=true) | Block Apps' in-app updater / self-updater. Relies only on update managers for app updates. Also helps to reduce network usage. | |
 | Bad Piracy | [adblock](filters/bad-piracy/adblock?raw=true) | Block fake piracy sites that serve malware, scam/phishing, or ads). | |
 | Bad TLDs | [adblock](filters/bad-tld/adblock?raw=true) | Block most abused *Top Level Domain* (TLD) that is known for scam/phishing, ad, and malware campaign. | |
 
