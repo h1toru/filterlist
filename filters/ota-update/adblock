@@ -3,7 +3,7 @@
 ! Description: Blocks System OTA Update.
 ! Homepage: https://github.com/h1toru/filterlist
 !
-! Last modified: 2026-10
+! Last modified: 2026-11
 ! Format: Adblock
 ! Entries: -
 !————————————————————————————————————————————————————————————————————————————————————————————————————
@@ -20,4 +20,6 @@
 
 ! MIUI / HyperOS
 ||update.intl.miui.com^
+
+! Transsion OS
 ||ota-checker.transsion-os.com^

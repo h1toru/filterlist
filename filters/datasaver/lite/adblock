@@ -1,9 +1,9 @@
 !————————————————————————————————————————————————————————————————————————————————————————————————————#
 ! Title: Data Saver (Lite)
-! Description: Blocks unnecessary CDNs without breaking main functionality.
+! Description: Blocks unnecessary CDNs without breaking core functionality.
 ! Homepage: https://github.com/h1toru/filterlist
 !
-! Last modified: 2026-10
+! Last modified: 2026-11
 ! Format: Adblock
 ! Entries: -
 !————————————————————————————————————————————————————————————————————————————————————————————————————#
@@ -16,6 +16,7 @@
 @@||down-cvs-id.vod.susercontent.com^
 @@||down-cvs-id.vod.susercontent.com.eo.dnse1.com^
 @@||down-cvs-id.vod.susercontent.com.cdn20.com^
+
 ! Shopee Live
 ||live.shopee.co.id^
 ||live-apm.shopee.co.id^

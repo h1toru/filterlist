@@ -3,7 +3,7 @@
 ! Description: Blocks any sort of data collection (analytics, ads, tracker, telemetry).
 ! Homepage: https://github.com/h1toru/filterlist
 !
-! Last modified: 2026-10
+! Last modified: 2026-11
 ! Format: Adblock
 ! Entries: -
 !————————————————————————————————————————————————————————————————————————————————————————————————————
@@ -11,8 +11,9 @@
 ! ——— Analytics Provider
 ||analytics.google.com^
 ||google-analytics.com^
-||report.appmetrica.yandex.net^
+||clarity.ms^
 ||cloudflareinsights.com^
+||report.appmetrica.yandex.net^
 ||appsflyer.com^
 ||appsflyersdk.com^
 ||demdex.net^
@@ -106,6 +107,16 @@
 ||adsupply.com^
 ||twinrdengine.com^
 ||adsmoloco.com^
+||hisavana.com^
+||tradplusad.com^
+||vungle.com^
+||liftoff.io^
+||liftoff-creatives.io^
+||rayjump.com^
+||mintegral.net^
+||zmaticoo.com^
+||antibanads.com^
+||lacunads.com^
 
 ! ——— Error Tracking Provider
 ||app-measurement.com^
@@ -122,27 +133,34 @@
 ||crashguard.me^
 ||guardsquare.com^
 ||browser-intake-datadoghq.com^
+||rqmob.com^
 
 ! ——— Service Tracker
+||xy.fbcdn.net^
+||xz.fbcdn.net^
+||dit.whatsapp.net^
+||analytics.twitter.com^
+||analytics.tiktok.com^
+||analytics.us.tiktok.com^
+||error-tracking.reddit.com^
+||w3-reporting.reddit.com^
+||alb.reddit.com^
+||pi.reddit.com^
 ||bat.bing.com^
 ||improving.duckduckgo.com^
 ||collector.github.com^
 ||analytics.githubassets.com^
 ||performance.squarespace.com^
-||error-tracking.reddit.com^
-||w3-reporting.reddit.com^
-||alb.reddit.com^
-||pi.reddit.com^
 ||sstats.adobe.com^
-||dit.whatsapp.net^
-||analytics.twitter.com^
-||analytics.tiktok.com^
-||analytics.us.tiktok.com^
-||analytics.crdroid.net^
+||analytics.ff.avast.com^
+||shepherd.ff.avast.com^
 ||tracing.roblox.com^
+||analytics.crdroid.net^
 ||client-tracking.omiapp.me^
 ||abtest.omiapp.me^
 ||report.mc.moontontech.com^
+||pullcf.com^
+||pullcm.com^
 ||content.garena.com^
 ||analytics.tokopedia.com^
 ||analytics.tokopedia.net^
@@ -156,8 +174,6 @@
 ||patronus.idata.shopeemobile.com^
 ||dem.shopee.com^
 ||ccms.shopee.io^
-
-||xy.fbcdn.net^
 
 ||byteoversea.com^
 ||byteoversea.net^
@@ -185,14 +201,34 @@
 ||ad.xiaomi.com^
 ||mcc-intl.inf.miui.com^
 ||authbe.sec.intl.miui.com^
+||resolver.msg.global.xiaomi.net^
 ||shalltry.com^
 ||shtranssion.com^
+||toolmatrix.plus^
+||eagllwin.com^
+||mosspf.com^
+||mosspf.net^
+||mossru.com^
 
 ! ——— Malicious Tracking Domains
 ||afafb.com^
 ||cloudlogobox.com^
 ||mushroomtrack.com^
 ||my-imcloud.com^
+||mnbvcxzq.com^
+||hellay.net^
+||dalyfeds.com^
+||fnyfeds.com^
+||hpyfeds.com^
+||tpnful.online^
+||news-cdn.site^
+||gov-img.site^
+||inmense.site^
+||dollphoin.site^
+||firwinds.site^
+||mkickoffo.site^
+||infeng.site^
+||beyla.site^
 
 ! ——— Cookie Management Service
 ||cookielaw.org^
@@ -211,38 +247,3 @@
 ||ushareit.org^
 ||shareitlite.com^
 ||shareitgames.com^
-
-||vungle.com^
-||rayjump.com^
-
-||news-cdn.site^
-||gov-img.site^
-||inmense.site^
-||dollphoin.site^
-||firwinds.site^
-||mkickoffo.site^
-||infeng.site^
-||beyla.site^
-
-||mnbvcxzq.com^
-||hellay.net^
-||zmaticoo.com^
-||pullcf.com^
-||pullcm.com^
-
-||dalyfeds.com^
-||fnyfeds.com^
-||hpyfeds.com^
-
-||liftoff.io^
-||liftoff-creatives.io^
-||antibanads.com^
-||lacunads.com^
-
-||rqmob.com^
-||mintegral.net^
-||mosspf.com^
-||mosspf.net^
-||mossru.com^
-
-||news-api.tpnful.online^
