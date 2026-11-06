@@ -142,6 +142,15 @@
 ||analytics.twitter.com^
 ||analytics.tiktok.com^
 ||analytics.us.tiktok.com^
+||business-api.tiktok.com^
+||mon-boot.tiktokv.com^
+||mon-va.tiktokv.com^
+||log.tiktokv.com^
+||tnc-boot.tiktokv.com^
+||mon-v2-boot.capcutapi.com^
+||log32-normal-sg.capcutapi.com^
+||tnc-sg.capcutapi.com^
+||mssdk-sg.capcutapi.com^
 ||error-tracking.reddit.com^
 ||w3-reporting.reddit.com^
 ||alb.reddit.com^
@@ -159,6 +168,7 @@
 ||client-tracking.omiapp.me^
 ||abtest.omiapp.me^
 ||report.mc.moontontech.com^
+||global-report.ml.youngjoygame.com^
 ||pullcf.com^
 ||pullcm.com^
 ||content.garena.com^
@@ -188,7 +198,6 @@
 ||tiktokpangle.us^
 ||tiktokpangle-b.us^
 ||tiktokpangle-cdn-us.com^
-||mon-boot.tiktokv.com^
 
 ! ——— Service Ad
 ||amazon-adsystem.com^
@@ -247,3 +256,6 @@
 ||ushareit.org^
 ||shareitlite.com^
 ||shareitgames.com^
+
+! ——— Draft
+||mtgglobals.com^

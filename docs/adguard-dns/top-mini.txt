@@ -10,8 +10,11 @@
 ||adsmoloco.com^
 ||hisavana.com^
 ||tradplusad.com^
+||mtgglobals.com^
 ||ibyteimg.com^
 ||pangle.io^
+||analytics.us.tiktok.com^
+||business-api.tiktok.com^
 ||mon-boot.tiktokv.com^
 ||dit.whatsapp.net^
 ||tracing.roblox.com^
@@ -31,9 +34,8 @@
 /^([^./]+\.)*byteoversea\.(com|net)$/
 /^([^./]+\.)*(i|sg)?snssdk\.com$/
 /^([^./]+\.)*tiktokpangle(-b)?\.us$/
-/^[^./]+-sg\.capcutapi\.com$/
 /^([^./]+\.)*x(y|z).fbcdn\.net$/
-/^([^./]+\.)*trace(-v(1|5))?.free-reels.com$/
+/^([^./]+\.)*trace(-v1|-v5))?.free-reels.com$/
 /^([^./]+\.)*(tracking|log-collector|msdk|df\.infra\.sz|livetech|live-apm)\.shopee\.co\.id$/
 /^([^./]+\.)*(analytics|shepherd)\.ff\.avast\.com$/
 /^([^./]+\.)*moss(pf|ru)\.(com|net)$/

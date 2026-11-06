@@ -3,13 +3,15 @@
 ! Description: Block media CDNs to reduce data usage.
 ! Homepage: https://github.com/h1toru/filterlist
 !
-! Last modified: 2026-10
+! Last modified: 2026-11
 ! Format: Adblock
 ! Entries: -
 !————————————————————————————————————————————————————————————————————————————————————————————————————
 
 ! ——— Media CDNs
 ||googlevideo.com^
+||video.xx.fbcdn.net^
+||video-cgk2-2.xx.fbcdn.net^
 ||patreonusercontent.com^
 ||video-v6.mydramawave.com^
 ||video-v81.mydramawave.com^
