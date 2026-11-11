@@ -9,10 +9,16 @@
 !————————————————————————————————————————————————————————————————————————————————————————————————————
 
 ! ——— Media CDNs
+||scontent-cgk2-1.cdninstagram.com^
+||scontent-cgk1-2.cdninstagram.com^
+||scontent-cgk1-1.cdninstagram.com^
+||media-cgk1-1.cdn.whatsapp.net^
+||patreonusercontent.com^
+
+! ——— Video CDN
 ||googlevideo.com^
 ||video.xx.fbcdn.net^
 ||video-cgk2-2.xx.fbcdn.net^
-||patreonusercontent.com^
 ||video-v6.mydramawave.com^
 ||video-v81.mydramawave.com^
 ||video-v7.mydramawave.com^
@@ -20,23 +26,27 @@
 ||vod.susercontent.com.eo.dnse1.com^
 ||vod.susercontent.com.cdn20.com^
 
-! ——— Static CDNs
+! ——— Static CDN
 ||lh3.googleusercontent.com^
+||play-lh.googleusercontent.com^
 ||encrypted-tbn0.gstatic.com^
 ||encrypted-tbn1.gstatic.com^
 ||encrypted-tbn2.gstatic.com^
+||encrypted-tbn3.gstatic.com^
 ||encrypted-vtbn0.gstatic.com^
 ||img.youtube.com^
 ||ytimg.com^
 ||yt3.googleusercontent.com^
 ||yt3.ggpht.com^
+||static.xx.fbcdn.net^
 ||redditstatic.com^
 ||redditmedia.com^
 ||redd.it^
 ||scdn.co^
-||avatars.githubusercontent.com^
 ||thumbnails.roblox.com^
 ||avatar.roblox.com^
+||avatars.githubusercontent.com^
+||icons.adguard.org^
 ||static-v1.mydramawave.com^
 ||img.susercontent.com^
 ||img.susercontent.com.eo.dnse1.com^
@@ -44,6 +54,10 @@
 ||zshopee.v.baishan-cloud.net^
 ||img.cocdn.co^
 ||cdn.crushon.ai^
+
+! ——— Fonts
+||fonts.googleapis.com^
+||fonts.gstatic.com^
 
 ! ——— Other CDNs
 

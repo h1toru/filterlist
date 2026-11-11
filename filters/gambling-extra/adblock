@@ -1,6 +1,6 @@
 !————————————————————————————————————————————————————————————————————————————————————————————————————
 ! Title: Gambling Extra
-! Description: Block Gambling Game Provider.
+! Description: Block Gambling-related domains.
 ! Homepage: https://github.com/h1toru/filterlist
 !
 ! Last modified: 2026-11
@@ -10,7 +10,55 @@
 
 ! ——— Game Provider
 ||pragmaticplay.com^
-||d3pvfi6m7bxu71.cloudfront.net^
 ||hacksawgaming.com^
+||playngo.com^
+||netent.com^
+||redtiger.com^
+||nolimitcity.com^
+||relax-gaming.com^
+||bgaming.com^
 ||tmgaming.space^
-||slotlaunch.com^
+
+! ——— Aggregator
+||everymatrix.com^
+||softswiss.com^
+||softswiss.net^
+||slotegrator.com^
+||bragg.games^
+||lnw.com^
+
+! ——— Game (DGA)
+||d3pvfi6m7bxu71.cloudfront.net^
+||d185mnvi8t3oqz.cloudfront.net^
+||ygvwripnaa.net^
+||501ytxk3a.com^
+||yziyu02by.com^
+||9ffyu1g9c.com^
+||v2kyu1kjr.com^
+||tkpusjc86.com^
+||u45owu68o.com^
+
+! ——— Platform
+/dewanaga/
+/petir108/
+/xo368/
+/icaslot/
+/yyrr/
+||akundewaa.site^
+
+! ——— Shortener, Hoster, Redirector
+||squarespace.com^
+||firebaseapp.com^
+||workers.dev^
+||base44.app^
+||mssg.me^
+||vpndordor.com^
+||domecolour.com^
+||hobbydental.com^
+||saranguang.com^
+||cancercarecoaching.com^
+/naikslot/
+
+! ——— Related
+||qrishoki.com^
+||superqris.com^

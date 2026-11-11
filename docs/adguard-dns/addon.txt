@@ -10,10 +10,17 @@
 ||shareitgames.com^
 ||abtest.omiapp.me^
 ||report.mc.moontontech.com^
-
+||global-report.ml.youngjoygame.com^
 ||pullcf.com^
 ||pullcm.com^
+||tracking.seabank.co.id^
+||apm.seabank.co.id^
 
+||dalyfeds.com^
+||fnyfeds.com^
+||hpyfeds.com^
+||tpnful.online^
+||mnbvcxzq.com^
 ||news-cdn.site^
 ||gov-img.site^
 ||inmense.site^
@@ -23,10 +30,5 @@
 ||infeng.site^
 ||beyla.site^
 
-||news-api.tpnful.online^
-||dalyfeds.com^
-||fnyfeds.com^
-||hpyfeds.com^
-
 ||antibanads.com^
-||mnbvcxzq.com^
+||ltguevmavv.com^

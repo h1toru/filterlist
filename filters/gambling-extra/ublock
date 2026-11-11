@@ -1,0 +1,20 @@
+!————————————————————————————————————————————————————————————————————————————————————————————————————
+! Title: Gambling Extra
+! Description: Block Gambling-related domains.
+! Homepage: https://github.com/h1toru/filterlist
+!
+! Last modified: 2026-11
+! Format: uBlock
+! Entries: -
+!————————————————————————————————————————————————————————————————————————————————————————————————————
+
+! ——— Search query
+/(\?|\&)[qp]\=[^\&]*judi/i
+/(\?|\&)[qp]\=[^\&]*gacor/i
+/(\?|\&)[qp]\=[^\&]*slot/i
+/(\?|\&)[qp]\=[^\&]*mahjong/i
+/(\?|\&)[qp]\=[^\&]*scatter/i
+/(\?|\&)[qp]\=[^\&]*dewanaga/i
+/(\?|\&)[qp]\=[^\&]*xo368/i
+/(\?|\&)[qp]\=[^\&]*petir108/i
+/(\?|\&)[qp]\=[^\&]*yyrr/i
