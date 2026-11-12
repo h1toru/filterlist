@@ -1,22 +1,42 @@
 # Filterlist
 
+### Table of Content <a name="toc"></a>
+1. [Filters](#filters)
+   - [Other Filter](#filters--other)
+2. [Service Filter](#filters--service)
+2. [Format/Syntax](#format)
+3. [Recommendation](#recommendation)
+
+#### Docummentation
+- [Tools](docs/TOOLS.md) — Domain filtering guide.
+- [DNS](docs/DNS.md) — List of recommended online DNS services.
+- [AdGuard DNS](docs/adguard-dns/README.md) — Guide to optimize AdGuard DNS settings.
+
+---
+
+## Filter
+
 | Name | Link | Description | Entries |
 | :- | :-: | :- | :- |
-| General Blocklist | [adblock](filters/adblock?raw=true) | Block analytics, tracker, telemetry, ads, and malicious domain. | |
-| Data Saver | [adblock](filters/datasaver/adblock?raw=true) | Block media CDNs to reduce data usage. | |
-| Data Saver (Lite) | [adblock](filters/datasaver/lite/adblock?raw=true) | Block unnecessary media CDNs to reduce data usage without breaking core functionality. | |
-| OTA Update | [adblock](filters/ota-update/adblock?raw=true) | Block system OTA update. | |
-| App Updater | [adblock](filters/updater/adblock?raw=true) | Block Apps' in-app updater / self-updater. Relies only on update managers for app updates. Also helps to reduce network usage. | |
-| Bad Piracy | [adblock](filters/bad-piracy/adblock?raw=true) | Block fake piracy sites that serve malware, scam/phishing, or ads). | |
-| Bad TLDs | [adblock](filters/bad-tld/adblock?raw=true) | Block most abused *Top Level Domain* (TLD) that is known for scam/phishing, ad, and malware campaign. | |
+| General Blocklist | [adblock](filters/adblock?raw=true) | | |
+| Data Saver | [adblock](filters/datasaver/adblock?raw=true) | | |
+| Data Saver (Lite) | [adblock](filters/datasaver/lite/adblock?raw=true) | | |
+| OTA Update | [adblock](filters/ota-update/adblock?raw=true) | | |
+| App Updater | [adblock](filters/updater/adblock?raw=true) | | |
+| Bad Piracy | [adblock](filters/bad-piracy/adblock?raw=true) | | |
+| Bad TLDs | [adblock](filters/bad-tld/adblock?raw=true) | | |
 
-### Addon
+### Other Filter
 
 | Name | Link | Description | Entries |
 | :- | :-: | :- | :- |
-| Gambling Extra | [adblock](filters/gambling-extra/adblock?raw=true) | A list to enhance the blockage of gambling sites. | |
+| Gambling Extra | [adblock](filters/gambling-extra/adblock?raw=true) | | |
 
-### Service Filter
+---
+
+<div align="right">[<a href="#toc">back-to-toc</a>]</div>
+
+## Service Filter
 
 Block access to specific service or category.
 
@@ -95,7 +115,11 @@ Block access to specific service or category.
 
 </details>
 
-## Filter Format
+---
+
+<div align="right">[<a href="#toc">back-to-toc</a>]</div>
+
+## Filter Format / Syntax <a name="format"></a>
 
 | Format | Syntax | Tool |
 | :- | :- | :- |
