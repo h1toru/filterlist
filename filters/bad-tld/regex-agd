@@ -1,0 +1,11 @@
+!————————————————————————————————————————————————————————————————————————————————————————————————————
+! Title: Most Abused TLDs
+! Description: 
+! Homepage: https://github.com/h1toru/filterlist
+!
+! Last modified: 2026-11
+! Format: RegEx (AdGuard DNS)
+! Entries: 
+!————————————————————————————————————————————————————————————————————————————————————————————————————
+
+/\.(pro|vip|top|best|club|party|fun|online|site|info|buzz)$/

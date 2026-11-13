@@ -55,18 +55,18 @@
 ||zshopee.v.baishan-cloud.net^
 ||img.cocdn.co^
 ||cdn.crushon.ai^
-imgcdn.latestmodapks.com
+||imgcdn.latestmodapks.com^
 
 ! ——— Font CDN
 ||fonts.googleapis.com^
 ||fonts.gstatic.com^
 
-! ——— File CDN
-drive.usercontent.google.com
-cloudflarestorage.com
-release-assets.githubusercontent.com
-dw.uptodown.net
-dl.modplays.com
+! ——— Cloud Storage
+||drive.usercontent.google.com^
+||cloudflarestorage.com^
+||release-assets.githubusercontent.com^
+||dw.uptodown.net^
+||dl.modplays.com^
 
 ! ——— Other CDN
 
