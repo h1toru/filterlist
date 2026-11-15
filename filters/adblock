@@ -142,15 +142,16 @@
 ||analytics.twitter.com^
 ||analytics.tiktok.com^
 ||analytics.us.tiktok.com^
+||log.tiktokv.com^
 ||business-api.tiktok.com^
 ||mon-boot.tiktokv.com^
 ||mon-va.tiktokv.com^
-||log.tiktokv.com^
-||tnc-boot.tiktokv.com^
-||mon-v2-boot.capcutapi.com^
 ||log32-normal-sg.capcutapi.com^
-||tnc-sg.capcutapi.com^
+||mon-sg.capcutapi.com^
+||mon-v2-boot.capcutapi.com^
 ||mssdk-sg.capcutapi.com^
+||tnc-sg.capcutapi.com^
+||tnc-boot.tiktokv.com^
 ||error-tracking.reddit.com^
 ||w3-reporting.reddit.com^
 ||alb.reddit.com^
@@ -174,6 +175,7 @@
 ||content.garena.com^
 ||analytics.tokopedia.com^
 ||analytics.tokopedia.net^
+||mp-mix.dana.id^
 ||gw-dana.ebuckler.com^
 ||tracking.shopee.co.id^
 ||log-collector.shopee.co.id^
@@ -261,3 +263,10 @@
 
 ! ——— Draft
 ||mtgglobals.com^
+||braze.com^
+||log-global.aliyuncs.com^
+||adsafeprotected.com^
+||vungle.com^
+||maticooads.com^
+||apicgate.com^
+||maticooads.com^

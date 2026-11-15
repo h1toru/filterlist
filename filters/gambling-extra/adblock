@@ -39,17 +39,7 @@
 ||u45owu68o.com^
 
 ! ——— Platform / Keyword
-/judi/
-/gacor/
-/slot/
-/scatter/
-/mahjong/
-/petir/
-/dewanaga/
-/xo368/
-!/petir108/
-!/icaslot/
-/yyrr/
+/(judi|gacor|slot|scatter|petir|dewanaga|xo368|yyrr)/
 ||akundewaa.site^
 
 ! ——— Shortener, Redirector, Hoster
@@ -63,8 +53,9 @@
 ||hobbydental.com^
 ||saranguang.com^
 ||cancercarecoaching.com^
-/naikslot/
 
 ! ——— Related / Most Abused Service
 ||qrishoki.com^
 ||superqris.com^
+
+! ——— Exceptions

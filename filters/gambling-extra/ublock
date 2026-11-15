@@ -9,14 +9,5 @@
 !————————————————————————————————————————————————————————————————————————————————————————————————————
 
 ! ——— Search query
-/(\?|\&)[qp]\=[^\&]*judi/i
-/(\?|\&)[qp]\=[^\&]*gacor/i
-/(\?|\&)[qp]\=[^\&]*slot/i
-/(\?|\&)[qp]\=[^\&]*scatter/i
-/(\?|\&)[qp]\=[^\&]*mahjong/i
-/(\?|\&)[qp]\=[^\&]*petir/i
-/(\?|\&)[qp]\=[^\&]*dewanaga/i
-/(\?|\&)[qp]\=[^\&]*xo368/i
-!/(\?|\&)[qp]\=[^\&]*petir108/i
-!/(\?|\&)[qp]\=[^\&]*icaslot/i
-/(\?|\&)[qp]\=[^\&]*yyrr/i
+/(\?|\&)q\=[^&]*(judi|gacor|slot|scatter|petir|dewanaga|xo368|yyrr)/
+/(^|\/)search\.yahoo\.com/search\?([^&]+\&)*p\=[^&]*(judi|gacor|slot|scatter|petir|dewanaga|xo368|yyrr)/

@@ -43,7 +43,7 @@
 ||redditstatic.com^
 ||redditmedia.com^
 ||redd.it^
-||scdn.co^
+||i.scdn.co^
 ||thumbnails.roblox.com^
 ||avatar.roblox.com^
 ||avatars.githubusercontent.com^
@@ -56,6 +56,8 @@
 ||img.cocdn.co^
 ||cdn.crushon.ai^
 ||imgcdn.latestmodapks.com^
+||img.shanxixi.com^
+||img.lameipi.com^
 
 ! ——— Font CDN
 ||fonts.googleapis.com^
@@ -68,7 +70,7 @@
 ||dw.uptodown.net^
 ||dl.modplays.com^
 
-! ——— Other CDN
+! ——— Misc.
 
 ! Shopee Live
 ||live.shopee.co.id^
@@ -77,6 +79,5 @@
 ! Shopee Games
 ||games.shopee.co.id^
 ||idgame.shopee.co.id^
-!||games-dailycheckin.shopee.co.id^ # ability to claim daily rewards
 ||games.deo.susercontent.com^
 ||games.deo.shopeemobile.com^

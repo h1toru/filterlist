@@ -4,8 +4,8 @@
 ! Homepage: https://github.com/h1toru/filterlist
 !
 ! Last modified: 2026-11
-! Format: RegEx (AdGuard DNS)
+! Format: RegEx
 ! Entries: 
 !————————————————————————————————————————————————————————————————————————————————————————————————————
 
-/\.(pro|vip|top|best|club|party|fun|online|site|info|buzz)$/
+/\.(pro|vip|top|best|club|party|fun|online|site|info|buzz)($|\/)/
