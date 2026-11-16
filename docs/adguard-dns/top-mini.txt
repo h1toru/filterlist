@@ -1,7 +1,5 @@
 ||app-measurement.com^
 ||crashlytics.com^
-||doubleclick.net^
-||2mdn.net^
 ||clarity.ms^
 ||afafb.com^
 ||magsrv.com^
@@ -17,8 +15,6 @@
 ||sentry.io^
 ||ibyteimg.com^
 ||pangle.io^
-||analytics.us.tiktok.com^
-||business-api.tiktok.com^
 ||mon-boot.tiktokv.com^
 ||dit.whatsapp.net^
 ||tracing.roblox.com^
@@ -28,8 +24,6 @@
 ||d1tru86qrby720.cloudfront.net^
 ||mcc-intl.inf.miui.com^
 ||authbe.sec.intl.miui.com^
-||resolver.msg.global.xiaomi.net^
-||app.chat.global.xiaomi.net^
 ||shalltry.com^
 ||shtranssion.com^
 ||toolmatrix.plus^
@@ -38,13 +32,16 @@
 /(^|\.)(crashlyticsreports|firebaselogging|appsgrowthpromo)(-pa)?\.googleapis\.com$/
 /(^|\.)(analytics|adservice|ogads-pa\.clients6)\.google\.com$/
 /(^|\.)google(-analytics|tagmanager|adservices|syndication)\.com$/
+/(^|\.)(doubleclick|2mdn)\.net$/
 /(^|\.)appsflyer(sdk)?\.com$/
 /(^|\.)appl(ovi|v)n\.com$/
 /(^|\.)byteoversea\.(com|net)$/
 /(^|\.)(i|sg)?snssdk\.com$/
 /(^|\.)tiktokpangle(-b)?\.us$/
-/(^|\.)log32-normal-sg|mon-sg|mon-v2-boot|mssdk-sg|tnc-sg)\.capcutapi\.com$/
+/(^|\.)(business-api|analytics\.us)\.tiktok\.com$/
+/(^|\.)(log32-normal-sg|mon-sg|mon-v2-boot|mssdk-sg|tnc-sg)\.capcutapi\.com$/
 /(^|\.)x(y|z).fbcdn\.net$/
-/(^|\.)(tracking|log-collector|msdk|df\.infra\.sz|livetech|live-apm)\.shopee\.co\.id$/
 /(^|\.)(analytics|shepherd)\.ff\.avast\.com$/
+/(^|\.)(tracking|log-collector|msdk|df\.infra\.sz|livetech|live-apm)\.shopee\.co\.id$/
+/(^|\.)(resolver\.msg|app\.chat)\.global\.xiaomi\.net$/
 /(^|\.)moss(pf|ru|turbo|fast)\.com$/
