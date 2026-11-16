@@ -146,12 +146,12 @@
 ||business-api.tiktok.com^
 ||mon-boot.tiktokv.com^
 ||mon-va.tiktokv.com^
+||tnc-boot.tiktokv.com^
 ||log32-normal-sg.capcutapi.com^
 ||mon-sg.capcutapi.com^
 ||mon-v2-boot.capcutapi.com^
 ||mssdk-sg.capcutapi.com^
 ||tnc-sg.capcutapi.com^
-||tnc-boot.tiktokv.com^
 ||error-tracking.reddit.com^
 ||w3-reporting.reddit.com^
 ||alb.reddit.com^
@@ -222,6 +222,8 @@
 ||mosspf.com^
 ||mosspf.net^
 ||mossru.com^
+||mossturbo.com^
+||mossfast.com^
 
 ! ——— Malicious Tracking Domains
 ||afafb.com^
@@ -270,3 +272,5 @@
 ||maticooads.com^
 ||apicgate.com^
 ||maticooads.com^
+||clienttracing-pa.googleapis.com^
+||app.chat.global.xiaomi.net^
