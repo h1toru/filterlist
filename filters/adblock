@@ -142,11 +142,17 @@
 ||analytics.twitter.com^
 ||analytics.tiktok.com^
 ||analytics.us.tiktok.com^
-||log.tiktokv.com^
 ||business-api.tiktok.com^
+||log.tiktokv.com^
+||log22-normal-alisg.tiktokv.com^
+||rtlog22-normal-alisg.tiktokv.com^
+||rtlog16-normal-alisg.tiktokv.com^
+||location-v6-sg.tiktokv.com^
 ||mon-boot.tiktokv.com^
 ||mon-va.tiktokv.com^
 ||tnc-boot.tiktokv.com^
+||tnc0-normal-alisg.tiktokv.com^
+||mcs-va.tiktokv.com^
 ||log32-normal-sg.capcutapi.com^
 ||mon-sg.capcutapi.com^
 ||mon-v2-boot.capcutapi.com^
@@ -276,3 +282,8 @@
 ||app.chat.global.xiaomi.net^
 ||ebuckler.com^
 ||federatedcompute-pa.googleapis.com^
+||amazon-adsystem.com^
+||ns1p.net^
+||airbridge.io^
+||mixpanel.com^
+||image.moengage.com^

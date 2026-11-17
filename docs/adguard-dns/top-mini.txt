@@ -1,6 +1,6 @@
 ||clarity.ms^
+||image.moengage.com^
 ||ibyteimg.com^
-||mon-boot.tiktokv.com^
 ||dit.whatsapp.net^
 ||tracing.roblox.com^
 ||content.garena.com^
@@ -8,9 +8,9 @@
 ||patronus.idata.shopeemobile.com^
 ||d1tru86qrby720.cloudfront.net^
 ||toolmatrix.plus^
-/(^|\.)(app-measurement|crashlytics|clevertap-prod|afafb|magsrv|rayjump|detailroi|adsmoloco|hisavana|tradplusad|mtgglobals|vungle|shalltry|shtranssion|eagllwin)\.com$/
-/(^|\.)(doubleclick|2mdn|mintegral|mosspf)\.net$/
-/(^|\.)(sentry|branch|pangle)\.io$/
+/(^|\.)(app-measurement|crashlytics|amazon-adsystem|mixpanel|clevertap-prod|afafb|magsrv|rayjump|detailroi|adsmoloco|hisavana|tradplusad|mtgglobals|vungle|shalltry|shtranssion|eagllwin)\.com$/
+/(^|\.)(doubleclick|2mdn|mintegral|ns1p|mosspf)\.net$/
+/(^|\.)(sentry|branch|airbridge|pangle)\.io$/
 /(^|\.)(crashlyticsreports|firebaselogging|appsgrowthpromo|federatedcompute)(-pa)?\.googleapis\.com$/
 /(^|\.)(analytics|adservice|ogads-pa\.clients6)\.google\.com$/
 /(^|\.)google(-analytics|tagmanager|adservices|syndication)\.com$/
@@ -20,6 +20,7 @@
 /(^|\.)(i|sg)?snssdk\.com$/
 /(^|\.)tiktokpangle(-b)?\.us$/
 /(^|\.)(business-api|analytics\.us)\.tiktok\.com$/
+/(^|\.)(log22-normal-alisg|rtlog22-normal-alisg|rtlog16-normal-alisg|location-v6-sg|mon-boot|mon-va|tnc-boot|tnc0-normal-alisg|mcs-va)\.tiktokv\.com$/
 /(^|\.)(log32-normal-sg|mon-sg|mon-v2-boot|mssdk-sg|tnc-sg)\.capcutapi\.com$/
 /(^|\.)x(y|z).fbcdn\.net$/
 /(^|\.)(analytics|shepherd)\.ff\.avast\.com$/
