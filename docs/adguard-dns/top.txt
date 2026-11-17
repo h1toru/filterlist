@@ -5,6 +5,7 @@
 ||crashlyticsreports-pa.googleapis.com^
 ||firebaselogging.googleapis.com^
 ||firebaselogging-pa.googleapis.com^
+||federatedcompute-pa.googleapis.com^
 ||googletagmanager.com^
 ||doubleclick.net^
 ||2mdn.net^
@@ -17,6 +18,8 @@
 ||appsflyersdk.com^
 ||applovin.com^
 ||applvn.com^
+||branch.io^
+||clevertap-prod.com^
 ||afafb.com^
 ||magsrv.com^
 ||mintegral.net^
@@ -27,7 +30,6 @@
 ||tradplusad.com^
 ||mtgglobals.com^
 ||vungle.com^
-||clevertap-prod.com^
 ||sentry.io^
 ||byteoversea.com^
 ||byteoversea.net^
